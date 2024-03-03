@@ -1,4 +1,7 @@
 .app__container {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-template-areas: "sidebar" "body";
   background: var(--backGroundColor);
   width: 100%;
   height: 100vh;
