@@ -6,10 +6,12 @@ const Sidebar = () => {
     <section className="sidebar__container">
       <div className="sidebar__first__section">
         <div className="sidebar__logo__section">
-          <i class="bx bxl-spotify sidebar__icon"></i>
-          <p className="sidebar__logo__paragraph sidebar__logo__paragraph__spotify">
-            Spotify
-          </p>
+          <NavLink className=" sidebar__logo__link__spotify">
+            <i class="bx bxl-spotify sidebar__icon"></i>
+            <p className="sidebar__logo__paragraph sidebar__logo__paragraph__spotify">
+              Spotify
+            </p>
+          </NavLink>
         </div>
         <div className="sidebar__logo__inicio">
           <NavLink className="sidebar__logo__link">
