@@ -76,7 +76,9 @@
   gap: 10px;
 }
 .sidebar__icon__library {
+  color: var(--letterColor);
   padding: 2px 1px 0;
+  font-size: 1.8rem;
 }
 .sidebar__icon__library__title {
   transition: color linear 0.2s;
