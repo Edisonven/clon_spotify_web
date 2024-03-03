@@ -1,5 +1,8 @@
 :root {
   --backGroundColor: #000;
+  --sectionBgColor: #121212;
+  --letterColor: #a7a7a7;
+  --btnBgColor: #f6f6f6;
 }
 
 * {

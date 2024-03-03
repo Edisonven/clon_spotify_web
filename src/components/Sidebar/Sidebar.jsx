@@ -2,9 +2,11 @@ import "../Sidebar/sidebar.css";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar__container">
-      <h1>Hola soy el sidebar</h1>
-    </div>
+    <section className="sidebar__container">
+      <div className="sidebar__first__section">
+        <h1>Hola soy la primer area</h1>
+      </div>
+    </section>
   );
 };
 
