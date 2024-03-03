@@ -28,7 +28,7 @@
 }
 
 .sidebar__icon {
-  transition: all linear 0.2s;
+  transition: color linear 0.2s;
   font-size: 1.8rem;
   color: var(--btnBgColor);
 }
@@ -145,10 +145,10 @@
 }
 
 .sidebar__icon__library:hover::after {
-  transition: 0.2s ease-in-out 0.3s;
+  transition: opacity 0.2s ease-in-out 0.3s;
   opacity: 1;
 }
 .sidebar__biblio__link:hover::after {
-  transition: 0.2s ease-in-out 0.3s;
+  transition: opacity 0.2s ease-in-out 0.3s;
   opacity: 1;
 }
