@@ -36,7 +36,7 @@ const Sidebar = () => {
         <div className="sidebar__biblio__section">
           <div className="sidebar__second__section__title">
             <NavLink className="sidebar__biblio__link">
-              <i className="bx bx-library sidebar__icon sidebar__icon__library"></i>
+              <i className="bx bx-library sidebar__icon sidebar__icon__library__title"></i>
               <p className="sidebar__logo__paragraph sidebar__logo__paragraph__library">
                 Tu biblioteca
               </p>
