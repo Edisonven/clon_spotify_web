@@ -66,7 +66,7 @@
 
 .sidebar__second__section {
   grid-area: second;
-  padding: 19px 21px 15px;
+  padding: 17px 10px 15px;
   background: var(--sectionBgColor);
   border-radius: 8px;
 }
@@ -87,4 +87,16 @@
 .sidebar__biblio__link:hover .sidebar__logo__paragraph__library {
   transition: all linear 0.2s;
   color: var(--btnBgColor);
+}
+.sidebar__biblio__btn {
+  transform: scale(0.85);
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.sidebar__biblio__section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px 0 10px;
 }

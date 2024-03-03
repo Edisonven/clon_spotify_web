@@ -33,13 +33,20 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="sidebar__second__section">
-        <div className="sidebar__second__section__title">
-          <NavLink className="sidebar__biblio__link">
-            <i className="bx bx-library sidebar__icon sidebar__icon__library"></i>
-            <p className="sidebar__logo__paragraph sidebar__logo__paragraph__library">
-              Tu biblioteca
-            </p>
-          </NavLink>
+        <div className="sidebar__biblio__section">
+          <div className="sidebar__second__section__title">
+            <NavLink className="sidebar__biblio__link">
+              <i className="bx bx-library sidebar__icon sidebar__icon__library"></i>
+              <p className="sidebar__logo__paragraph sidebar__logo__paragraph__library">
+                Tu biblioteca
+              </p>
+            </NavLink>
+          </div>
+          <div className="sidebar__bliblio__create__list">
+            <button className="sidebar__biblio__btn">
+              <i className="bx bx-plus sidebar__icon sidebar__icon__library"></i>
+            </button>
+          </div>
         </div>
       </div>
     </section>
