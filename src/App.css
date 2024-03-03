@@ -1,0 +1,5 @@
+.app__container {
+  background: var(--backGroundColor);
+  width: 100%;
+  height: 100vh;
+}
