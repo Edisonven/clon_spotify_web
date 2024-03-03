@@ -7,7 +7,7 @@ const Sidebar = () => {
       <div className="sidebar__first__section">
         <div className="sidebar__logo__section">
           <NavLink className=" sidebar__logo__link__spotify">
-            <i class="bx bxl-spotify sidebar__icon"></i>
+            <i className="bx bxl-spotify sidebar__icon"></i>
             <p className="sidebar__logo__paragraph sidebar__logo__paragraph__spotify">
               Spotify
             </p>
@@ -32,9 +32,7 @@ const Sidebar = () => {
           </NavLink>
         </div>
       </div>
-      <div className="sidebar__second__section">
-
-      </div>
+      <div className="sidebar__second__section"></div>
     </section>
   );
 };
