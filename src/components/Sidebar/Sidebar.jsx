@@ -32,6 +32,9 @@ const Sidebar = () => {
           </NavLink>
         </div>
       </div>
+      <div className="sidebar__second__section">
+
+      </div>
     </section>
   );
 };
