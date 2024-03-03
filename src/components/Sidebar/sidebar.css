@@ -5,11 +5,26 @@
   grid-template-areas:
     "first"
     "second";
-  color: var(--letterColor);
 }
 
 .sidebar__first__section {
+  padding: 19px 21px;
   grid-area: first;
   background: var(--sectionBgColor);
   border-radius: 8px;
+}
+.sidebar__logo__section {
+  color: var(--btnBgColor);
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.sidebar__icon {
+  font-size: 1.8rem;
+  color: var(--btnBgColor);
+}
+.sidebar__logo__paragraph {
+  font-weight: 500;
+  font-size: 0.9rem;
 }
