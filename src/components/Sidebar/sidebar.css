@@ -29,6 +29,7 @@
 }
 
 .sidebar__icon {
+  transition: all linear 0.2s;
   font-size: 1.8rem;
   color: var(--btnBgColor);
 }
@@ -37,11 +38,13 @@
 }
 
 .sidebar__logo__paragraph {
+  transition: all linear 0.2s;
   font-weight: 500;
   font-size: 0.9rem;
   color: var(--letterColor);
 }
-.sidebar__logo__paragraph__inicio__section {
+.sidebar__logo__paragraph__inicio__section,
+.sidebar__logo__paragraph__library {
   font-size: 1rem;
 }
 .sidebar__logo__paragraph__spotify {
@@ -56,7 +59,6 @@
 
 .sidebar__logo__link:hover .sidebar__icon,
 .sidebar__logo__link:hover .sidebar__logo__paragraph {
-  transition: all linear 0.2s;
   color: var(--btnBgColor);
 }
 
@@ -67,4 +69,22 @@
   padding: 19px 21px 15px;
   background: var(--sectionBgColor);
   border-radius: 8px;
+}
+.sidebar__biblio__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar__icon__library {
+  transition: all linear 0.2s;
+  color: var(--letterColor);
+}
+.sidebar__logo__paragraph__library {
+  transition: all linear 0.2s;
+}
+.sidebar__biblio__link:hover .sidebar__icon__library,
+.sidebar__biblio__link:hover .sidebar__logo__paragraph__library {
+  transition: all linear 0.2s;
+  color: var(--btnBgColor);
 }

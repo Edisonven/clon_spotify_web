@@ -32,7 +32,16 @@ const Sidebar = () => {
           </NavLink>
         </div>
       </div>
-      <div className="sidebar__second__section"></div>
+      <div className="sidebar__second__section">
+        <div className="sidebar__second__section__title">
+          <NavLink className="sidebar__biblio__link">
+            <i className="bx bx-library sidebar__icon sidebar__icon__library"></i>
+            <p className="sidebar__logo__paragraph sidebar__logo__paragraph__library">
+              Tu biblioteca
+            </p>
+          </NavLink>
+        </div>
+      </div>
     </section>
   );
 };
