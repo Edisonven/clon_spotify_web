@@ -2,9 +2,11 @@
   display: grid;
   grid-area: sidebar;
   height: 100vh;
+  grid-template-rows: 155px 1fr;
   grid-template-areas:
     "first"
     "second";
+  max-width: 420px;
 }
 
 .sidebar__first__section {
@@ -12,9 +14,11 @@
   grid-area: first;
   background: var(--sectionBgColor);
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .sidebar__logo__section {
-  color: var(--btnBgColor);
   display: flex;
   align-items: center;
   gap: 1px;
@@ -24,7 +28,24 @@
   font-size: 1.8rem;
   color: var(--btnBgColor);
 }
+.sidebar__icon__inicio {
+  color: var(--letterColor);
+}
+
 .sidebar__logo__paragraph {
   font-weight: 500;
   font-size: 0.9rem;
+  color: var(--letterColor);
+}
+.sidebar__logo__paragraph__inicio__section {
+  font-size: 1rem;
+}
+.sidebar__logo__paragraph__spotify {
+  color: var(--btnBgColor);
+}
+.sidebar__logo__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
