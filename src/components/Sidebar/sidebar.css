@@ -66,7 +66,7 @@
 
 .sidebar__second__section {
   grid-area: second;
-  padding: 17px 10px 15px;
+  padding: 14px 10px 15px;
   background: var(--sectionBgColor);
   border-radius: 8px;
 }
@@ -77,7 +77,8 @@
   gap: 10px;
 }
 .sidebar__icon__library {
-  transition: all linear 0.2s;
+  padding: 2px 1px 0;
+  transition: color linear 0.2s;
   color: var(--letterColor);
 }
 .sidebar__logo__paragraph__library {
@@ -85,8 +86,10 @@
 }
 .sidebar__biblio__link:hover .sidebar__icon__library,
 .sidebar__biblio__link:hover .sidebar__logo__paragraph__library {
-  transition: all linear 0.2s;
   color: var(--btnBgColor);
+}
+.sidebar__bliblio__create__list {
+  position: relative;
 }
 .sidebar__biblio__btn {
   transform: scale(0.85);
@@ -95,8 +98,37 @@
   background-color: transparent;
   border: none;
 }
+.sidebar__icon__library:hover {
+  border-radius: 50%;
+  color: var(--btnBgColor);
+  outline: 4px solid #96939318;
+  background-color: #96939318;
+}
 .sidebar__biblio__section {
   display: flex;
   justify-content: space-between;
   padding: 0 8px 0 10px;
+}
+.sidebar__icon__library::after {
+  box-shadow: 0 0 10px #000;
+  opacity: 0;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-radius: 7px;
+  padding: 9px 10px;
+  background-color: var(--backGroundColor_2);
+  width: max-content;
+  position: absolute;
+  top: -50px;
+  right: -350%;
+  font-size: 1rem;
+  color: var(--btnBgColor);
+  content: "Crea una playlist o una carpeta";
+}
+
+.sidebar__icon__library:hover::after {
+  transition-delay: 0.3s;
+
+  opacity: 1;
 }
