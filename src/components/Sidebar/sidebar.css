@@ -10,7 +10,7 @@
 }
 
 .sidebar__first__section {
-  padding: 19px 21px;
+  padding: 19px 21px 15px;
   grid-area: first;
   background: var(--sectionBgColor);
   border-radius: 8px;
