@@ -1,7 +1,14 @@
 import { NavLink } from "react-router-dom";
 import "../Sidebar/sidebar.css";
+import { useState } from "react";
 
 const Sidebar = () => {
+  const [createPlaytist, setCreatePlaylist] = useState(false);
+
+  const handleCreatePlaylist = () => {
+    setCreatePlaylist(!createPlaytist);
+  };
+
   return (
     <section className="sidebar__container">
       <div className="sidebar__first__section">
@@ -43,7 +50,10 @@ const Sidebar = () => {
             </NavLink>
           </div>
           <div className="sidebar__bliblio__create__list">
-            <button className="sidebar__biblio__btn">
+            <button
+              onClick={() => handleCreatePlaylist()}
+              className="sidebar__biblio__btn"
+            >
               <i className="bx bx-plus sidebar__icon sidebar__icon__library"></i>
             </button>
           </div>
