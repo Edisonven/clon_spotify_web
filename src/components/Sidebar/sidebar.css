@@ -49,3 +49,8 @@
   align-items: center;
   gap: 18px;
 }
+.sidebar__logo__link:hover .sidebar__icon,
+.sidebar__logo__link:hover .sidebar__logo__paragraph {
+  transition: all linear 0.2s;
+  color: var(--btnBgColor);
+}
