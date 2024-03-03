@@ -75,8 +75,10 @@
   align-items: center;
   gap: 10px;
 }
-.sidebar__icon__library__title {
+.sidebar__icon__library {
   padding: 2px 1px 0;
+}
+.sidebar__icon__library__title {
   transition: color linear 0.2s;
   color: var(--letterColor);
 }
@@ -85,7 +87,7 @@
 }
 .sidebar__biblio__link::after {
   box-shadow: 0 0 10px #000;
-  opacity: 0;
+  visibility: hidden;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -128,7 +130,7 @@
 }
 .sidebar__icon__library::after {
   box-shadow: 0 0 10px #000;
-  opacity: 0;
+  visibility: hidden;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -145,10 +147,11 @@
 }
 
 .sidebar__icon__library:hover::after {
-  transition: opacity 0.2s ease-in-out 0.3s;
-  opacity: 1;
+  transition: visibility 0.3s linear 0.3s;
+  visibility: visible;
 }
+
 .sidebar__biblio__link:hover::after {
-  transition: opacity 0.2s ease-in-out 0.3s;
-  opacity: 1;
+  transition: visibility 0.3s linear 0.3s;
+  visibility: visible;
 }
