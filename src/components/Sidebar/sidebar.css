@@ -88,6 +88,7 @@
 .sidebar__biblio__link::after {
   box-shadow: 0 0 10px #000;
   visibility: hidden;
+  opacity: 0;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -131,6 +132,7 @@
 .sidebar__icon__library::after {
   box-shadow: 0 0 10px #000;
   visibility: hidden;
+  opacity: 0;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -147,11 +149,13 @@
 }
 
 .sidebar__icon__library:hover::after {
-  transition: visibility 0.3s linear 0.3s;
+  transition: visibility 0.3s linear 0.3s, opacity 0.5s linear;
   visibility: visible;
+  opacity: 1;
 }
 
 .sidebar__biblio__link:hover::after {
-  transition: visibility 0.3s linear 0.3s;
+  transition: visibility 0.3s linear 0.3s, opacity 0.5s linear;
   visibility: visible;
+  opacity: 1;
 }
