@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import "../Sidebar/sidebar.css";
 import { useState } from "react";
 import { PiMusicNotesPlus } from "react-icons/pi";
+import AsideCard from "../AsideCard/AsideCard";
 
 const Sidebar = () => {
   const [createPlaytist, setCreatePlaylist] = useState(false);
@@ -70,6 +71,9 @@ const Sidebar = () => {
             ) : null}
           </div>
         </div>
+        <AsideCard>
+          
+        </AsideCard>
       </div>
     </section>
   );

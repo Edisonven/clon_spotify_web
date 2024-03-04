@@ -1,0 +1,27 @@
+.asidecard__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--btnBgColor);
+  background-color: var(--backGroundColor_2);
+  padding: 20px;
+  border-radius: 8px;
+  height: 135px;
+}
+.asidecard__btn {
+  padding: 9px 16px;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  width: max-content;
+  border: none;
+  background-color: var(--btnBgColor);
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.asidecard__btn:hover {
+  transform: scale(1.05);
+}
