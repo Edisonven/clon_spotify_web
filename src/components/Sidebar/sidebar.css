@@ -8,7 +8,9 @@
     "second";
   max-width: 420px;
 }
-
+.sidebar__paragraph {
+  color: var(--letterColor);
+}
 /*FIRST SECTION*/
 
 .sidebar__first__section {
@@ -164,4 +166,23 @@
 .sidebar__icon__library:active {
   background-color: #000;
   outline: 4px solid #000;
+}
+.create__playlist__info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  top: 42px;
+  left: 0;
+  height: 48px;
+  width: max-content;
+  position: absolute;
+  background-color: #282828;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px #000;
+}
+.musicNote {
+  color: var(--btnBgColor);
+  font-size: 1.3rem;
 }
