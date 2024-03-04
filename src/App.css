@@ -1,6 +1,7 @@
 .app__container {
   display: grid;
   grid-template-columns: minmax(400px, 1fr);
+  grid-template-rows: 1fr 66px;
   grid-template-areas:
     "sidebar body"
     "footer footer";
@@ -8,6 +9,7 @@
   width: 100%;
   height: 100vh;
   padding: 8px;
+  gap: 8px;
 }
 
 body {

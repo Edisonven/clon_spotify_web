@@ -1,5 +1,4 @@
 .footer__container {
   grid-area: footer;
-  color: azure;
-  height: 100px;
+  background-image: linear-gradient(120deg, #f68084 0%, #a6c0fe 100%);
 }

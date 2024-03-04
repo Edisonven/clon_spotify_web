@@ -2,7 +2,7 @@
   display: grid;
   grid-area: sidebar;
   grid-template-rows: 155px 1fr;
-  grid-row-gap: 8px;
+  gap: 8px;
   grid-template-areas:
     "first"
     "second";
@@ -205,7 +205,7 @@
   gap: 24px;
 }
 .sidebar__legal__container {
-  padding: 0 22px;
+  padding: 0 18px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -215,4 +215,20 @@
   color: var(--letterColor);
   text-decoration: none;
   font-size: 0.65rem;
+}
+.sidebar__language__icon {
+  font-size: 1.3rem;
+}
+.sidebar__language__btn {
+  cursor: pointer;
+  font-size: 0.86rem;
+  font-weight: 700;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  background-color: transparent;
+  color: var(--btnBgColor);
+  border: 1px solid #ffffff9a;
+  padding: 6px 13px;
+  border-radius: 30px;
 }

@@ -3,6 +3,7 @@ import "../Sidebar/sidebar.css";
 import { useState } from "react";
 import { PiMusicNotesPlus } from "react-icons/pi";
 import AsideCard from "../AsideCard/AsideCard";
+import { MdLanguage } from "react-icons/md";
 
 const Sidebar = () => {
   const [createPlaytist, setCreatePlaylist] = useState(false);
@@ -102,6 +103,12 @@ const Sidebar = () => {
             <Link className="sidebar__legal__link">Notice At Collection</Link>
             <Link className="sidebar__legal__link">Your Privacy Choices</Link>
             <Link className="sidebar__legal__link">Cookies</Link>
+            <div className="sidebar__language__Section">
+              <button className="sidebar__language__btn">
+                <MdLanguage className="sidebar__language__icon" />
+                Español De Latinoamérica
+              </button>
+            </div>
           </div>
         </div>
       </div>
