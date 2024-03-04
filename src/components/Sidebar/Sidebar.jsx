@@ -4,6 +4,7 @@ import { useState } from "react";
 import { PiMusicNotesPlus } from "react-icons/pi";
 import AsideCard from "../AsideCard/AsideCard";
 import { MdLanguage } from "react-icons/md";
+import Button from "../Button/Button";
 
 const Sidebar = () => {
   const [createPlaytist, setCreatePlaylist] = useState(false);
@@ -79,7 +80,7 @@ const Sidebar = () => {
               <h5 className="asidecard__subtitle">
                 ¡Es muy fácil! Te vamos a ayudar
               </h5>
-              <button className="asidecard__btn">Crear playlist</button>
+              <Button className="btn asidecard__btn">Crear playlist</Button>
             </AsideCard>
             <AsideCard>
               <h1 className="asidecard__title">
@@ -88,7 +89,7 @@ const Sidebar = () => {
               <h5 className="asidecard__subtitle">
                 Te mantendremos al tanto de los nuevos episodios.
               </h5>
-              <button className="asidecard__btn">Explorar podscasts</button>
+              <Button className="btn asidecard__btn">Explorar podscasts</Button>
             </AsideCard>
           </div>
           <div className="sidebar__legal__section">
@@ -105,7 +106,7 @@ const Sidebar = () => {
               <Link className="sidebar__legal__link">Accesibilidad</Link>
               <Link className="sidebar__legal__link">Notice At Collection</Link>
               <Link className="sidebar__legal__link">Your Privacy Choices</Link>
-              <Link  className="sidebar__legal__link sidebar__legal__link__cookies">
+              <Link className="sidebar__legal__link sidebar__legal__link__cookies">
                 Cookies
               </Link>
               <div className="sidebar__language__Section">

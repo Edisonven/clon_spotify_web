@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 import "../Footer/footer.css";
 
 const Footer = () => {
@@ -11,7 +12,7 @@ const Footer = () => {
         </h5>
       </div>
       <div className="footer__register__section">
-        <button className="footer__register__btn">Regístrate gratis</button>
+        <Button className="btn footer__register__btn">Regístrate gratis</Button>
       </div>
     </section>
   );
