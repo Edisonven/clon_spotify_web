@@ -63,7 +63,7 @@ const Sidebar = () => {
                 className="create__playlist__info"
               >
                 <PiMusicNotesPlus className="musicNote" />
-                <p className="sidebar__paragraph sidebar__logo__paragraph">
+                <p className="sidebar__paragraph sidebar__playlist__paragraph">
                   Crear nueva playlist
                 </p>
               </div>

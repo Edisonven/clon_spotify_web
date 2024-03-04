@@ -179,7 +179,7 @@
   width: max-content;
   position: absolute;
   background-color: #282828;
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 10px;
   box-shadow: 0 0 10px #000;
 }
@@ -190,4 +190,8 @@
 .create__playlist__info:hover {
   background: var(--backGroundColor_3);
   box-shadow: inset 0 0 0 4px #282828;
+}
+.sidebar__playlist__paragraph {
+  font-size: 0.86rem;
+  color: var(--btnBgColor);
 }
