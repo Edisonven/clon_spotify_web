@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../Sidebar/sidebar.css";
 import { useState } from "react";
 import { PiMusicNotesPlus } from "react-icons/pi";
@@ -88,6 +88,21 @@ const Sidebar = () => {
             </h5>
             <button className="asidecard__btn">Explorar podscasts</button>
           </AsideCard>
+        </div>
+        <div className="sidebar__legal__section">
+          <div className="sidebar__legal__container">
+            <Link className="sidebar__legal__link">Legal</Link>
+            <Link className="sidebar__legal__link">
+              Seguridad Y Centro de Privacidad
+            </Link>
+            <Link className="sidebar__legal__link">Política de privacidad</Link>
+            <Link className="sidebar__legal__link">Cookies</Link>
+            <Link className="sidebar__legal__link">Sobre los anuncios</Link>
+            <Link className="sidebar__legal__link">Accesibilidad</Link>
+            <Link className="sidebar__legal__link">Notice At Collection</Link>
+            <Link className="sidebar__legal__link">Your Privacy Choices</Link>
+            <Link className="sidebar__legal__link">Cookies</Link>
+          </div>
         </div>
       </div>
     </section>
