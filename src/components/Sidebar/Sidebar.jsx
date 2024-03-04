@@ -72,42 +72,48 @@ const Sidebar = () => {
             ) : null}
           </div>
         </div>
-        <div className="asidecard__card__container">
-          <AsideCard>
-            <h1 className="asidecard__title">Crea tu primera playlist</h1>
-            <h5 className="asidecard__subtitle">
-              ¡Es muy fácil! Te vamos a ayudar
-            </h5>
-            <button className="asidecard__btn">Crear playlist</button>
-          </AsideCard>
-          <AsideCard>
-            <h1 className="asidecard__title">
-              Busquemos algunos podcast para seguir
-            </h1>
-            <h5 className="asidecard__subtitle">
-              Te mantendremos al tanto de los nuevos episodios.
-            </h5>
-            <button className="asidecard__btn">Explorar podscasts</button>
-          </AsideCard>
-        </div>
-        <div className="sidebar__legal__section">
-          <div className="sidebar__legal__container">
-            <Link className="sidebar__legal__link">Legal</Link>
-            <Link className="sidebar__legal__link">
-              Seguridad Y Centro de Privacidad
-            </Link>
-            <Link className="sidebar__legal__link">Política de privacidad</Link>
-            <Link className="sidebar__legal__link">Cookies</Link>
-            <Link className="sidebar__legal__link">Sobre los anuncios</Link>
-            <Link className="sidebar__legal__link">Accesibilidad</Link>
-            <Link className="sidebar__legal__link">Notice At Collection</Link>
-            <Link className="sidebar__legal__link">Your Privacy Choices</Link>
-            <Link className="sidebar__legal__link">Cookies</Link>
-            <div className="sidebar__language__Section">
-              <button className="sidebar__language__btn">
-                <MdLanguage className="sidebar__language__icon" />
-                Español De Latinoamérica
-              </button>
+        <div className="asidecard__cards__section">
+          <div className="asidecard__card__container">
+            <AsideCard>
+              <h1 className="asidecard__title">Crea tu primera playlist</h1>
+              <h5 className="asidecard__subtitle">
+                ¡Es muy fácil! Te vamos a ayudar
+              </h5>
+              <button className="asidecard__btn">Crear playlist</button>
+            </AsideCard>
+            <AsideCard>
+              <h1 className="asidecard__title">
+                Busquemos algunos podcast para seguir
+              </h1>
+              <h5 className="asidecard__subtitle">
+                Te mantendremos al tanto de los nuevos episodios.
+              </h5>
+              <button className="asidecard__btn">Explorar podscasts</button>
+            </AsideCard>
+          </div>
+          <div className="sidebar__legal__section">
+            <div className="sidebar__legal__container">
+              <Link className="sidebar__legal__link">Legal</Link>
+              <Link className="sidebar__legal__link">
+                Seguridad Y Centro de Privacidad
+              </Link>
+              <Link className="sidebar__legal__link">
+                Política de privacidad
+              </Link>
+              <Link className="sidebar__legal__link">Cookies</Link>
+              <Link className="sidebar__legal__link">Sobre los anuncios</Link>
+              <Link className="sidebar__legal__link">Accesibilidad</Link>
+              <Link className="sidebar__legal__link">Notice At Collection</Link>
+              <Link className="sidebar__legal__link">Your Privacy Choices</Link>
+              <Link  className="sidebar__legal__link sidebar__legal__link__cookies">
+                Cookies
+              </Link>
+              <div className="sidebar__language__Section">
+                <button className="sidebar__language__btn">
+                  <MdLanguage className="sidebar__language__icon" />
+                  Español De Latinoamérica
+                </button>
+              </div>
             </div>
           </div>
         </div>

@@ -205,7 +205,7 @@
   gap: 24px;
 }
 .sidebar__legal__container {
-  padding: 0 18px;
+  padding: 0 16px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -216,19 +216,31 @@
   text-decoration: none;
   font-size: 0.65rem;
 }
+
 .sidebar__language__icon {
   font-size: 1.3rem;
 }
 .sidebar__language__btn {
+  margin-top: 20px;
   cursor: pointer;
-  font-size: 0.86rem;
-  font-weight: 700;
+  font-size: 0.75rem;
+  font-weight: 800;
   display: flex;
   gap: 4px;
   align-items: center;
   background-color: transparent;
   color: var(--btnBgColor);
-  border: 1px solid #ffffff9a;
-  padding: 6px 13px;
+  border: 1px solid #ffffff79;
+  padding: 6px 13px 6px 10px;
   border-radius: 30px;
+}
+.sidebar__language__btn:hover {
+  transform: scale(1.03);
+  border: 1px solid var(--btnBgColor);
+}
+.asidecard__cards__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
 }
