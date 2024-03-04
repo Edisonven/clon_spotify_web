@@ -25,6 +25,10 @@
 .asidecard__btn:hover {
   transform: scale(1.05);
 }
+.asidecard__btn:active {
+  opacity: 70%;
+  transform: scale(1);
+}
 .asidecard__title {
   font-size: 0.95rem;
 }

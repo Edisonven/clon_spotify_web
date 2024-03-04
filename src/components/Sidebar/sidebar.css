@@ -216,7 +216,12 @@
   text-decoration: none;
   font-size: 0.65rem;
 }
-
+.sidebar__legal__link__cookies {
+  font-size: 0.8rem;
+}
+.sidebar__legal__link__cookies:hover {
+  text-decoration: underline;
+}
 .sidebar__language__icon {
   font-size: 1.3rem;
 }
