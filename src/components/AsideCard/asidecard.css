@@ -4,7 +4,7 @@
   justify-content: space-between;
   color: var(--btnBgColor);
   background-color: var(--backGroundColor_2);
-  padding: 20px;
+  padding: 18px 20px;
   border-radius: 8px;
   height: 135px;
 }
@@ -24,4 +24,10 @@
 
 .asidecard__btn:hover {
   transform: scale(1.05);
+}
+.asidecard__title {
+  font-size: 0.95rem;
+}
+.asidecard__subtitle {
+  font-weight: 400;
 }

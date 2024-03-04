@@ -71,9 +71,24 @@ const Sidebar = () => {
             ) : null}
           </div>
         </div>
-        <AsideCard>
-          
-        </AsideCard>
+        <div className="asidecard__card__container">
+          <AsideCard>
+            <h1 className="asidecard__title">Crea tu primera playlist</h1>
+            <h5 className="asidecard__subtitle">
+              ¡Es muy fácil! Te vamos a ayudar
+            </h5>
+            <button className="asidecard__btn">Crear playlist</button>
+          </AsideCard>
+          <AsideCard>
+            <h1 className="asidecard__title">
+              Busquemos algunos podcast para seguir
+            </h1>
+            <h5 className="asidecard__subtitle">
+              Te mantendremos al tanto de los nuevos episodios.
+            </h5>
+            <button className="asidecard__btn">Explorar podscasts</button>
+          </AsideCard>
+        </div>
       </div>
     </section>
   );

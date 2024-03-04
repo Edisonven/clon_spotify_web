@@ -196,3 +196,11 @@
   font-size: 0.86rem;
   color: var(--btnBgColor);
 }
+
+/*CARD SECTION*/
+
+.asidecard__card__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
