@@ -243,6 +243,11 @@
   transform: scale(1.03);
   border: 1px solid var(--btnBgColor);
 }
+.sidebar__language__btn:active {
+  transform: scale(1);
+  opacity: 70%;
+  border: 1px solid #ffffff79;
+}
 .asidecard__cards__section {
   display: flex;
   flex-direction: column;

@@ -21,7 +21,6 @@
   border-radius: 50px;
   cursor: pointer;
 }
-
 .asidecard__btn:hover {
   transform: scale(1.05);
 }
