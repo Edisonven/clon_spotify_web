@@ -2,6 +2,17 @@
   border-radius: 8px;
   width: 100%;
   grid-area: principal;
-  background: var(--sectionBgColor);
+  background-image: linear-gradient(
+    to top,
+    var(--sectionBgColor) 70%,
+    var(--backGroundColor_2) 100%
+  );
   color: var(--btnBgColor);
+}
+.principal__navbar {
+  padding: 22px;
+  background: var(--sectionBgColor);
+}
+.principal__navbar__icon {
+  color: var(--letterColor);
 }
