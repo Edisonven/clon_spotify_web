@@ -23,7 +23,7 @@ const Sidebar = () => {
     <section className="sidebar__container">
       <div className="sidebar__first__section">
         <div className="sidebar__logo__section">
-          <NavLink className=" sidebar__logo__link__spotify">
+          <NavLink to="/" className=" sidebar__logo__link__spotify">
             <i className="bx bxl-spotify sidebar__icon"></i>
             <p className="sidebar__paragraph sidebar__logo__paragraph sidebar__logo__paragraph__spotify">
               Spotify

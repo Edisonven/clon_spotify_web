@@ -1,14 +1,15 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/Footer/Footer.jsx";
-import Principal from "./components/Principal/Principal.jsx";
-import Sidebar from "./components/Sidebar/Sidebar.jsx";
+import Register from "./components/views/Register/Register.jsx";
+import Home from "./components/views/Home/Home.jsx";
 
 function App() {
   return (
     <section className="app__container">
-      <Sidebar />
-      <Principal />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
     </section>
   );
 }
