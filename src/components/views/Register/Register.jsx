@@ -71,7 +71,10 @@ const Register = () => {
                 </Alert>
               </div>
             ) : null}
-            <NavLink className="register__number__link">
+            <NavLink
+              to="/register/:register_with_number"
+              className="register__number__link"
+            >
               Usar el número de teléfono.
             </NavLink>
             <Button

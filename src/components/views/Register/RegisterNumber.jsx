@@ -1,11 +1,17 @@
 import "../Register/registernumber.css";
+import SpotifyHome from "../../SpotifyHome/SpotifyHome";
 
 const RegisterNumber = () => {
   return (
     <section className="register__number__container">
-      <h1 className="register__number__title">
-        Hola soy el metodo de registrop con numero
-      </h1>
+      <nav className="register__navbar">
+        <SpotifyHome to="/" className="register__logo__link__spotify">
+          <i className="bx bxl-spotify register__icon"></i>
+          <p className="register__paragraph register__logo__paragraph register__logo__paragraph__spotify">
+            Spotify
+          </p>
+        </SpotifyHome>
+      </nav>
     </section>
   );
 };
