@@ -1,4 +1,5 @@
 .principal__container {
+  overflow: hidden;
   border-radius: 8px;
   width: 100%;
   grid-area: principal;
@@ -10,9 +11,68 @@
   color: var(--btnBgColor);
 }
 .principal__navbar {
-  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 28px;
   background: var(--sectionBgColor);
 }
+.principal__navbar__icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 .principal__navbar__icon {
+  cursor: not-allowed;
+  border-radius: 50%;
+  background-color: #00000096;
   color: var(--letterColor);
+  font-size: 1.5rem;
+  outline: 4px solid #00000096;
+}
+.principal__navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.principal__navbar__link {
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--letterColor);
+}
+.principal__navbar__link__register {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--letterColor);
+}
+
+.principal__navbar__link:hover,
+.principal__navbar__link__register:hover {
+  transform: scale(1.06);
+  color: var(--btnBgColor);
+}
+
+.principal__navbar__divisor {
+  display: flex;
+  height: 26px;
+  width: 2px;
+  background-color: var(--btnBgColor);
+  margin: 0 20px;
+}
+.principal__register__section {
+  display: flex;
+  align-items: center;
+}
+.principal__navbar__register {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.principal__navbar__btn {
+  height: 100%;
+  font-size: 0.94rem;
+  padding: 15px 30px;
 }

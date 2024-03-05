@@ -116,7 +116,10 @@ const Sidebar = () => {
                 ¡Es muy fácil! Te vamos a ayudar
               </h5>
               <Button
-                onClick={() => setPlaylistModal(true)}
+                onClick={() => {
+                  setPlaylistModal(true);
+                  setCreatePlaylist(false);
+                }}
                 className="btn asidecard__btn"
               >
                 Crear playlist
