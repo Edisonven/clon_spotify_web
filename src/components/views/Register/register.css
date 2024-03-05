@@ -72,11 +72,21 @@ input:hover {
   margin-top: 20px;
   background-color: var(--registerColor);
   border: none;
-  padding: 15px 50px;
+  padding: 12px 50px;
   border-radius: 30px;
   font-size: 1rem;
   font-weight: 700;
 }
 .register__number__btn:hover {
   filter: brightness(110%);
+}
+.register__divisor__container {
+  color: var(--letterColor);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+.register__divisor {
+  width: 100%;
 }

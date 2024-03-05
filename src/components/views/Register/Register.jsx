@@ -33,6 +33,11 @@ const Register = () => {
               Usar el número de teléfono.
             </NavLink>
             <Button className="register__number__btn">Siguiente</Button>
+            <div className="register__divisor__container">
+              <hr className="register__divisor" />
+              <span>o</span>
+              <hr className="register__divisor" />
+            </div>
           </form>
         </div>
       </section>
