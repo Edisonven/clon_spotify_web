@@ -91,7 +91,7 @@
   transition: all linear 0.2s;
 }
 .sidebar__biblio__link::after {
-  box-shadow: 0 0 10px #000;
+  box-shadow: 5px 5px 20px #000000a6;
   visibility: hidden;
   opacity: 0;
   font-family: "Rubik", sans-serif;
@@ -136,7 +136,7 @@
   margin-bottom: 18px;
 }
 .sidebar__icon__library::after {
-  box-shadow: 0 0 10px #000;
+  box-shadow: 5px 5px 20px #000000a6;
   visibility: hidden;
   opacity: 0;
   font-family: "Rubik", sans-serif;
@@ -183,7 +183,7 @@
   background-color: #282828;
   border-radius: 4px;
   padding: 10px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 5px 5px 20px #000000a6;
 }
 .musicNote {
   color: var(--btnBgColor);
