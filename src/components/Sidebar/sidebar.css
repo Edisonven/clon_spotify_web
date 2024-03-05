@@ -103,6 +103,7 @@
   width: max-content;
   position: absolute;
   top: -40px;
+
   left: -10%;
   font-size: 0.85rem;
   color: var(--btnBgColor);
@@ -115,6 +116,7 @@
 .sidebar__bliblio__create__list,
 .sidebar__second__section__title {
   position: relative;
+  z-index: 40;
 }
 .sidebar__biblio__btn {
   transform: scale(0.85);
