@@ -2,8 +2,28 @@ import { NavLink } from "react-router-dom";
 import SpotifyHome from "../../SpotifyHome/SpotifyHome";
 import Button from "../../Button/Button";
 import "../Register/register.css";
+import { useState } from "react";
 
 const Register = () => {
+  const [mail, setMail] = useState("");
+  const [error, setError] = useState("");
+  const [exito, setExito] = useState("");
+
+  const validEmail =
+    /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.(com|cl|net|org|gov|edu|info|biz|co|uk|...)){1,}$/;
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    if (mail === "") {
+      setError(
+        "Este email no es válido. Asegúrate de que tenga un formato como este: ejemplo@email.com"
+      );
+    } else if (!validEmail.test(mail))
+      setError(
+        "Este email no es válido. Asegúrate de que tenga un formato como este: ejemplo@email.com"
+      );
+  };
+
   return (
     <section className="register__container">
       <nav className="register__navbar">
@@ -24,15 +44,23 @@ const Register = () => {
               Dirección de email
             </label>
             <input
+              onChange={(event) => setMail(event.target.value)}
+              value={mail}
               name="correo"
               type="text"
               className="register__input__correo"
               placeholder="nombre@dominio.com"
             />
+            <span>{error}</span>
             <NavLink className="register__number__link">
               Usar el número de teléfono.
             </NavLink>
-            <Button className="register__number__btn">Siguiente</Button>
+            <Button
+              onClick={(e) => handleSubmit(e)}
+              className="register__number__btn"
+            >
+              Siguiente
+            </Button>
             <div className="register__divisor__container">
               <hr className="register__divisor" />
               <span>o</span>
