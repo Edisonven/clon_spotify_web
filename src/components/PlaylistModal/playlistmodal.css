@@ -13,6 +13,18 @@
   background-color: var(--modalBackground);
   border-radius: 8px;
   padding: 16px;
+  animation: modalMove ease-in 1 0.2s;
+}
+
+@keyframes modalMove {
+  from {
+    transform: translateX(4px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .playlistmodal::after {
   content: "";
