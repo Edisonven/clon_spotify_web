@@ -51,6 +51,7 @@ const Register = () => {
               Dirección de email
             </label>
             <input
+              style={{ border: error ? "1px solid red" : null }}
               onChange={(event) => setMail(event.target.value)}
               value={mail}
               name="correo"

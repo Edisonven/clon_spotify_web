@@ -7,3 +7,50 @@
   height: 100vh;
   padding: 30px;
 }
+.register__number__section__container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register__number__section__title {
+  color: var(--btnBgColor);
+  font-size: 1.5rem;
+}
+.register__number__numbers {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.register__number__form {
+  width: 100%;
+}
+.register__number__form__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.register__number__input {
+  width: 100%;
+}
+.register__number__select {
+  width: 240px;
+  height: 45px;
+  background: transparent;
+  color: var(--btnBgColor);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.register__number__select:focus,
+.register__number__input:focus {
+  outline: 2px solid var(--btnBgColor);
+}
+.register__number__select > option {
+  background: var(--sectionBgColor);
+  padding-bottom: 10px;
+}
