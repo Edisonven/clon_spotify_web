@@ -5,9 +5,15 @@ import { PiMusicNotesPlus } from "react-icons/pi";
 import AsideCard from "../AsideCard/AsideCard";
 import { MdLanguage } from "react-icons/md";
 import Button from "../Button/Button";
+import PlaylistModal from "../PlaylistModal/PlaylistModal";
 
 const Sidebar = () => {
   const [createPlaytist, setCreatePlaylist] = useState(false);
+  const [playlistModal, setPlaylistModal] = useState(false);
+
+  const handlePlaylistModal = () => {
+    setPlaylistModal(!playlistModal);
+  };
 
   const handleCreatePlaylist = () => {
     setCreatePlaylist(!createPlaytist);
@@ -55,14 +61,43 @@ const Sidebar = () => {
           </div>
           <div className="sidebar__bliblio__create__list">
             <button
-              onClick={() => handleCreatePlaylist()}
+              onClick={() => {
+                handleCreatePlaylist();
+                setPlaylistModal(false);
+              }}
               className="sidebar__biblio__btn"
             >
               <i className="bx bx-plus sidebar__icon sidebar__icon__library"></i>
             </button>
+            {playlistModal ? (
+              <div className="playlistmodal__container">
+                <PlaylistModal className="playlistmodal">
+                  <div className="playlist__modal__title__container">
+                    <h4 className="playlistmodal__title">Crea una playlist</h4>
+                    <p className="playlist__modal__subtitle">
+                      Inicia sesión para crear y compartir playlists.
+                    </p>
+                  </div>
+                  <div className="playlistmodal__links__container">
+                    <button
+                      onClick={() => setPlaylistModal(false)}
+                      className="playlistmodal__notnow__btn"
+                    >
+                      Ahora no
+                    </button>
+                    <Link className="btn playlistmodal__session">
+                      Iniciar sesión
+                    </Link>
+                  </div>
+                </PlaylistModal>
+              </div>
+            ) : null}
             {createPlaytist ? (
               <div
-                onClick={() => handleCreatePlaylist()}
+                onClick={() => {
+                  handleCreatePlaylist();
+                  handlePlaylistModal();
+                }}
                 className="create__playlist__info"
               >
                 <PiMusicNotesPlus className="musicNote" />

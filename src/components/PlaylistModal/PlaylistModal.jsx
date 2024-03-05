@@ -1,11 +1,12 @@
 import "../PlaylistModal/playlistmodal.css";
 
-const PlaylistModal = () => {
+const PlaylistModal = ({children , className}) => {
   return (
-    <section className="modal__container">
-      <h1>Hola soy nuna modal</h1>
+    <section className={className}>
+      {children}
     </section>
   );
 };
 
 export default PlaylistModal;
+ 
