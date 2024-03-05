@@ -1,9 +1,11 @@
 .register__container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   background: var(--sectionBgColor);
   width: 100%;
   height: 100vh;
   padding: 30px;
-  gap: 8px;
 }
 .register__logo__link__spotify {
   display: flex;
@@ -82,14 +84,18 @@ input:hover {
   filter: brightness(110%);
 }
 .register__divisor__container {
-  color: var(--letterColor);
   display: flex;
   align-items: center;
   gap: 20px;
   margin: 30px 0;
 }
 .register__divisor {
+  border: 1px solid #868585a8;
   width: 100%;
+}
+.register__divisor__last {
+  margin-top: 15px;
+  border: 1px solid #86858559;
 }
 .register__social__section {
   display: flex;
@@ -116,4 +122,22 @@ input:hover {
 }
 .register__social__btn__icon {
   width: 22px;
+}
+.register__cuenta__secdtion {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: var(--letterColor);
+}
+
+.register__cuenta__link {
+  color: var(--btnBgColor);
+}
+.register__footer__section {
+  text-align: center;
+  color: var(--letterColor);
+  font-size: 0.7rem;
+}
+.register__footer__link {
+  color: var(--letterColor);
 }

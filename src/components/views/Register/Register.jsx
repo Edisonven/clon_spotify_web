@@ -64,6 +64,28 @@ const Register = () => {
               />
               Registrarte con apple
             </Button>
+            <hr className="register__divisor register__divisor__last" />
+            <div className="register__cuenta__secdtion">
+              <span className="register__cuenta__paragraph">
+                ¿Ya tienes una cuenta?
+              </span>
+              <NavLink className="register__cuenta__link">
+                Inicia sesión aquí.
+              </NavLink>
+            </div>
+            <footer className="register__footer__section">
+              <p className="register__footer__paragraph">
+                This site is protected by reCAPTCHA and the Google{" "}
+                <NavLink className="register__footer__link">
+                  Privacy Policy
+                </NavLink>{" "}
+                and{" "}
+                <NavLink className="register__footer__link">
+                  Terms of Service
+                </NavLink>{" "}
+                apply.
+              </p>
+            </footer>
           </div>
         </div>
       </section>
