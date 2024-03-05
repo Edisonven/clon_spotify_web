@@ -1,4 +1,6 @@
+import { NavLink } from "react-router-dom";
 import SpotifyHome from "../../SpotifyHome/SpotifyHome";
+import Button from "../../Button/Button";
 import "../Register/register.css";
 
 const Register = () => {
@@ -13,7 +15,26 @@ const Register = () => {
         </SpotifyHome>
       </nav>
       <section className="register__section__container">
-        <h1 className="register__section__title">Regístrate para empezar a escuchar contenido</h1>
+        <h1 className="register__section__title">
+          Regístrate para empezar a escuchar contenido
+        </h1>
+        <div className="resgister__form__container">
+          <form className="register__form">
+            <label className="register__label__correo" htmlFor="correo">
+              Dirección de email
+            </label>
+            <input
+              name="correo"
+              type="text"
+              className="register__input__correo"
+              placeholder="nombre@dominio.com"
+            />
+            <NavLink className="register__number__link">
+              Usar el número de teléfono.
+            </NavLink>
+            <Button className="register__number__btn">Siguiente</Button>
+          </form>
+        </div>
       </section>
     </section>
   );
