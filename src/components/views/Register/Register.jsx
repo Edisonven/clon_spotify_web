@@ -2,17 +2,14 @@ import { NavLink } from "react-router-dom";
 import SpotifyHome from "../../SpotifyHome/SpotifyHome";
 import Button from "../../Button/Button";
 import "../Register/register.css";
-import { useState } from "react";
 import Alert from "../../Alert/Alert";
 import { IoAlertCircleOutline } from "react-icons/io5";
+import { useContext } from "react";
+import { ValidationContext } from "../../contexts/ValidationContext";
 
 const Register = () => {
-  const [mail, setMail] = useState("");
-  const [error, setError] = useState("");
-  const [exito, setExito] = useState("");
-
-  const validEmail =
-    /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.(com|cl|net|org|gov|edu|info|biz|co|uk|...)){1,}$/;
+  const { mail, setError, setExito, setMail, exito, error, validEmail } =
+    useContext(ValidationContext);
   const handleSubmit = (event) => {
     event.preventDefault();
 

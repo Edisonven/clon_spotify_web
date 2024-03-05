@@ -3,6 +3,10 @@ import SpotifyHome from "../../SpotifyHome/SpotifyHome";
 import Button from "../../Button/Button";
 
 const RegisterNumber = () => {
+
+    
+  const onlyNumbers = "^d+$";
+
   return (
     <section className="register__number__container">
       <nav className="register__navbar">
@@ -96,6 +100,7 @@ const RegisterNumber = () => {
                 </option>
               </select>
               <input
+                pattern=""
                 className="register__number__input"
                 type="text"
                 placeholder="Número de teléfono"
