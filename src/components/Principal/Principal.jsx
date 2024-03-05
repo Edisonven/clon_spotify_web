@@ -20,7 +20,7 @@ const Principal = () => {
           <span className="principal__navbar__divisor">'</span>
           <div className="principal__navbar__register">
             <Link className="principal__navbar__link__register">Regístrate</Link>
-            <Button className="btn principal__navbar__btn">Iniciar Sesión</Button>
+            <Button className="btn principal__navbar__btn">Iniciar sesión</Button>
           </div>
         </div>
       </nav>
