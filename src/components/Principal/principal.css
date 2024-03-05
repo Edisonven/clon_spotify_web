@@ -102,4 +102,24 @@
 .principal__body__title {
   font-size: 1.3rem;
   transform: scaleY(1.1);
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--btnBgColor);
+}
+.principal__body__title:hover {
+  text-decoration: underline;
+}
+.principal__body__title__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.principal__body__showmore {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--letterColor);
+}
+.principal__body__showmore:hover {
+  text-decoration: underline;
 }

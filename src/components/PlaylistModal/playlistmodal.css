@@ -2,6 +2,7 @@
   position: absolute;
   top: 130%;
   left: 170%;
+  z-index: 50;
 }
 .playlistmodal {
   display: flex;

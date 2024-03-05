@@ -30,7 +30,10 @@ const Principal = () => {
       </nav>
 
       <section className="principal__body__container">
-        <h1 className="principal__body__title">Playlists de Spotify</h1>
+        <div className="principal__body__title__section">
+          <Link className="principal__body__title">Playlists de Spotify</Link>
+          <Link className="principal__body__showmore">Mostrar todo</Link>
+        </div>
       </section>
     </section>
   );
