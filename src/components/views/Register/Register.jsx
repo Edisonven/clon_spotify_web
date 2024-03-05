@@ -39,6 +39,32 @@ const Register = () => {
               <hr className="register__divisor" />
             </div>
           </form>
+          <div className="register__social__section">
+            <Button className="register__social__btn">
+              <img
+                className="register__social__btn__icon"
+                src="/google_icon.webp"
+                alt=""
+              />
+              Registrarte con Goole
+            </Button>
+            <Button className="register__social__btn">
+              <img
+                className="register__social__btn__icon"
+                src="/facebook_icon.webp"
+                alt=""
+              />
+              Registrarte con Facebook
+            </Button>
+            <Button className="register__social__btn">
+              <img
+                className="register__social__btn__icon"
+                src="/apple_icon.png"
+                alt=""
+              />
+              Registrarte con apple
+            </Button>
+          </div>
         </div>
       </section>
     </section>
