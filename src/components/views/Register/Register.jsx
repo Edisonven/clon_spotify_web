@@ -3,6 +3,8 @@ import SpotifyHome from "../../SpotifyHome/SpotifyHome";
 import Button from "../../Button/Button";
 import "../Register/register.css";
 import { useState } from "react";
+import Alert from "../../Alert/Alert";
+import { IoAlertCircleOutline } from "react-icons/io5";
 
 const Register = () => {
   const [mail, setMail] = useState("");
@@ -18,10 +20,15 @@ const Register = () => {
       setError(
         "Este email no es válido. Asegúrate de que tenga un formato como este: ejemplo@email.com"
       );
-    } else if (!validEmail.test(mail))
+    } else if (!validEmail.test(mail)) {
       setError(
         "Este email no es válido. Asegúrate de que tenga un formato como este: ejemplo@email.com"
       );
+      setExito("");
+    } else {
+      setExito("¡Correo válido!");
+      setError("");
+    }
   };
 
   return (
@@ -51,7 +58,19 @@ const Register = () => {
               className="register__input__correo"
               placeholder="nombre@dominio.com"
             />
-            <span>{error}</span>
+            {error ? (
+              <div className="register__alert__container">
+                <IoAlertCircleOutline className="register__alert__icon" />
+                <Alert className="register__alert">{error}</Alert>
+              </div>
+            ) : null}
+            {exito ? (
+              <div className="register__alert__container">
+                <Alert className="register__alert register__alert__exito">
+                  {exito}
+                </Alert>
+              </div>
+            ) : null}
             <NavLink className="register__number__link">
               Usar el número de teléfono.
             </NavLink>

@@ -141,3 +141,21 @@ input:hover {
 .register__footer__link {
   color: var(--letterColor);
 }
+.register__alert__container {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+.register__alert {
+  color: #ce4250;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.register__alert__icon {
+  transform: scale(2.5);
+  color: #ce4250;
+}
+.register__alert__exito {
+  color: green;
+}
