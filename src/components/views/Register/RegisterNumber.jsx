@@ -10,10 +10,18 @@ import { IoAlertCircleOutline } from "react-icons/io5";
 const RegisterNumber = () => {
   const { error, setError, exito, setExito } = useContext(ValidationContext);
   const [error_2, setError_2] = useState("");
-
   const [number, setNumber] = useState("");
+  const onlyNumbers = /^\d+$/;
 
-  const onlyNumbers = "^d+$";
+  const verifyValue = (e) => {
+    if (e.trim() === "") {
+      setError("Ingresa tu número de teléfono");
+    } else if (!onlyNumbers.test(e)) {
+      setError("Solo puedes ingresar números.");
+    } else {
+      setError("");
+    }
+  };
 
   const handleNumberInput = (e) => {
     e.preventDefault();
@@ -130,7 +138,11 @@ const RegisterNumber = () => {
               </select>
               <div className="register__number__input__container">
                 <input
-                  onChange={(e) => setNumber(e.target.value)}
+                  style={{ border: error ? "1px solid red" : "" }}
+                  onChange={(e) => {
+                    setNumber(e.target.value);
+                    verifyValue(e.target.value);
+                  }}
                   value={number}
                   className="register__number__input"
                   type="text"
