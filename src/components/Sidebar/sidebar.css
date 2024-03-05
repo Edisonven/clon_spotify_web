@@ -7,6 +7,7 @@
     "first"
     "second";
   max-width: 420px;
+  min-width: 390px;
 }
 .sidebar__paragraph {
   color: var(--letterColor);

@@ -1,0 +1,7 @@
+.principal__container {
+  border-radius: 8px;
+  width: 100%;
+  grid-area: principal;
+  background: var(--sectionBgColor);
+  color: var(--btnBgColor);
+}
