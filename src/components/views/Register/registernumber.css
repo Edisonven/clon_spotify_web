@@ -54,3 +54,42 @@
   background: var(--sectionBgColor);
   padding-bottom: 10px;
 }
+
+.register__number__alert__container {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  display: flex;
+  gap: 5px;
+}
+.register__number__alert {
+  color: #ce4250;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.register__number__alert__icon {
+  transform: scale(1.3);
+  color: #ce4250;
+}
+.register__number__input__container {
+  position: relative;
+  width: 100%;
+}
+.register__number__alert2__container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #e91429;
+  color: var(--btnBgColor);
+  padding: 12px 20px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.register__number__alert2 {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.register__number__alert2__icon {
+  font-size: 1.6rem;
+}

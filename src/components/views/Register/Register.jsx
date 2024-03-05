@@ -10,6 +10,7 @@ import { ValidationContext } from "../../contexts/ValidationContext";
 const Register = () => {
   const { mail, setError, setExito, setMail, exito, error, validEmail } =
     useContext(ValidationContext);
+
   const handleSubmit = (event) => {
     event.preventDefault();
 

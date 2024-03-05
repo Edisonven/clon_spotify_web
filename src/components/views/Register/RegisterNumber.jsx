@@ -1,11 +1,31 @@
 import "../Register/registernumber.css";
 import SpotifyHome from "../../SpotifyHome/SpotifyHome";
 import Button from "../../Button/Button";
+import { useContext, useState } from "react";
+import { ValidationContext } from "../../contexts/ValidationContext";
+import Alert from "../../Alert/Alert";
+import { IoMdAlert } from "react-icons/io";
+import { IoAlertCircleOutline } from "react-icons/io5";
 
 const RegisterNumber = () => {
+  const { error, setError, exito, setExito } = useContext(ValidationContext);
+  const [error_2, setError_2] = useState("");
 
-    
+  const [number, setNumber] = useState("");
+
   const onlyNumbers = "^d+$";
+
+  const handleNumberInput = (e) => {
+    e.preventDefault();
+
+    if (number === "") {
+      setError("Ingresa tu número de teléfono");
+      setError_2("");
+    } else if (number.length < 9) {
+      setError_2("Verifica tu número de teléfono.");
+      setError("");
+    }
+  };
 
   return (
     <section className="register__number__container">
@@ -18,11 +38,20 @@ const RegisterNumber = () => {
         </SpotifyHome>
       </nav>
       <section className="register__number__section__container">
+        {error_2 ? (
+          <div className="register__number__alert2__container">
+            <IoAlertCircleOutline className="register__number__alert2__icon" />
+            <Alert className="register__number__alert2">{error_2}</Alert>
+          </div>
+        ) : null}
         <h1 className="register__number__section__title">
           Ingresa un número de teléfono
         </h1>
         <div className="register__number__form__section">
-          <form className="register__number__form">
+          <form
+            onSubmit={(e) => handleNumberInput(e)}
+            className="register__number__form"
+          >
             <div className="register__number__numbers">
               <select
                 name="select"
@@ -99,12 +128,21 @@ const RegisterNumber = () => {
                   +966
                 </option>
               </select>
-              <input
-                pattern=""
-                className="register__number__input"
-                type="text"
-                placeholder="Número de teléfono"
-              />
+              <div className="register__number__input__container">
+                <input
+                  onChange={(e) => setNumber(e.target.value)}
+                  value={number}
+                  className="register__number__input"
+                  type="text"
+                  placeholder="Número de teléfono"
+                />
+                {error ? (
+                  <div className="register__number__alert__container">
+                    <IoMdAlert className="register__number__alert__icon" />
+                    <Alert className="register__number__alert">{error}</Alert>
+                  </div>
+                ) : null}
+              </div>
             </div>
 
             <Button className="register__number__btn">Siguiente</Button>
