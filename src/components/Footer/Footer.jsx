@@ -1,7 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
 import "../Footer/footer.css";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/register");
+  };
+
   return (
     <section className="footer__container">
       <div className="footer__title__section">
@@ -12,7 +19,12 @@ const Footer = () => {
         </h5>
       </div>
       <div className="footer__register__section">
-        <Button className="btn footer__register__btn">Regístrate gratis</Button>
+        <Button
+          onClick={() => handleNavigate()}
+          className="btn footer__register__btn"
+        >
+          Regístrate gratis
+        </Button>
       </div>
     </section>
   );
