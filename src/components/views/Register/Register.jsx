@@ -12,6 +12,9 @@ const Register = () => {
           </p>
         </SpotifyHome>
       </nav>
+      <section className="register__section__container">
+        <h1 className="register__section__title">Regístrate para empezar a escuchar contenido</h1>
+      </section>
     </section>
   );
 };

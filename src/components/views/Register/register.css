@@ -20,3 +20,14 @@
   font-size: 1.3rem;
   color: var(--btnBgColor);
 }
+.register__section__container {
+  margin: 0 auto;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register__section__title {
+  color: var(--btnBgColor);
+  font-size: 3rem;
+}
