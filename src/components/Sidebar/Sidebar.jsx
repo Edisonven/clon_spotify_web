@@ -6,6 +6,7 @@ import AsideCard from "../AsideCard/AsideCard";
 import { MdLanguage } from "react-icons/md";
 import Button from "../Button/Button";
 import PlaylistModal from "../PlaylistModal/PlaylistModal";
+import SpotifyHome from "../SpotifyHome/SpotifyHome";
 
 const Sidebar = () => {
   const [createPlaytist, setCreatePlaylist] = useState(false);
@@ -23,12 +24,12 @@ const Sidebar = () => {
     <section className="sidebar__container">
       <div className="sidebar__first__section">
         <div className="sidebar__logo__section">
-          <NavLink to="/" className=" sidebar__logo__link__spotify">
+          <SpotifyHome to="/" className=" sidebar__logo__link__spotify">
             <i className="bx bxl-spotify sidebar__icon"></i>
             <p className="sidebar__paragraph sidebar__logo__paragraph sidebar__logo__paragraph__spotify">
               Spotify
             </p>
-          </NavLink>
+          </SpotifyHome>
         </div>
         <div className="sidebar__logo__inicio">
           <NavLink className="sidebar__logo__link">

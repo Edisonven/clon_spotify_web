@@ -1,9 +1,17 @@
+import SpotifyHome from "../../SpotifyHome/SpotifyHome";
 import "../Register/register.css";
 
 const Register = () => {
   return (
     <section className="register__container">
-      <h1>Hola soy el registro</h1>
+      <nav className="register__navbar">
+        <SpotifyHome to="/" className=" sidebar__logo__link__spotify">
+          <i className="bx bxl-spotify sidebar__icon"></i>
+          <p className="sidebar__paragraph sidebar__logo__paragraph sidebar__logo__paragraph__spotify">
+            Spotify
+          </p>
+        </SpotifyHome>
+      </nav>
     </section>
   );
 };
