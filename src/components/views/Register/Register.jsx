@@ -5,9 +5,9 @@ const Register = () => {
   return (
     <section className="register__container">
       <nav className="register__navbar">
-        <SpotifyHome to="/" className=" sidebar__logo__link__spotify">
-          <i className="bx bxl-spotify sidebar__icon"></i>
-          <p className="sidebar__paragraph sidebar__logo__paragraph sidebar__logo__paragraph__spotify">
+        <SpotifyHome to="/" className="register__logo__link__spotify">
+          <i className="bx bxl-spotify register__icon"></i>
+          <p className="register__paragraph register__logo__paragraph register__logo__paragraph__spotify">
             Spotify
           </p>
         </SpotifyHome>
