@@ -19,11 +19,19 @@ const Principal = () => {
           </div>
           <span className="principal__navbar__divisor">'</span>
           <div className="principal__navbar__register">
-            <Link className="principal__navbar__link__register">Regístrate</Link>
-            <Button className="btn principal__navbar__btn">Iniciar sesión</Button>
+            <Link className="principal__navbar__link__register">
+              Regístrate
+            </Link>
+            <Button className="btn principal__navbar__btn">
+              Iniciar sesión
+            </Button>
           </div>
         </div>
       </nav>
+
+      <section className="principal__body__container">
+        <h1 className="principal__body__title">Playlists de Spotify</h1>
+      </section>
     </section>
   );
 };
