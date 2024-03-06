@@ -1,7 +1,7 @@
 import "../Register/registernumber.css";
 import SpotifyHome from "../../SpotifyHome/SpotifyHome";
 import Button from "../../Button/Button";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ValidationContext } from "../../contexts/ValidationContext";
 import Alert from "../../Alert/Alert";
 import { IoMdAlert } from "react-icons/io";
@@ -11,15 +11,36 @@ const RegisterNumber = () => {
   const { error, setError, exito, setExito } = useContext(ValidationContext);
   const [error_2, setError_2] = useState("");
   const [number, setNumber] = useState("");
+  const [disabledBtn, setDisabledBtn] = useState(true);
   const onlyNumbers = /^\d+$/;
+
+  useEffect(() => {
+    const submitBtn = document.querySelector(
+      ".register__number__btn__number__section"
+    );
+
+    const handleDisabledBtn = () => {
+      if (disabledBtn) {
+        submitBtn.classList.add("disabled");
+      } else {
+        submitBtn.classList.remove("disabled");
+      }
+    };
+
+    handleDisabledBtn();
+  }, [disabledBtn]);
 
   const verifyValue = (e) => {
     if (e.trim() === "") {
       setError("Ingresa tu número de teléfono");
+      setDisabledBtn(true);
+      setError_2("");
     } else if (!onlyNumbers.test(e)) {
       setError("Solo puedes ingresar números.");
+      setDisabledBtn(true);
     } else {
       setError("");
+      setDisabledBtn(false);
     }
   };
 
@@ -157,7 +178,12 @@ const RegisterNumber = () => {
               </div>
             </div>
 
-            <Button className="register__number__btn">Siguiente</Button>
+            <Button
+              disabled={disabledBtn}
+              className="register__number__btn register__number__btn__number__section"
+            >
+              Siguiente
+            </Button>
           </form>
         </div>
       </section>

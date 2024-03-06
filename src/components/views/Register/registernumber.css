@@ -93,3 +93,18 @@
 .register__number__alert2__icon {
   font-size: 1.6rem;
 }
+.register__number__btn__number__section:hover {
+  transform: scale(1.05);
+  filter: brightness(100%);
+}
+
+.register__number__btn__number__section.disabled {
+  background: #164e2a;
+  cursor: not-allowed;
+}
+
+.register__number__btn__number__section:hover.disabled {
+  background: #164e2a;
+  cursor: not-allowed;
+  transform: scale(1);
+}
