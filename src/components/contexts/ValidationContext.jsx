@@ -8,6 +8,7 @@ const ValidationProvider = ({ children }) => {
   const [exito, setExito] = useState("");
   const [number, setNumber] = useState("");
   const [disabledBtn, setDisabledBtn] = useState(true);
+  const [selectValue, setSelectValue] = useState("");
   const validEmail =
     /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.(com|cl|net|org|gov|edu|info|biz|co|uk|...)){1,}$/;
 
@@ -28,6 +29,8 @@ const ValidationProvider = ({ children }) => {
         disabledBtn,
         setDisabledBtn,
         onlyNumbers,
+        selectValue,
+        setSelectValue,
       }}
     >
       {children}

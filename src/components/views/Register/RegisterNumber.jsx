@@ -17,11 +17,13 @@ const RegisterNumber = () => {
     disabledBtn,
     setDisabledBtn,
     onlyNumbers,
+    selectValue,
+    setSelectValue,
   } = useContext(ValidationContext);
   const [error_2, setError_2] = useState("");
 
   const navigate = useNavigate();
-
+  console.log(selectValue);
   const verifyValue = (e) => {
     if (e.trim() === "") {
       setError("Ingresa tu número de teléfono");
@@ -93,79 +95,35 @@ const RegisterNumber = () => {
           >
             <div className="register__number__numbers">
               <select
+                onChange={(e) => setSelectValue(e.target.value)}
                 name="select"
                 id="select"
+                value={selectValue}
                 className="register__number__select"
               >
-                <option label="+20" value="EG">
-                  +20
-                </option>
-                <option label="+971" value="AE">
-                  +971
-                </option>
-                <option label="+27" value="ZA">
-                  +27
-                </option>
-                <option label="+51" value="PE">
-                  +51
-                </option>
-                <option label="+52" value="MX">
-                  +52
-                </option>
-                <option label="+54" value="AR">
-                  +54
-                </option>
-                <option label="+55" value="BR">
-                  +55
-                </option>
-                <option label="+56" value="CL">
-                  +56
-                </option>
-                <option label="+57" value="CO">
-                  +57
-                </option>
-                <option label="+62" value="ID">
-                  +62
-                </option>
-                <option label="+66" value="TH">
-                  +66
-                </option>
-                <option label="+84" value="VN">
-                  +84
-                </option>
-                <option label="+91" value="IN">
-                  +91
-                </option>
-                <option label="+212" value="MA">
-                  +212
-                </option>
-                <option label="+213" value="DZ">
-                  +213
-                </option>
-                <option label="+233" value="GH">
-                  +233
-                </option>
-                <option label="+234" value="NG">
-                  +234
-                </option>
-                <option label="+254" value="KE">
-                  +254
-                </option>
-                <option label="+255" value="TZ">
-                  +255
-                </option>
-                <option label="+256" value="UG">
-                  +256
-                </option>
-                <option label="+593" value="EC">
-                  +593
-                </option>
-                <option label="+852" value="HK">
-                  +852
-                </option>
-                <option label="+966" value="SA">
-                  +966
-                </option>
+                <option value="+20">+20</option>
+                <option value="+971">+971</option>
+                <option value="+27">+27</option>
+                <option value="+51">+51</option>
+                <option value="+52">+52</option>
+                <option value="+54">+54</option>
+                <option value="+55">+55</option>
+                <option value="+56">+56</option>
+                <option value="+57">+57</option>
+                <option value="+62">+62</option>
+                <option value="+66">+66</option>
+                <option value="+84">+84</option>
+                <option value="+91">+91</option>
+                <option value="+212">+212</option>
+                <option value="+213">+213</option>
+                <option value="+233">+233</option>
+                <option value="+234">+234</option>
+                <option value="+254">+254</option>
+                <option value="+255">+255</option>
+                <option value="+256">+256</option>
+                <option value="+593">+593</option>
+                <option value="+852">+852</option>
+                <option value="+966">+966</option>
               </select>
               <div className="register__number__input__container">
                 <input
