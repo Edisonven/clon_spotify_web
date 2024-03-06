@@ -23,7 +23,7 @@ const RegisterNumber = () => {
   const [error_2, setError_2] = useState("");
 
   const navigate = useNavigate();
-  console.log(selectValue);
+
   const verifyValue = (e) => {
     if (e.trim() === "") {
       setError("Ingresa tu número de teléfono");
@@ -108,9 +108,7 @@ const RegisterNumber = () => {
                 <option value="+52">+52</option>
                 <option value="+54">+54</option>
                 <option value="+55">+55</option>
-                <option value="+56" selected>
-                  +56
-                </option>
+                <option value="+56">+56</option>
                 <option value="+57">+57</option>
                 <option value="+62">+62</option>
                 <option value="+66">+66</option>

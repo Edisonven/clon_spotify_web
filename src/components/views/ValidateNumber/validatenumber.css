@@ -66,3 +66,7 @@
 .validatenumber__section__form {
   width: 100%;
 }
+.register__number__validation__icon,
+.register__number__validation__alert__exito {
+  color: var(--registerColor);
+}

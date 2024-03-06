@@ -6,6 +6,7 @@ import { useContext, useEffect, useState } from "react";
 import { ValidationContext } from "../../contexts/ValidationContext";
 import { IoMdAlert } from "react-icons/io";
 import Alert from "../../Alert/Alert";
+import { FaCheck } from "react-icons/fa6";
 
 const ValidateNumber = () => {
   const { onlyNumbers } = useContext(ValidationContext);
@@ -35,6 +36,7 @@ const ValidateNumber = () => {
     if (e.trim() === "") {
       setCodeError("Ingresa el código");
       setDisabledBtnCode(true);
+      setCodeExito("")
     } else if (!onlyNumbers.test(e)) {
       setCodeError("Solo puedes ingresar números.");
       setDisabledBtnCode(true);
@@ -47,12 +49,12 @@ const ValidateNumber = () => {
   const handleNumberInput = (e) => {
     e.preventDefault();
 
-    if (code === "") {
-      setCodeError("Ingresa el código");
-    } else if (code.length < 5) {
-      setCodeError("Verifica el código.");
+    if (code.length !== 6) {
+      setCodeError("El código debe ser de 6 dígitos.");
+      setCodeExito("");
     } else {
-      setCodeExito("¡código correcto!");
+      setCodeError("");
+      setCodeExito("¡Código correcto!");
     }
   };
 
@@ -68,7 +70,10 @@ const ValidateNumber = () => {
       </nav>
       <section className="validatenumber__section__container">
         <h1 className="validatenumber__section__title">Ingresa tu código</h1>
-        <form className="validatenumber__section__form" onSubmit={(e) => handleNumberInput(e)}>
+        <form
+          className="validatenumber__section__form"
+          onSubmit={(e) => handleNumberInput(e)}
+        >
           <input
             onChange={(e) => {
               setCode(e.target.value);
@@ -79,27 +84,35 @@ const ValidateNumber = () => {
             className="validatenumber__section__input"
             placeholder="Código de 6 dígitos (ingresa cualquier número)"
           />
-        </form>
-        {codeError ? (
-          <div className="register__number__validation__alert__container">
-            <IoMdAlert className="register__number__validation__alert__icon" />
-            <Alert className="register__number__validation__alert">
-              {codeError}
-            </Alert>
-          </div>
-        ) : null}
 
-        <div className="validatenumber__code__section">
-          <NavLink className="validationnumber__code__link">
-            Obtener nuevo código
-          </NavLink>
-          <Button
-            disabled={disabledBtnCode}
-            className="register__number__btn register__number__btn__numbervalid__section"
-          >
-            Siguiente
-          </Button>
-        </div>
+          {codeError ? (
+            <div className="register__number__validation__alert__container">
+              <IoMdAlert className="register__number__validation__alert__icon" />
+              <Alert className="register__number__validation__alert">
+                {codeError}
+              </Alert>
+            </div>
+          ) : null}
+          {codeExito ? (
+            <div className="register__number__validation__alert__container">
+              <FaCheck className="register__number__validation__icon" />
+              <Alert className="register__number__validation__alert register__number__validation__alert__exito">
+                {codeExito}
+              </Alert>
+            </div>
+          ) : null}
+          <div className="validatenumber__code__section">
+            <NavLink className="validationnumber__code__link">
+              Obtener nuevo código
+            </NavLink>
+            <Button
+              disabled={disabledBtnCode}
+              className="register__number__btn register__number__btn__numbervalid__section"
+            >
+              Siguiente
+            </Button>
+          </div>
+        </form>
       </section>
     </section>
   );
