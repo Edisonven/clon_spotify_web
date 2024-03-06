@@ -8,6 +8,8 @@ import { useState } from "react";
 
 const SingUp = () => {
   const [passwrodEye, setPasswordeye] = useState(false);
+  const [userName, setUserName] = useState("");
+  const [userPassword, setUserpassword] = useState("");
 
   const handlePasswordEye = () => {
     setPasswordeye(!passwrodEye);
@@ -69,8 +71,10 @@ const SingUp = () => {
                 Email o nombre de usuario
               </label>
               <input
+                onChange={(e) => setUserName(e.target.value)}
                 className="singup__form__input singup__form__input__name"
                 type="text"
+                value={userName}
                 placeholder="Email o nombre de usuario"
               />
               <label className="singup__form__label" htmlFor="">
@@ -78,6 +82,8 @@ const SingUp = () => {
               </label>
               <div className="singup__form__input__password__container">
                 <input
+                  onChange={(e) => setUserpassword(e.target.value)}
+                  value={userPassword}
                   className="singup__form__input singup__form__input__password"
                   type={passwrodEye ? "text" : "password"}
                   placeholder="Contraseña"
