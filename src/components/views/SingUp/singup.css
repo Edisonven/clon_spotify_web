@@ -158,7 +158,8 @@
   margin: 0 auto;
 }
 
-.singup__from__link:hover {
+.singup__from__link:hover,
+.singup__cuenta__link:hover {
   color: var(--registerColor);
 }
 
