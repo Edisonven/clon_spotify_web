@@ -63,3 +63,6 @@
   cursor: not-allowed;
   transform: scale(1);
 }
+.validatenumber__section__form {
+  width: 100%;
+}

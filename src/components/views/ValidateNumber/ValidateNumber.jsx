@@ -8,7 +8,7 @@ import { IoMdAlert } from "react-icons/io";
 import Alert from "../../Alert/Alert";
 
 const ValidateNumber = () => {
-  const { disabledBtn, onlyNumbers, number } = useContext(ValidationContext);
+  const { onlyNumbers } = useContext(ValidationContext);
 
   const [codeError, setCodeError] = useState("");
   const [code, setCode] = useState("");
@@ -68,7 +68,7 @@ const ValidateNumber = () => {
       </nav>
       <section className="validatenumber__section__container">
         <h1 className="validatenumber__section__title">Ingresa tu código</h1>
-        <form onSubmit={(e) => handleNumberInput(e)}>
+        <form className="validatenumber__section__form" onSubmit={(e) => handleNumberInput(e)}>
           <input
             onChange={(e) => {
               setCode(e.target.value);
@@ -77,7 +77,7 @@ const ValidateNumber = () => {
             value={code}
             type="text"
             className="validatenumber__section__input"
-            placeholder="Código de 6 dígitos"
+            placeholder="Código de 6 dígitos (ingresa cualquier número)"
           />
         </form>
         {codeError ? (
