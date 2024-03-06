@@ -6,6 +6,7 @@ import { ValidationContext } from "../../contexts/ValidationContext";
 import Alert from "../../Alert/Alert";
 import { IoMdAlert } from "react-icons/io";
 import { IoAlertCircleOutline } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 const RegisterNumber = () => {
   const { error, setError, exito, setExito } = useContext(ValidationContext);
@@ -13,6 +14,8 @@ const RegisterNumber = () => {
   const [number, setNumber] = useState("");
   const [disabledBtn, setDisabledBtn] = useState(true);
   const onlyNumbers = /^\d+$/;
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const submitBtn = document.querySelector(
@@ -53,6 +56,8 @@ const RegisterNumber = () => {
     } else if (number.length < 9) {
       setError_2("Verifica tu número de teléfono.");
       setError("");
+    } else {
+      navigate("/register/:register_with_number/validate_number");
     }
   };
 
