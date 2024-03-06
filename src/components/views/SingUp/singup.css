@@ -4,8 +4,8 @@
   gap: 25px;
   background-image: linear-gradient(
     to top,
-    var(--sectionBgColor) 70%,
-    var(--backGroundColor_2) 100%
+    var(--backGroundColor) 20%,
+    var(--backGroundColor_2) 80%
   );
   width: 100%;
 }
@@ -140,4 +140,17 @@
 
 .singup__from__link:hover {
   color: var(--registerColor);
+}
+
+.singup__footer__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background: var(--sectionBgColor);
+  color: var(--letterColor);
+  font-size: 0.7rem;
+}
+.singup__footer__link {
+  color: var(--letterColor);
 }

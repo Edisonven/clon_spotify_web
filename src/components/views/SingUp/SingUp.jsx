@@ -87,10 +87,15 @@ const SingUp = () => {
       </div>
       <footer className="singup__footer__section">
         <p className="singup__footer__paragraph">
-          This site is protected by reCAPTCHA and the Google{" "}
-          <NavLink className="singup__footer__link">Privacy Policy</NavLink> and{" "}
-          <NavLink className="singup__footer__link">Terms of Service</NavLink>{" "}
-          apply.
+          Este sitio está protegido por reCAPTCHA y se aplican la{" "}
+          <NavLink className="singup__footer__link">
+            Política de Privacidad
+          </NavLink>{" "}
+          y los{" "}
+          <NavLink className="singup__footer__link">
+            Términos de Servicio
+          </NavLink>{" "}
+          de Google.
         </p>
       </footer>
     </section>
