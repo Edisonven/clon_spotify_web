@@ -2,8 +2,17 @@ import "../SingUp/singup.css";
 import SpotifyHome from "../../SpotifyHome/SpotifyHome";
 import Button from "../../Button/Button";
 import { NavLink } from "react-router-dom";
+import { AiOutlineEyeInvisible } from "react-icons/ai";
+import { AiOutlineEye } from "react-icons/ai";
+import { useState } from "react";
 
 const SingUp = () => {
+  const [passwrodEye, setPasswordeye] = useState(false);
+
+  const handlePasswordEye = () => {
+    setPasswordeye(!passwrodEye);
+  };
+
   const handleFromSubmit = (e) => {
     e.preventDefault();
   };
@@ -60,18 +69,30 @@ const SingUp = () => {
                 Email o nombre de usuario
               </label>
               <input
-                className="singup__form__input"
+                className="singup__form__input singup__form__input__name"
                 type="text"
                 placeholder="Email o nombre de usuario"
               />
               <label className="singup__form__label" htmlFor="">
                 Contraseña
               </label>
-              <input
-                className="singup__form__input"
-                type="text"
-                placeholder="Contraseña"
-              />
+              <div className="singup__form__input__password__container">
+                <input
+                  className="singup__form__input singup__form__input__password"
+                  type={passwrodEye ? "text" : "password"}
+                  placeholder="Contraseña"
+                />
+                <div
+                  onClick={() => handlePasswordEye()}
+                  className="singup__form__eyes__icons__container"
+                >
+                  {passwrodEye ? (
+                    <AiOutlineEye className="singup__form__eye__icon" />
+                  ) : (
+                    <AiOutlineEyeInvisible className="singup__form__eye__icon" />
+                  )}
+                </div>
+              </div>
               <div className="singup__remeber__data">
                 <span>Recordarme</span>
               </div>
