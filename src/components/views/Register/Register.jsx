@@ -128,7 +128,7 @@ const Register = () => {
               <span className="register__cuenta__paragraph">
                 ¿Ya tienes una cuenta?
               </span>
-              <NavLink className="register__cuenta__link">
+              <NavLink to="/singup" className="register__cuenta__link">
                 Inicia sesión aquí.
               </NavLink>
             </div>

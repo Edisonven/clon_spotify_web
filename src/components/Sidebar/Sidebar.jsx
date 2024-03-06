@@ -86,7 +86,7 @@ const Sidebar = () => {
                     >
                       Ahora no
                     </button>
-                    <Link className="btn playlistmodal__session">
+                    <Link to="/singup" className="btn playlistmodal__session">
                       Iniciar sesión
                     </Link>
                   </div>

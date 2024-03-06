@@ -79,7 +79,7 @@ const SingUp = () => {
             <span className="singup__cuenta__paragraph">
               ¿No tienes una cuenta?
             </span>
-            <NavLink className="singup__cuenta__link">
+            <NavLink to="/register" className="singup__cuenta__link">
               Regístrate en Spotify
             </NavLink>
           </div>
