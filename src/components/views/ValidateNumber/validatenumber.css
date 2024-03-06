@@ -30,4 +30,22 @@
 }
 .validationnumber__code__link {
   color: var(--btnBgColor);
+  text-decoration: none;
+}
+.validationnumber__code__link:hover {
+  text-decoration: underline;
+}
+.register__number__validation__alert__container {
+  display: flex;
+  gap: 10px;
+}
+.register__number__validation__alert {
+  color: #ce4250;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.register__number__validation__alert__icon {
+  transform: scale(1.3);
+  color: #ce4250;
 }

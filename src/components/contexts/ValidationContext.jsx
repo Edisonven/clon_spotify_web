@@ -11,21 +11,7 @@ const ValidationProvider = ({ children }) => {
   const validEmail =
     /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.(com|cl|net|org|gov|edu|info|biz|co|uk|...)){1,}$/;
 
-  useEffect(() => {
-    const submitBtn = document.querySelector(
-      ".register__number__btn__number__section"
-    );
-
-    const handleDisabledBtn = () => {
-      if (disabledBtn) {
-        submitBtn.classList.add("disabled");
-      } else {
-        submitBtn.classList.remove("disabled");
-      }
-    };
-
-    handleDisabledBtn();
-  }, [disabledBtn]);
+  const onlyNumbers = /^\d+$/;
 
   return (
     <ValidationContext.Provider
@@ -41,6 +27,7 @@ const ValidationProvider = ({ children }) => {
         setNumber,
         disabledBtn,
         setDisabledBtn,
+        onlyNumbers,
       }}
     >
       {children}
