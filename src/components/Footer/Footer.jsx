@@ -10,7 +10,7 @@ const Footer = () => {
   };
 
   return (
-    <section className="footer__container">
+    <section onClick={handleNavigate} className="footer__container">
       <div className="footer__title__section">
         <h4 className="footer__title">Muestra de Spotify</h4>
         <h5 className="footer__descrip">
