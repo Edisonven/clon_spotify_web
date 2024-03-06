@@ -4,6 +4,10 @@ import Button from "../../Button/Button";
 import { NavLink } from "react-router-dom";
 
 const SingUp = () => {
+  const handleFromSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <section className="singup__container">
       <nav className="singup__navbar">
@@ -48,7 +52,10 @@ const SingUp = () => {
           </div>
           <hr className="singup__divisor singup__divisor__last" />
           <section className="singup__form__section">
-            <form className="singup__from">
+            <form
+              onSubmit={(e) => handleFromSubmit(e)}
+              className="singup__from"
+            >
               <label className="singup__form__label" htmlFor="">
                 Email o nombre de usuario
               </label>

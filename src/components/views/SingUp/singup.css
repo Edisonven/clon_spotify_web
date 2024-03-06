@@ -132,7 +132,27 @@
   font-size: 1rem;
   font-weight: 700;
 }
-
+.singup__form__btn:hover {
+  transform: scale(1.03);
+}
+.singup__form__btn:active {
+  transition: all linear 0.2s;
+  transform: scale(1);
+  outline: 3px solid var(--backGroundColor);
+  background-color: #14a148;
+}
+.singup__form__btn:active::after {
+  position: absolute;
+  content: "";
+  top: -7px;
+  bottom: -7px;
+  left: -7px;
+  right: -7px;
+  border: 4px solid;
+  border-color: var(--btnBgColor);
+  pointer-events: none;
+  border-radius: 32px;
+}
 .singup__from__link {
   color: var(--btnBgColor);
   margin: 0 auto;
