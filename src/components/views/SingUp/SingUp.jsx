@@ -5,18 +5,25 @@ import { NavLink } from "react-router-dom";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
 import { useState } from "react";
+import Alert from "../../Alert/Alert";
+import { IoAlertCircleOutline } from "react-icons/io5";
 
 const SingUp = () => {
   const [passwrodEye, setPasswordeye] = useState(false);
   const [userName, setUserName] = useState("");
   const [userPassword, setUserpassword] = useState("");
+  const [error_1, setError_1] = useState("");
 
   const handlePasswordEye = () => {
     setPasswordeye(!passwrodEye);
   };
 
-  const handleFromSubmit = (e) => {
+  const handleFormSubmit = (e) => {
     e.preventDefault();
+
+    if (userName === "") {
+      setError_1("Nombre de usuario o contraseña incorrectos.");
+    }
   };
 
   return (
@@ -32,6 +39,14 @@ const SingUp = () => {
       <div className="singup__body__section">
         <section className="singup__body__container">
           <h1 className="singup__body__title">Inicia sesión en Spotify</h1>
+          {error_1 ? (
+            <div className="singup__form__alert__container">
+              <IoAlertCircleOutline className="singup__form__alert__icon" />
+              <Alert className="singup__form__alert">{error_1}</Alert>
+            </div>
+          ) : (
+            ""
+          )}
           <div className="singup__social__section">
             <Button className="singup__social__btn">
               <img
@@ -64,7 +79,7 @@ const SingUp = () => {
           <hr className="singup__divisor singup__divisor__last" />
           <section className="singup__form__section">
             <form
-              onSubmit={(e) => handleFromSubmit(e)}
+              onSubmit={(e) => handleFormSubmit(e)}
               className="singup__from"
             >
               <label className="singup__form__label" htmlFor="">
