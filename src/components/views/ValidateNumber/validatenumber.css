@@ -49,3 +49,17 @@
   transform: scale(1.3);
   color: #ce4250;
 }
+.register__number__btn__numbervalid__section:hover {
+  transform: scale(1.05);
+  filter: brightness(100%);
+}
+.register__number__btn__numbervalid__section.disabled {
+  background: #164e2a;
+  cursor: not-allowed;
+}
+
+.register__number__btn__numbervalid__section:hover.disabled {
+  background: #164e2a;
+  cursor: not-allowed;
+  transform: scale(1);
+}
