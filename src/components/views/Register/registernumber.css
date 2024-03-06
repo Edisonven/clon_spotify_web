@@ -63,14 +63,14 @@
   gap: 5px;
 }
 .register__number__alert {
-  color: #ce4250;
+  color: var(--alertColor_1);
   font-size: 0.8rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
 .register__number__alert__icon {
   transform: scale(1.3);
-  color: #ce4250;
+  color: var(--alertColor_1);
 }
 .register__number__input__container {
   position: relative;

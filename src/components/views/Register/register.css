@@ -147,14 +147,14 @@ input:hover {
   gap: 10px;
 }
 .register__alert {
-  color: #ce4250;
+  color: var(--alertColor_1);
   font-size: 0.8rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
 .register__alert__icon {
   transform: scale(2.5);
-  color: #ce4250;
+  color: var(--alertColor_1);
 }
 .register__alert__exito {
   color: green;

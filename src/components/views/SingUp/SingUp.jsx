@@ -7,15 +7,25 @@ import { AiOutlineEye } from "react-icons/ai";
 import { useState } from "react";
 import Alert from "../../Alert/Alert";
 import { IoAlertCircleOutline } from "react-icons/io5";
+import { IoMdAlert } from "react-icons/io";
 
 const SingUp = () => {
   const [passwrodEye, setPasswordeye] = useState(false);
   const [userName, setUserName] = useState("");
   const [userPassword, setUserpassword] = useState("");
   const [error_1, setError_1] = useState("");
+  const [userError, setUserError] = useState("");
 
   const handlePasswordEye = () => {
     setPasswordeye(!passwrodEye);
+  };
+
+  const validateInputName = (e) => {
+    if (e === "") {
+      setUserError(
+        "Ingresa tu nombre de usuario de Spotify o tu dirección de correo electrónico."
+      );
+    }
   };
 
   const handleFormSubmit = (e) => {
@@ -23,6 +33,8 @@ const SingUp = () => {
 
     if (userName === "") {
       setError_1("Nombre de usuario o contraseña incorrectos.");
+    } else {
+      setError_1("");
     }
   };
 
@@ -86,12 +98,25 @@ const SingUp = () => {
                 Email o nombre de usuario
               </label>
               <input
-                onChange={(e) => setUserName(e.target.value)}
+                onChange={(e) => {
+                  setUserName(e.target.value);
+                  validateInputName(e.target.value);
+                }}
                 className="singup__form__input singup__form__input__name"
                 type="text"
                 value={userName}
                 placeholder="Email o nombre de usuario"
               />
+              {userError ? (
+                <div className="singup__form__username__alert__container">
+                  <IoMdAlert className="singup__form__username__icon" />
+                  <Alert className="singup__form__username__alert">
+                    {userError}
+                  </Alert>
+                </div>
+              ) : (
+                ""
+              )}
               <label className="singup__form__label" htmlFor="">
                 Contraseña
               </label>

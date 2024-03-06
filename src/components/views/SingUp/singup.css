@@ -217,3 +217,18 @@
 .singup__form__alert__icon {
   font-size: 1.8rem;
 }
+.singup__form__username__alert {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--alertColor_1);
+}
+.singup__form__username__alert__container {
+  display: flex;
+  gap: 10px;
+  align-items: normal;
+}
+.singup__form__username__icon {
+  color: var(--alertColor_1);
+  transform: scale(2.5);
+}
