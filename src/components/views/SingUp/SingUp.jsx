@@ -15,6 +15,7 @@ const SingUp = () => {
   const [userPassword, setUserpassword] = useState("");
   const [error_1, setError_1] = useState("");
   const [userError, setUserError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
 
   const handlePasswordEye = () => {
     setPasswordeye(!passwrodEye);
@@ -25,6 +26,15 @@ const SingUp = () => {
       setUserError(
         "Ingresa tu nombre de usuario de Spotify o tu dirección de correo electrónico."
       );
+    } else {
+      setUserError("");
+    }
+  };
+  const validatePassword = (e) => {
+    if (e === "") {
+      setPasswordError("Por favor introduce tu contraseña.");
+    } else {
+      setPasswordError("");
     }
   };
 
@@ -122,12 +132,25 @@ const SingUp = () => {
               </label>
               <div className="singup__form__input__password__container">
                 <input
-                  onChange={(e) => setUserpassword(e.target.value)}
+                  onChange={(e) => {
+                    setUserpassword(e.target.value);
+                    validatePassword(e.target.value);
+                  }}
                   value={userPassword}
                   className="singup__form__input singup__form__input__password"
                   type={passwrodEye ? "text" : "password"}
                   placeholder="Contraseña"
                 />
+                {passwordError ? (
+                  <div className="singup__form__password__alert__container">
+                    <IoMdAlert className="singup__form__password__icon" />
+                    <Alert className="singup__form__password__alert">
+                      {passwordError}
+                    </Alert>
+                  </div>
+                ) : (
+                  ""
+                )}
                 <div
                   onClick={() => handlePasswordEye()}
                   className="singup__form__eyes__icons__container"

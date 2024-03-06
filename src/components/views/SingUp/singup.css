@@ -127,7 +127,7 @@
   color: var(--letterColor);
   font-size: 1.7rem;
   position: absolute;
-  top: 26%;
+  top: 20px;
   right: 3%;
 }
 .singup__form__eye__icon:hover {
@@ -232,3 +232,20 @@
   color: var(--alertColor_1);
   transform: scale(2.5);
 }
+
+.singup__form__password__alert {
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--alertColor_1);
+  }
+  .singup__form__password__alert__container {
+    display: flex;
+    gap: 5px;
+    align-items: normal;
+  }
+  .singup__form__password__icon {
+    color: var(--alertColor_1);
+    transform: scale(1.4);
+  }
+  
