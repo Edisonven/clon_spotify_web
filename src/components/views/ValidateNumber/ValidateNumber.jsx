@@ -104,7 +104,6 @@ const ValidateNumber = () => {
           <div className="validatenumber__code__section">
             <NavLink
               to="/register/:register_with_number"
-              s
               className="validationnumber__code__link"
             >
               Obtener nuevo código
