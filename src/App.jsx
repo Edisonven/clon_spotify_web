@@ -3,6 +3,7 @@ import "./App.css";
 import Register from "./components/views/Register/Register.jsx";
 import Home from "./components/views/Home/Home.jsx";
 import RegisterNumber from "./components/views/Register/RegisterNumber.jsx";
+import ValidateNumber from "./components/views/ValidateNumber/ValidateNumber.jsx";
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
         <Route
           path="/register/:register_with_number"
           element={<RegisterNumber />}
+        />
+        <Route
+          path="/register/:register_with_number/:validate_number"
+          element={<ValidateNumber />}
         />
       </Routes>
     </section>
