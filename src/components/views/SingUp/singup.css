@@ -81,7 +81,7 @@
   justify-content: center;
 }
 .singup__social__btn:hover {
-  outline: 2px solid var(--btnBgColor);
+  outline: 1px solid var(--btnBgColor);
 }
 .singup__social__btn__icon {
   width: 22px;
@@ -129,6 +129,15 @@
   top: 26%;
   right: 3%;
 }
+.singup__form__eye__icon:hover {
+  transform: scale(1.1);
+  color: var(--btnBgColor);
+}
+.singup__form__eye__icon:active {
+  transform: scale(1);
+  color: var(--letterColor);
+}
+
 .singup__form__input__password {
   width: 100%;
 }
