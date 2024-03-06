@@ -70,3 +70,11 @@
 .register__number__validation__alert__exito {
   color: var(--registerColor);
 }
+.validatenumber__code__sent {
+  margin-top: 20px;
+  color: var(--btnBgColor);
+}
+.validnumber__simulation__info {
+  margin-top: 60px;
+  color: var(--btnBgColor);
+}

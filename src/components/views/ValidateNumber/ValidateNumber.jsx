@@ -9,7 +9,7 @@ import Alert from "../../Alert/Alert";
 import { FaCheck } from "react-icons/fa6";
 
 const ValidateNumber = () => {
-  const { onlyNumbers } = useContext(ValidationContext);
+  const { onlyNumbers, number, selectValue } = useContext(ValidationContext);
 
   const [codeError, setCodeError] = useState("");
   const [code, setCode] = useState("");
@@ -36,7 +36,7 @@ const ValidateNumber = () => {
     if (e.trim() === "") {
       setCodeError("Ingresa el código");
       setDisabledBtnCode(true);
-      setCodeExito("")
+      setCodeExito("");
     } else if (!onlyNumbers.test(e)) {
       setCodeError("Solo puedes ingresar números.");
       setDisabledBtnCode(true);
@@ -113,6 +113,14 @@ const ValidateNumber = () => {
             </Button>
           </div>
         </form>
+        <h4 className="validnumber__simulation__info">(Simulación)</h4>
+        <h4 className="validatenumber__code__sent">
+          Enviamos un SMS con tu código de 6 dígitos a{" "}
+          <span>
+            {selectValue}
+            {number}
+          </span>
+        </h4>
       </section>
     </section>
   );
