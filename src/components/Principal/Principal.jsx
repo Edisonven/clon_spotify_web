@@ -1,9 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../Principal/principal.css/";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Button from "../Button/Button";
 
 const Principal = () => {
+  const navigate = useNavigate();
+
+  const NavigateToSingUp = () => {
+    navigate("/singup");
+  };
   return (
     <section className="principal__container">
       <nav className="principal__navbar">
@@ -22,7 +27,10 @@ const Principal = () => {
             <Link to="/register" className="principal__navbar__link__register">
               Regístrate
             </Link>
-            <Button className="btn principal__navbar__btn">
+            <Button
+              onClick={NavigateToSingUp}
+              className="btn principal__navbar__btn"
+            >
               Iniciar sesión
             </Button>
           </div>

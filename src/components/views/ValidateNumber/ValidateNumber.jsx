@@ -102,7 +102,11 @@ const ValidateNumber = () => {
             </div>
           ) : null}
           <div className="validatenumber__code__section">
-            <NavLink className="validationnumber__code__link">
+            <NavLink
+              to="/register/:register_with_number"
+              s
+              className="validationnumber__code__link"
+            >
               Obtener nuevo código
             </NavLink>
             <Button
@@ -118,6 +122,7 @@ const ValidateNumber = () => {
           Enviamos un SMS con tu código de 6 dígitos a{" "}
           <span>
             {selectValue}
+            {"-"}
             {number}
           </span>
         </h4>
