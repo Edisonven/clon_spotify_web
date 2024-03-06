@@ -9,29 +9,13 @@ import { IoAlertCircleOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
 const RegisterNumber = () => {
-  const { error, setError, exito, setExito } = useContext(ValidationContext);
+  const { error, setError, number, setNumber, disabledBtn, setDisabledBtn } =
+    useContext(ValidationContext);
   const [error_2, setError_2] = useState("");
-  const [number, setNumber] = useState("");
-  const [disabledBtn, setDisabledBtn] = useState(true);
+
   const onlyNumbers = /^\d+$/;
 
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const submitBtn = document.querySelector(
-      ".register__number__btn__number__section"
-    );
-
-    const handleDisabledBtn = () => {
-      if (disabledBtn) {
-        submitBtn.classList.add("disabled");
-      } else {
-        submitBtn.classList.remove("disabled");
-      }
-    };
-
-    handleDisabledBtn();
-  }, [disabledBtn]);
 
   const verifyValue = (e) => {
     if (e.trim() === "") {

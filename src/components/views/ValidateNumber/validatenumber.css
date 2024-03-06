@@ -7,3 +7,27 @@
   height: 100vh;
   padding: 30px;
 }
+.validatenumber__section__container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.validatenumber__section__input {
+  width: 100%;
+}
+.validatenumber__section__title {
+  color: var(--btnBgColor);
+}
+.validatenumber__code__section {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.validationnumber__code__link {
+  color: var(--btnBgColor);
+}
