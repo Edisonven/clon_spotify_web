@@ -1,15 +1,25 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import SpotifyHome from "../../SpotifyHome/SpotifyHome";
 import Button from "../../Button/Button";
 import "../Register/register.css";
 import Alert from "../../Alert/Alert";
 import { IoAlertCircleOutline } from "react-icons/io5";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ValidationContext } from "../../contexts/ValidationContext";
 
 const Register = () => {
+  const navigate = useNavigate();
   const { mail, setError, setExito, setMail, exito, error, validEmail } =
     useContext(ValidationContext);
+
+  useEffect(() => {
+    // Resetea los valores cuando cambies de vista
+    return () => {
+      setError("");
+      setExito("");
+      setMail("");
+    };
+  }, [navigate, setError, setExito, setMail]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
