@@ -15,6 +15,18 @@ const Principal = () => {
 
   const { artistData } = useContext(ArtistContext);
 
+  let totalLength = 0;
+
+  const filteredArtists = [];
+
+  const newData = [...artistData];
+
+  for (const artist of newData) {
+    if (filteredArtists.length >= 7) break; // Salir del bucle si ya tenemos 7 artistas
+    filteredArtists.push(artist);
+    totalLength += artist.name.length;
+  }
+
   return (
     <section className="principal__container">
       <nav className="principal__navbar">
@@ -49,7 +61,7 @@ const Principal = () => {
         </div>
         <section className="principal__artist__section">
           <div className="artistcard__cards__container">
-            {artistData?.map((artist) => {
+            {filteredArtists?.map((artist) => {
               return (
                 <ArtistCard key={artist.id} className="artistcard__card">
                   <img className="artistcard__img" src={artist.src} alt="" />
