@@ -2,9 +2,19 @@ import "../MailSent/mailsent.css";
 import SpotifyHome from "../../SpotifyHome/SpotifyHome";
 import Button from "../../Button/Button";
 import { RxPencil1 } from "react-icons/rx";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const MailSent = () => {
+  const navigate = useNavigate();
+
+  const editMail = () => {
+    navigate("/singup/:reset_password");
+  };
+
+  const singUpBack = () => {
+    navigate("/singup");
+  };
+
   return (
     <section className="mailsent__container">
       <nav className="singup__navbar">
@@ -21,10 +31,13 @@ const MailSent = () => {
           Te enviamos un email. Sigue las instrucciones para volver a ingresar a
           tu cuenta.
         </p>
-        <Button className="mailsent__body__btn">
+        <Button onClick={singUpBack} className="mailsent__body__btn">
           Regresar al inicio de sesión
         </Button>
-        <Button className="mailsent__body__btn mailsent__body__btn__edit">
+        <Button
+          onClick={editMail}
+          className="mailsent__body__btn mailsent__body__btn__edit"
+        >
           <RxPencil1 className="mailsent__btn__icon" />
           Editar mail/nombre de usuario
         </Button>
