@@ -37,8 +37,10 @@ const Register = () => {
     const onFocus = () => {
       if (inputFocus && inputFocus.value === "") {
         setError(true);
+        setExito("");
       }
     };
+
     inputFocus.addEventListener("blur", onFocus);
   }, []);
 
