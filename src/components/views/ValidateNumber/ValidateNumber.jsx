@@ -32,6 +32,17 @@ const ValidateNumber = () => {
     handleDisabledBtn();
   }, [disabledBtnCode]);
 
+  useEffect(() => {
+    const singupInputValue = document.querySelector(
+      ".validatenumber__section__input"
+    );
+    if (codeError) {
+      singupInputValue.classList.add("singup_active");
+    } else {
+      singupInputValue.classList.remove("singup_active");
+    }
+  }, [codeError]);
+
   const verifyValue = (e) => {
     if (e.trim() === "") {
       setCodeError("Ingresa el código");
