@@ -4,7 +4,7 @@ import Button from "../../Button/Button";
 import { NavLink } from "react-router-dom";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Alert from "../../Alert/Alert";
 import { IoAlertCircleOutline } from "react-icons/io5";
 import { IoMdAlert } from "react-icons/io";
@@ -16,6 +16,29 @@ const SingUp = () => {
   const [error_1, setError_1] = useState("");
   const [userError, setUserError] = useState("");
   const [passwordError, setPasswordError] = useState("");
+
+  useEffect(() => {
+    const singupInputPassword = document.querySelector(
+      ".singup__form__input__password"
+    );
+    if (passwordError) {
+      singupInputPassword.classList.add("singup_active");
+    } else {
+      singupInputPassword.classList.remove("singup_active");
+    }
+  }, [passwordError]);
+
+  useEffect(() => {
+    const singupInputName = document.querySelector(
+      ".singup__form__input__name"
+    );
+
+    if (userError) {
+      singupInputName.classList.add("singup_active");
+    } else {
+      singupInputName.classList.remove("singup_active");
+    }
+  }, [userError]);
 
   const handlePasswordEye = () => {
     setPasswordeye(!passwrodEye);
