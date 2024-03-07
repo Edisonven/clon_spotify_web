@@ -32,17 +32,23 @@ const Register = () => {
     }
   }, [error]);
 
+  useEffect(() => {
+    const inputFocus = document.querySelector(".register__input__correo");
+    const onFocus = () => {
+      if (inputFocus && inputFocus.value === "") {
+        setError(true);
+      }
+    };
+    inputFocus.addEventListener("blur", onFocus);
+  }, []);
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
     if (mail === "") {
-      setError(
-        "Este email no es válido. Asegúrate de que tenga un formato como este: ejemplo@email.com"
-      );
+      setError(true);
     } else if (!validEmail.test(mail)) {
-      setError(
-        "Este email no es válido. Asegúrate de que tenga un formato como este: ejemplo@email.com"
-      );
+      setError(true);
       setExito("");
     } else {
       setExito("¡Correo válido!");
@@ -70,7 +76,6 @@ const Register = () => {
               Dirección de email
             </label>
             <input
-              style={{ border: error ? "1px solid red" : null }}
               onChange={(event) => setMail(event.target.value)}
               value={mail}
               name="correo"
@@ -81,7 +86,10 @@ const Register = () => {
             {error ? (
               <div className="register__alert__container">
                 <IoAlertCircleOutline className="register__alert__icon" />
-                <Alert className="register__alert">{error}</Alert>
+                <Alert className="register__alert">
+                  Este email no es válido. Asegúrate de que tenga un formato
+                  como este: ejemplo@email.com
+                </Alert>
               </div>
             ) : null}
             {exito ? (
