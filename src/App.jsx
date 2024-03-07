@@ -5,6 +5,7 @@ import Home from "./components/views/Home/Home.jsx";
 import RegisterNumber from "./components/views/Register/RegisterNumber.jsx";
 import ValidateNumber from "./components/views/ValidateNumber/ValidateNumber.jsx";
 import SingUp from "./components/views/SingUp/SingUp.jsx";
+import ResetPassword from "./components/views/ResetPassword/ResetPaswword.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           element={<ValidateNumber />}
         />
         <Route path="/singup" element={<SingUp />} />
+        <Route path="/singup/:reset_password" element={<ResetPassword />} />
       </Routes>
     </section>
   );

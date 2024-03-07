@@ -189,7 +189,10 @@ const SingUp = () => {
                 <span>Recordarme</span>
               </div>
               <Button className="singup__form__btn">Iniciar Sesión</Button>
-              <NavLink className="singup__from__link">
+              <NavLink
+                to="/singup/:reset_password"
+                className="singup__from__link"
+              >
                 ¿Has olvidado la contraseña?
               </NavLink>
             </form>
