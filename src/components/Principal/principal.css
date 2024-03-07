@@ -133,11 +133,17 @@
   flex-wrap: wrap;
 }
 .artistcard__card {
+  transition: all linear 0.2s;
+  position: relative;
   margin-top: 13px;
   border-radius: 8px;
   padding: 20px 16px;
   width: max-content;
   background: #181818;
+}
+.artistcard__card:hover {
+  cursor: pointer;
+  background: var(--backGroundColor_2);
 }
 .artistcard__img {
   object-fit: cover;
@@ -149,10 +155,45 @@
   margin-top: 12px;
   font-size: 1rem;
 }
+.artistcard__play__icon {
+  position: absolute;
+  top: 43%;
+  right: 25px;
+  font-size: 1rem;
+  color: var(--backGroundColor);
+  background: var(--registerColor);
+  width: 50px;
+  height: 49px;
+  padding: 8px 8px 8px 12px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 20px #000000a6;
+}
+.artistcard__play__icon {
+  transform: translateY(6px);
+  opacity: 0;
+  transition: ease-in 0.2s;
+  --transform: translateY(0);
+  --opacity: 1;
+}
+
+.inverse {
+  transform: var(--transform);
+  opacity: var(--opacity);
+}
 
 .artistcard__desc {
   margin-top: 10px;
   font-size: 0.85rem;
   color: var(--letterColor);
   margin-bottom: 15px;
+}
+.artistcard__play__icon:hover {
+  transform: scale(1.03);
+  filter: brightness(105%);
+}
+.artistcard__play__icon {
+  visibility: hidden;
+}
+.artistcard__card:hover .artistcard__play__icon {
+  visibility: visible;
 }

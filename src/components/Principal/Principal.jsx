@@ -3,8 +3,9 @@ import "../Principal/principal.css/";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Button from "../Button/Button";
 import ArtistCard from "../ArtistCard/ArtistCard";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ArtistContext } from "../contexts/ArtistContext";
+import { IoIosPlay } from "react-icons/io";
 
 const Principal = () => {
   const navigate = useNavigate();
@@ -26,6 +27,31 @@ const Principal = () => {
     filteredArtists.push(artist);
     totalLength += artist.name.length;
   }
+
+  useEffect(() => {
+    const cardOnHover = document.querySelectorAll(".artistcard__card");
+
+    cardOnHover.forEach((card) => {
+      const icon = card.querySelector(".artistcard__play__icon");
+
+      const handleMouseEnter = () => {
+        card.classList.add("inverse");
+        if (icon) {
+          icon.classList.add("inverse");
+        }
+      };
+
+      const handleMouseLeave = () => {
+        card.classList.remove("inverse");
+        if (icon) {
+          icon.classList.remove("inverse");
+        }
+      };
+
+      card.addEventListener("mouseenter", handleMouseEnter);
+      card.addEventListener("mouseleave", handleMouseLeave);
+    });
+  }, [artistData]);
 
   return (
     <section className="principal__container">
@@ -67,6 +93,7 @@ const Principal = () => {
                   <img className="artistcard__img" src={artist.src} alt="" />
                   <h1 className="artistcard__name">{artist.name}</h1>
                   <p className="artistcard__desc">{artist.desc}</p>
+                  <IoIosPlay className="artistcard__play__icon" />
                 </ArtistCard>
               );
             })}

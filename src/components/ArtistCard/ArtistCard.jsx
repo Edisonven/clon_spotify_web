@@ -1,9 +1,9 @@
 import "../ArtistCard/artistcard.css";
 
-const ArtistCard = ({children,className}) => {
+const ArtistCard = ({ children, className, cardanim }) => {
   return (
-    <section className={className}>
-    {children}
+    <section cardanim={cardanim} className={className}>
+      {children}
     </section>
   );
 };
