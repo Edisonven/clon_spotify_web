@@ -2,6 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "../Principal/principal.css/";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Button from "../Button/Button";
+import ArtistCard from "../ArtistCard/ArtistCard";
 
 const Principal = () => {
   const navigate = useNavigate();
@@ -41,6 +42,15 @@ const Principal = () => {
           <Link className="principal__body__title">Artistas Populares</Link>
           <Link className="principal__body__showmore">Mostrar todo</Link>
         </div>
+        <section className="principal__artist__section">
+          <div className="artistcard__cards__container">
+            <ArtistCard className="artistcard__card">
+              <img className="artistcard__img" src="/taylor.jpeg" alt="" />
+              <h1 className="artistcard__name">Taylor Swift</h1>
+              <p className="artistcard__desc">Artista</p>
+            </ArtistCard>
+          </div>
+        </section>
       </section>
     </section>
   );

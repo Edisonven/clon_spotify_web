@@ -1,9 +1,9 @@
 import "../ArtistCard/artistcard.css";
 
-const ArtistCard = () => {
+const ArtistCard = ({children,className}) => {
   return (
-    <section className="artiscard__container">
-      <h1>Hola soy una card</h1>
+    <section className={className}>
+    {children}
     </section>
   );
 };
