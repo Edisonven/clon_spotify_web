@@ -51,6 +51,7 @@ const ValidateNumber = () => {
     } else if (!onlyNumbers.test(e)) {
       setCodeError("Solo puedes ingresar números.");
       setDisabledBtnCode(true);
+      setCodeExito("");
     } else {
       setDisabledBtnCode(false);
       setCodeError("");
