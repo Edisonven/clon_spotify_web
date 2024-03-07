@@ -2,8 +2,35 @@ import "../ResetPassword/resetpassword.css";
 import SpotifyHome from "../../SpotifyHome/SpotifyHome";
 import { NavLink } from "react-router-dom";
 import Button from "../../Button/Button";
+import { useState, useEffect } from "react";
+import Alert from "../../Alert/Alert";
+import { IoAlertCircleOutline } from "react-icons/io5";
 
 const ResetPassword = () => {
+  const [resetError, setResetError] = useState("");
+  const [inputValue, setInputValue] = useState("");
+
+  useEffect(() => {
+    const resetPasswordInput = document.querySelector(
+      ".resetpassword__form__input"
+    );
+    if (resetError) {
+      resetPasswordInput.classList.add("singup_active");
+    } else {
+      resetPasswordInput.classList.remove("singup_active");
+    }
+  }, [resetError]);
+
+  const handleFormSubtmit = (e) => {
+    e.preventDefault();
+
+    if (inputValue == "") {
+      setResetError("Este campo es obligatorio");
+    } else {
+      setResetError("");
+    }
+  };
+
   return (
     <section className="resetpassword__container">
       <nav className="singup__navbar">
@@ -23,8 +50,24 @@ const ResetPassword = () => {
         <span className="resetpassword__body__paragraph">
           Dirección de email o nombre de usuario
         </span>
-        <form className="resetpassword__body__form">
-          <input className="resetpassword__form__input" type="text" />
+        <form
+          onSubmit={(e) => handleFormSubtmit(e)}
+          className="resetpassword__body__form"
+        >
+          <input
+            onChange={(e) => setInputValue(e.target.value)}
+            value={inputValue}
+            className="resetpassword__form__input"
+            type="text"
+          />
+          {resetError ? (
+            <div className="resetpassword__form__alert__container">
+              <IoAlertCircleOutline className="resetpassword__form__alert__icon" />
+              <Alert className="resetpassword__form__alert">{resetError}</Alert>
+            </div>
+          ) : (
+            ""
+          )}
           <NavLink className="resetpassword__form__help">
             ¿Necesitas ayuda?
           </NavLink>
