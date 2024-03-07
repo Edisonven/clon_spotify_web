@@ -46,8 +46,20 @@
   border-radius: 5px;
   font-size: 1rem;
 }
-.register__number__select:focus,
+.register__number__input {
+  transition: all linear 0.07s;
+  border: 0;
+  outline: 0;
+  box-shadow: inset 0 0 0 1px var(--letterColor);
+}
+.register__number__select:hover {
+  outline: 1px solid var(--btnBgColor);
+}
 .register__number__input:focus {
+  box-shadow: inset 0 0 0 3px var(--btnBgColor);
+}
+
+.register__number__select:focus {
   outline: 2px solid var(--btnBgColor);
 }
 .register__number__select > option {

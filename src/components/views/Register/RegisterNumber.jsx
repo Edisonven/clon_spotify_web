@@ -54,6 +54,15 @@ const RegisterNumber = () => {
     handleDisabledBtn();
   }, [disabledBtn]);
 
+  useEffect(() => {
+    const singupInputValue = document.querySelector(".register__number__input");
+    if (error) {
+      singupInputValue.classList.add("singup_active");
+    } else {
+      singupInputValue.classList.remove("singup_active");
+    }
+  }, [error]);
+
   const handleNumberInput = (e) => {
     e.preventDefault();
 
