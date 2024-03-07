@@ -1,6 +1,6 @@
 import "../ResetPassword/resetpassword.css";
 import SpotifyHome from "../../SpotifyHome/SpotifyHome";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Button from "../../Button/Button";
 import { useState, useEffect } from "react";
 import Alert from "../../Alert/Alert";
@@ -10,6 +10,7 @@ const ResetPassword = () => {
   const [resetError, setResetError] = useState("");
   const [inputValue, setInputValue] = useState("");
 
+  const navigate = useNavigate();
   useEffect(() => {
     const resetPasswordInput = document.querySelector(
       ".resetpassword__form__input"
@@ -28,6 +29,7 @@ const ResetPassword = () => {
       setResetError("Este campo es obligatorio");
     } else {
       setResetError("");
+      navigate("/singup/:reset_password/:mail_sent");
     }
   };
 
@@ -71,7 +73,12 @@ const ResetPassword = () => {
           <NavLink className="resetpassword__form__help">
             ¿Necesitas ayuda?
           </NavLink>
-          <Button className="resetpassword__form__btn">Enviar enlace</Button>
+          <Button
+            onClick={handleFormSubtmit}
+            className="resetpassword__form__btn"
+          >
+            Enviar enlace
+          </Button>
         </form>
       </section>
       <footer className="resetpassword__footer">
