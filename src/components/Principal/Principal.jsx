@@ -22,7 +22,7 @@ const Principal = () => {
   const newData = [...artistData];
 
   for (const artist of newData) {
-    if (filteredArtists.length >= 7) break; // Salir del bucle si ya tenemos 7 artistas
+    if (filteredArtists.length >= 7) break;
     filteredArtists.push(artist);
     totalLength += artist.name.length;
   }

@@ -127,7 +127,7 @@
 /*ARTIST SECTION*/
 
 .artistcard__cards__container {
-  gap: 20px;
+  gap: 25px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
