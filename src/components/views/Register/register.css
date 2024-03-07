@@ -54,10 +54,10 @@ input {
   border-radius: 5px;
   height: 45px;
   background-color: transparent;
-  border: 1px solid var(--letterColor);
+  outline: 1px solid var(--letterColor);
 }
 input:hover {
-  border: 1px solid var(--btnBgColor);
+  outline: 1px solid var(--btnBgColor);
 }
 [placeholder] {
   padding-left: 20px;
