@@ -36,10 +36,9 @@ const Principal = () => {
           </div>
         </div>
       </nav>
-
       <section className="principal__body__container">
         <div className="principal__body__title__section">
-          <Link className="principal__body__title">Playlists de Spotify</Link>
+          <Link className="principal__body__title">Artistas Populares</Link>
           <Link className="principal__body__showmore">Mostrar todo</Link>
         </div>
       </section>
