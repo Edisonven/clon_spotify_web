@@ -1,0 +1,55 @@
+.mailsent__container {
+  display: flex;
+  flex-direction: column;
+  background: var(--sectionBgColor);
+  width: 100%;
+  height: 100vh;
+}
+.mailsent__body__section {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+  color: var(--btnBgColor);
+  height: 100%;
+}
+.mailsent__body__title {
+  font-size: 2rem;
+}
+.mailsent__body__section__desc {
+  margin: 20px 0;
+  width: 100%;
+  max-width: 300px;
+}
+.mailsent__body__btn {
+  cursor: pointer;
+  margin: 20px 0;
+  background-color: var(--registerColor);
+  border: none;
+  padding: 16px 50px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 90%;
+}
+.mailsent__body__btn:hover {
+  filter: brightness(105%);
+}
+.mailsent__body__btn__edit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  padding: 12px 30px;
+  background: transparent;
+  color: var(--btnBgColor);
+  outline: 1px solid var(--letterColor);
+}
+.mailsent__body__btn__edit:hover {
+  outline: 1px solid var(--btnBgColor);
+}
+.mailsent__btn__icon {
+  font-size: 2.1rem;
+}
