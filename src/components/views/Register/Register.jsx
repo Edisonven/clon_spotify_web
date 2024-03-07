@@ -21,6 +21,17 @@ const Register = () => {
     };
   }, [navigate, setError, setExito, setMail]);
 
+  useEffect(() => {
+    const singupInputPassword = document.querySelector(
+      ".register__input__correo"
+    );
+    if (error) {
+      singupInputPassword.classList.add("singup_active");
+    } else {
+      singupInputPassword.classList.remove("singup_active");
+    }
+  }, [error]);
+
   const handleSubmit = (event) => {
     event.preventDefault();
 
