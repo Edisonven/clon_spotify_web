@@ -126,15 +126,23 @@
 
 /*ARTIST SECTION*/
 
+.artistcard__cards__container {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .artistcard__card {
   margin-top: 13px;
   border-radius: 8px;
-  padding: 20px;
+  padding: 20px 16px;
   width: max-content;
   background: #181818;
 }
 .artistcard__img {
+  object-fit: cover;
   width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 .artistcard__name {
@@ -146,4 +154,5 @@
   margin-top: 10px;
   font-size: 0.85rem;
   color: var(--letterColor);
+  margin-bottom: 15px;
 }

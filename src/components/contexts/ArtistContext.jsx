@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react";
 
-const ArtistContext = createContext();
+export const ArtistContext = createContext();
 
 const artistJs = "/src/components/ArtistCard/artists.json";
 
@@ -18,7 +18,7 @@ const ArtistProvider = ({ children }) => {
   }, []);
 
   return (
-    <ArtistContext.Provider value={(artistData, setArtistData)}>
+    <ArtistContext.Provider value={{ artistData, setArtistData }}>
       {children}
     </ArtistContext.Provider>
   );
