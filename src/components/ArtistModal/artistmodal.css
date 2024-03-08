@@ -41,3 +41,59 @@
 .artistmodal__desc__section {
   text-align: center;
 }
+.artistmodal__desc__btn {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: var(--registerColor);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.artistmodal__desc__btn:hover {
+  transform: scale(1.04);
+}
+.artistmodal__desc__btn:active {
+  transform: scale(1);
+  filter: brightness(70%);
+}
+.artistmodal__desc__btn_download {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid var(--letterColor);
+  color: var(--btnBgColor);
+  padding: 14px 43px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.artistmodal__desc__btn_download:hover {
+  transform: scale(1.03);
+  border: 1px solid var(--btnBgColor);
+}
+.artistmodal__desc__btn_download:active {
+  transform: scale(1);
+  filter: brightness(70%);
+}
+.artistmodal__desc__link__section {
+  margin-top: 25px;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  color: var(--btnBgColor);
+}
+.artistmodal__desc__link__paragraph {
+  font-size: 0.83rem;
+}
+.artistmodal__desc__link {
+  font-size: 0.85rem;
+  color: var(--btnBgColor);
+  font-weight: 600;
+  text-decoration: none;
+}
+.artistmodal__desc__link:hover {
+  text-decoration: underline;
+}
