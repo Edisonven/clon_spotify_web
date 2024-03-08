@@ -159,6 +159,10 @@ const Principal = () => {
           </section>
         </section>
       </section>
+      <hr className="footer__divisor" />
+      <footer className="footer__section">
+        <h5 className="footer__section__title">© 2024 Spotify AB</h5>
+      </footer>
     </section>
   );
 };

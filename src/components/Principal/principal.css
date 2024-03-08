@@ -245,3 +245,19 @@
 .principal__social__icon:hover {
   background-color: var(--letterColor);
 }
+
+/*FOOTER SECTION*/
+.footer__divisor {
+  margin: 30px auto;
+  width: 95%;
+  height: 1px;
+  border-radius: 50%;
+  border: none;
+  background: var(--backGroundColor_2);
+}
+.footer__section__title {
+  margin-left: 40px;
+  font-size: 0.85rem;
+  color: var(--letterColor);
+  font-weight: 400;
+}
