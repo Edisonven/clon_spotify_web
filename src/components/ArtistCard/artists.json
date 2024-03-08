@@ -3,60 +3,60 @@
     "id": 1,
     "src": "/taylor.jpeg",
     "name": "Taylor Swift",
-    "desc": "Artist"
+    "desc": "Artista"
   },
   {
     "id": 2,
     "src": "/drake.jpeg",
     "name": "Drake",
-    "desc": "Artist"
+    "desc": "Artista"
   },
   {
     "id": 3,
     "src": "/kanye.jpeg",
     "name": "Kanye West",
-    "desc": "Artist"
+    "desc": "Artista"
   },
   {
     "id": 4,
     "src": "/21.jpeg",
     "name": "21 Savage",
-    "desc": "Artist"
+    "desc": "Artista"
   },
   {
     "id": 5,
     "src": "/travis.jpeg",
     "name": "Travis Scott",
-    "desc": "Artist"
+    "desc": "Artista"
   },
   {
     "id": 6,
     "src": "/morgan.jpeg",
     "name": "Morgan Wallena",
-    "desc": "Artist"
+    "desc": "Artista"
   },
   {
     "id": 7,
     "src": "/theweeknd.jpeg",
     "name": "The Weeknd",
-    "desc": "Artist"
+    "desc": "Artista"
   },
   {
     "id": 8,
     "src": "/zach.jpeg",
     "name": "Zach Bryan",
-    "desc": "Artist"
+    "desc": "Artista"
   },
   {
     "id": 9,
     "src": "/sza.jpeg",
     "name": "SZA",
-    "desc": "Artist"
+    "desc": "Artista"
   },
   {
     "id": 10,
     "src": "/future.jpeg",
     "name": "Future",
-    "desc": "Artist"
+    "desc": "Artista"
   }
 ]
