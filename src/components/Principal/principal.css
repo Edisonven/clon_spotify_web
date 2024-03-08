@@ -127,10 +127,11 @@
 /*ARTIST SECTION*/
 
 .artistcard__cards__container {
-  gap: 25px;
+  gap: 20px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .artistcard__card {
   transition: all linear 0.2s;
