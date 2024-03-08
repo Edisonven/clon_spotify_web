@@ -10,18 +10,26 @@ import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 
-const Principal = ({ showFilteredData }) => {
-  const { artistData } = useContext(ArtistContext);
-
-  const artistDataFiltered = [...artistData].slice(0, 7);
-
-  const dataToMap = showFilteredData ? artistData : artistDataFiltered;
-
+const Principal = () => {
   const navigate = useNavigate();
 
   const NavigateToSingUp = () => {
     navigate("/singup");
   };
+
+  const { artistData } = useContext(ArtistContext);
+
+  let totalLength = 0;
+
+  const filteredArtists = [];
+
+  const newData = [...artistData];
+
+  for (const artist of newData) {
+    if (filteredArtists.length >= 7) break;
+    filteredArtists.push(artist);
+    totalLength += artist.name.length;
+  }
 
   useEffect(() => {
     const cardOnHover = document.querySelectorAll(".artistcard__card");
@@ -75,10 +83,7 @@ const Principal = ({ showFilteredData }) => {
           </div>
         </div>
       </nav>
-      <section
-        style={{ marginTop: showFilteredData ? "60px" : "" }}
-        className="principal__body__container allartist__body__container "
-      >
+      <section className="principal__body__container">
         <div className="principal__body__title__section">
           <Link to="/all_artists" className="principal__body__title">
             Artistas Populares
@@ -88,13 +93,8 @@ const Principal = ({ showFilteredData }) => {
           </Link>
         </div>
         <section className="principal__artist__section">
-          <div
-            style={{
-              justifyContent: showFilteredData ? "flex-start" : "space-between",
-            }}
-            className="artistcard__cards__container"
-          >
-            {dataToMap?.map((artist) => {
+          <div className="principal__artistcard__cards__container">
+            {filteredArtists?.map((artist) => {
               return (
                 <ArtistCard key={artist.id} className="artistcard__card">
                   <img className="artistcard__img" src={artist.src} alt="" />
@@ -164,10 +164,7 @@ const Principal = ({ showFilteredData }) => {
         </section>
       </section>
       <hr className="principal__footer__divisor" />
-      <footer
-        style={{ marginBottom: showFilteredData ? "75px" : "" }}
-        className="principal__footer__section"
-      >
+      <footer className="principal__footer__section">
         <h5 className="principal__footer__section__title">© 2024 Spotify AB</h5>
       </footer>
     </section>

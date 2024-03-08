@@ -126,7 +126,7 @@
 
 /*ARTIST SECTION*/
 
-.artistcard__cards__container {
+.principal__artistcard__cards__container {
   gap: 20px;
   display: flex;
   align-items: center;
