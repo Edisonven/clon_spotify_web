@@ -14,15 +14,24 @@
   transform: translate(-50%, -50%);
   width: 810px;
   border-radius: 8px;
-  overflow: hidden;
   height: 455px;
   padding: 64px;
   display: flex;
   justify-content: space-between;
-  z-index: 51;
+  z-index: 55;
   box-shadow: 5px 5px 20px #000000a6;
 }
 
+@keyframes modalArtist {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .artistmodal__img {
   border-radius: 8px;
   object-fit: cover;
@@ -102,8 +111,8 @@
 }
 .artistmodal__close__btn {
   position: absolute;
-  top: 78%;
-  left: 48%;
+  top: 105%;
+  left: 46%;
   background: transparent;
   border: none;
   color: var(--letterColor);

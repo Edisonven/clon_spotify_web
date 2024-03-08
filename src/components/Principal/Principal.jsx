@@ -3,13 +3,12 @@ import "../Principal/principal.css/";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Button from "../Button/Button";
 import ArtistCard from "../ArtistCard/ArtistCard";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import { ArtistContext } from "../contexts/ArtistContext";
 import { IoIosPlay } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
-import ArtistModal from "../ArtistModal/ArtistModal";
 
 const Principal = () => {
   const navigate = useNavigate();

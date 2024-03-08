@@ -16,17 +16,17 @@ function App() {
         <Route path="*" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route
-          path="/register/:register_with_number"
+          path="/register/register_with_number"
           element={<RegisterNumber />}
         />
         <Route
-          path="/register/:register_with_number/:validate_number"
+          path="/register/register_with_number/validate_number"
           element={<ValidateNumber />}
         />
         <Route path="/singup" element={<SingUp />} />
-        <Route path="/singup/:reset_password" element={<ResetPassword />} />
+        <Route path="/singup/reset_password" element={<ResetPassword />} />
         <Route
-          path="/singup/:reset_password/:mail_sent"
+          path="/singup/reset_password/mail_sent"
           element={<MailSent />}
         />
       </Routes>

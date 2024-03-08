@@ -8,7 +8,7 @@ const MailSent = () => {
   const navigate = useNavigate();
 
   const editMail = () => {
-    navigate("/singup/:reset_password");
+    navigate("/singup/reset_password");
   };
 
   const singUpBack = () => {

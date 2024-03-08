@@ -102,7 +102,7 @@ const Register = () => {
               </div>
             ) : null}
             <NavLink
-              to="/register/:register_with_number"
+              to="/register/register_with_number"
               className="register__number__link"
             >
               Usar el número de teléfono.

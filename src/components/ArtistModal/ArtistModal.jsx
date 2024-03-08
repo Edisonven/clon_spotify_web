@@ -59,15 +59,15 @@ const ArtistModal = () => {
             </NavLink>
           </div>
         </div>
+        {artistModal ? (
+          <button
+            onClick={() => setArtistModal(false)}
+            className="artistmodal__close__btn"
+          >
+            Cerrar
+          </button>
+        ) : null}
       </div>
-      {artistModal ? (
-        <button
-          onClick={() => setArtistModal(false)}
-          className="artistmodal__close__btn"
-        >
-          Cerrar
-        </button>
-      ) : null}
     </section>
   );
 };

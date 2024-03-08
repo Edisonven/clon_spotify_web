@@ -73,7 +73,7 @@ const RegisterNumber = () => {
       setError_2("Verifica tu número de teléfono.");
       setError("");
     } else {
-      navigate("/register/:register_with_number/validate_number");
+      navigate("/register/register_with_number/validate_number");
     }
   };
 

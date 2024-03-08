@@ -29,7 +29,7 @@ const ResetPassword = () => {
       setResetError("Este campo es obligatorio");
     } else {
       setResetError("");
-      navigate("/singup/:reset_password/:mail_sent");
+      navigate("/singup/reset_password/mail_sent");
     }
   };
 
