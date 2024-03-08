@@ -100,7 +100,7 @@ const AllArtist = () => {
           </h1>
         </div>
         <section className="principal__artist__section allartist__artist__section">
-          <div className="allartist__artistcard__cards__container">
+          <div className="principal__artistcard__cards__container allartist__artistcard__cards__container">
             {artistData?.map((artist) => {
               return (
                 <ArtistCard key={artist.id} className="artistcard__card">
