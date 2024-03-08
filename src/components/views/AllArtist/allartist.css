@@ -1,17 +1,17 @@
-/*BODY SECTION*/
-.allartist__body__container {
+.allartist {
+  grid-area: principal;
+  overflow: auto;
+}
+
+.allartist .allartist__body__container {
   margin-top: 60px;
 }
 
-/*ARTIST SECTION*/
-
-.allartist__artistcard__cards__container {
+.allartist .allartist__artistcard__cards__container {
   gap: 22px;
   justify-content: flex-start;
 }
 
-/*FOOTER SECTION*/
-
-.allartist__footer__section {
+.allartist .allartist__footer__section {
   margin-bottom: 75px;
 }

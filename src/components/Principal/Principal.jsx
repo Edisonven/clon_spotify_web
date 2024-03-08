@@ -10,15 +10,15 @@ import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 
-const Principal = () => {
+const Principal = ({ fullArray = false }) => {
+  const { artistData, openArtistModal } = useContext(ArtistContext);
+  const filteredArtists = fullArray ? artistData : [...artistData].slice(0, 7);
+
+  console.log(fullArray);
   const navigate = useNavigate();
   const NavigateToSingUp = () => {
     navigate("/singup");
   };
-
-  const { artistData, openArtistModal } = useContext(ArtistContext);
-
-  const filteredArtists = [...artistData].slice(0, 7);
 
   useEffect(() => {
     const cardOnHover = document.querySelectorAll(".artistcard__card");
@@ -72,7 +72,7 @@ const Principal = () => {
           </div>
         </div>
       </nav>
-      <section className="principal__body__container">
+      <section className="principal__body__container allartist__body__container">
         <div className="principal__body__title__section">
           <Link to="/all_artists" className="principal__body__title">
             Artistas Populares
@@ -82,7 +82,7 @@ const Principal = () => {
           </Link>
         </div>
         <section className="principal__artist__section">
-          <div className="principal__artistcard__cards__container">
+          <div className="principal__artistcard__cards__container allartist__artistcard__cards__container">
             {filteredArtists?.map((artist) => {
               return (
                 <ArtistCard key={artist.id} className="artistcard__card">
@@ -155,8 +155,8 @@ const Principal = () => {
           </section>
         </section>
       </section>
-      <hr className="principal__footer__divisor" />
-      <footer className="principal__footer__section">
+      <hr className="principal__footer__divisor allartist" />
+      <footer className="principal__footer__section allartist__footer__section">
         <h5 className="principal__footer__section__title">© 2024 Spotify AB</h5>
       </footer>
     </section>
