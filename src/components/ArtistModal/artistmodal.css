@@ -20,6 +20,7 @@
   display: flex;
   justify-content: space-between;
   z-index: 51;
+  box-shadow: 5px 5px 20px #000000a6;
 }
 .artistmodal__img {
   border-radius: 8px;
