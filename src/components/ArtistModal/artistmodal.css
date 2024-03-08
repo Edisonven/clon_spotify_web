@@ -22,10 +22,12 @@
   z-index: 51;
   box-shadow: 5px 5px 20px #000000a6;
 }
+
 .artistmodal__img {
   border-radius: 8px;
   object-fit: cover;
   width: 300px;
+  box-shadow: 0 0 100px #000000a6;
 }
 .artistmodal__img__container {
   margin-right: 55px;
