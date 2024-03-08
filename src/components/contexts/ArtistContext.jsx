@@ -6,6 +6,7 @@ const artistJs = "/artists.json";
 
 const ArtistProvider = ({ children }) => {
   const [artistData, setArtistData] = useState([]);
+  const [artistModal, setArtistModal] = useState([]);
 
   const getArtistData = async () => {
     const response = await fetch(artistJs);
@@ -17,11 +18,22 @@ const ArtistProvider = ({ children }) => {
     getArtistData();
   }, []);
 
+  const openArtistModal = (artist) => {
+    const newData = [...artistData].find((a) => a.id === artist.id);
+    if (newData) {
+      setArtistModal(newData);
+    }
+    return;
+  };
+
   return (
     <ArtistContext.Provider
       value={{
         artistData,
         setArtistData,
+        artistModal,
+        setArtistModal,
+        openArtistModal,
       }}
     >
       {children}

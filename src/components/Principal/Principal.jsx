@@ -3,7 +3,7 @@ import "../Principal/principal.css/";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Button from "../Button/Button";
 import ArtistCard from "../ArtistCard/ArtistCard";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ArtistContext } from "../contexts/ArtistContext";
 import { IoIosPlay } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa6";
@@ -13,12 +13,11 @@ import ArtistModal from "../ArtistModal/ArtistModal";
 
 const Principal = () => {
   const navigate = useNavigate();
-
   const NavigateToSingUp = () => {
     navigate("/singup");
   };
 
-  const { artistData } = useContext(ArtistContext);
+  const { artistData, openArtistModal } = useContext(ArtistContext);
 
   const filteredArtists = [...artistData].slice(0, 7);
 
@@ -91,10 +90,10 @@ const Principal = () => {
                   <img className="artistcard__img" src={artist.src} alt="" />
                   <h1 className="artistcard__name">{artist.name}</h1>
                   <p className="artistcard__desc">{artist.desc}</p>
-                  <IoIosPlay className="artistcard__play__icon" />
-                  {/*     <ArtistModal className="principal__artist__card__modal">
-                    <img src={artist.src} alt="" />
-                  </ArtistModal> */}
+                  <IoIosPlay
+                    onClick={() => openArtistModal(artist)}
+                    className="artistcard__play__icon"
+                  />
                 </ArtistCard>
               );
             })}

@@ -1,9 +1,12 @@
+import { useContext } from "react";
 import "../ArtistModal/artistmodal.css";
+import { ArtistContext } from "../contexts/ArtistContext";
 
-const ArtistModal = ({children, className}) => {
+const ArtistModal = () => {
+  const { artistModal } = useContext(ArtistContext);
   return (
-    <section className={className}>
-    {children}
+    <section className="artistmodal__container">
+      <img src={artistModal.src} alt="" />
     </section>
   );
 };
