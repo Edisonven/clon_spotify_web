@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 65;
+  z-index: 50;
   transition: linear 0.2s;
 }
 
@@ -19,7 +19,7 @@
   padding: 64px;
   display: flex;
   justify-content: space-between;
-  z-index: 60;
+  z-index: 51;
 }
 .artistmodal__img {
   border-radius: 8px;
@@ -96,4 +96,19 @@
 }
 .artistmodal__desc__link:hover {
   text-decoration: underline;
+}
+.artistmodal__close__btn {
+  position: absolute;
+  top: 78%;
+  left: 48%;
+  background: transparent;
+  border: none;
+  color: var(--letterColor);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.artistmodal__close__btn:hover {
+  color: var(--btnBgColor);
+  transform: scale(1.07);
 }

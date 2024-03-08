@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 import { NavLink } from "react-router-dom";
 
 const ArtistModal = () => {
-  const { artistModal } = useContext(ArtistContext);
+  const { artistModal, setArtistModal } = useContext(ArtistContext);
   return (
     <section
       style={{
@@ -43,6 +43,14 @@ const ArtistModal = () => {
           </div>
         </div>
       </div>
+      {artistModal ? (
+        <button
+          onClick={() => setArtistModal(false)}
+          className="artistmodal__close__btn"
+        >
+          Cerrar
+        </button>
+      ) : null}
     </section>
   );
 };
