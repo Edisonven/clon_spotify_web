@@ -85,7 +85,9 @@ const Principal = () => {
       </nav>
       <section className="principal__body__container">
         <div className="principal__body__title__section">
-          <Link className="principal__body__title">Artistas Populares</Link>
+          <Link to="/all_artists" className="principal__body__title">
+            Artistas Populares
+          </Link>
           <Link to="/all_artists" className="principal__body__showmore">
             Mostrar todo
           </Link>
