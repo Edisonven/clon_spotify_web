@@ -30,7 +30,7 @@ function App() {
           element={<MailSent />}
         />
       </Routes>
-      <ArtistModal></ArtistModal>
+      <ArtistModal />
     </section>
   );
 }

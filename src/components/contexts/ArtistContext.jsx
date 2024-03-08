@@ -6,7 +6,7 @@ const artistJs = "/artists.json";
 
 const ArtistProvider = ({ children }) => {
   const [artistData, setArtistData] = useState([]);
-  const [artistModal, setArtistModal] = useState([]);
+  const [artistModal, setArtistModal] = useState(false);
 
   const getArtistData = async () => {
     const response = await fetch(artistJs);
