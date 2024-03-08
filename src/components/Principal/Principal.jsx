@@ -86,7 +86,9 @@ const Principal = () => {
       <section className="principal__body__container">
         <div className="principal__body__title__section">
           <Link className="principal__body__title">Artistas Populares</Link>
-          <Link className="principal__body__showmore">Mostrar todo</Link>
+          <Link to="/all_artists" className="principal__body__showmore">
+            Mostrar todo
+          </Link>
         </div>
         <section className="principal__artist__section">
           <div className="artistcard__cards__container">

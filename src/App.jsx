@@ -12,7 +12,7 @@ function App() {
   return (
     <section className="app__container">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route
           path="/register/:register_with_number"

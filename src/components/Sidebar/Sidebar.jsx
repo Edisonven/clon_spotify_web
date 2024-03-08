@@ -32,7 +32,7 @@ const Sidebar = () => {
           </SpotifyHome>
         </div>
         <div className="sidebar__logo__inicio">
-          <NavLink className="sidebar__logo__link">
+          <NavLink to="/" className="sidebar__logo__link">
             <span className="material-symbols-outlined sidebar__icon sidebar__icon__inicio">
               home
             </span>
