@@ -18,7 +18,7 @@ const ArtistModal = () => {
       <div
         style={{
           display: artistModal ? "flex" : "none",
-          background: artistModal.color,
+          background: `linear-gradient(to bottom, ${artistModal.color}, #292929`,
         }}
         className="artistmodal__body"
       >
