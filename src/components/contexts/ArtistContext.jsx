@@ -18,7 +18,12 @@ const ArtistProvider = ({ children }) => {
   }, []);
 
   return (
-    <ArtistContext.Provider value={{ artistData, setArtistData }}>
+    <ArtistContext.Provider
+      value={{
+        artistData,
+        setArtistData,
+      }}
+    >
       {children}
     </ArtistContext.Provider>
   );
