@@ -2,7 +2,7 @@ import { createContext, useEffect, useState } from "react";
 
 export const ArtistContext = createContext();
 
-const artistJs = "/src/components/ArtistCard/artists.json";
+const artistJs = "/artists.json";
 
 const ArtistProvider = ({ children }) => {
   const [artistData, setArtistData] = useState([]);
