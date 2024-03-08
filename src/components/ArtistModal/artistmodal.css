@@ -12,9 +12,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 810px;
+  max-width: 810px;
+  width: 100%;
   border-radius: 8px;
-  height: 455px;
+  max-height: 455px;
   padding: 64px;
   display: flex;
   justify-content: space-between;
@@ -123,4 +124,19 @@
 .artistmodal__close__btn:hover {
   color: var(--btnBgColor);
   transform: scale(1.07);
+}
+
+@media (max-width: 1000px) {
+  .artistmodal__body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 100%;
+    max-width: 450px;
+  }
+
+  .artistmodal__img__container {
+    margin: 0;
+    justify-content: center;
+  }
 }
