@@ -3,60 +3,70 @@
     "id": 1,
     "src": "/taylor.jpeg",
     "name": "Taylor Swift",
-    "desc": "Artista"
+    "desc": "Artista",
+    "color": "#3A4650"
   },
   {
     "id": 2,
     "src": "/drake.jpeg",
     "name": "Drake",
-    "desc": "Artista"
+    "desc": "Artista",
+    "color": "#303030"
   },
   {
     "id": 3,
     "src": "/kanye.jpeg",
     "name": "Kanye West",
-    "desc": "Artista"
+    "desc": "Artista",
+    "color": "#2A2A2A"
   },
   {
     "id": 4,
     "src": "/21.jpeg",
     "name": "21 Savage",
-    "desc": "Artista"
+    "desc": "Artista",
+    "color": "#424444"
   },
   {
     "id": 5,
     "src": "/travis.jpeg",
     "name": "Travis Scott",
-    "desc": "Artista"
+    "desc": "Artista",
+    "color": "#653632"
   },
   {
     "id": 6,
     "src": "/morgan.jpeg",
     "name": "Morgan Wallena",
-    "desc": "Artista"
+    "desc": "Artista",
+    "color": "#444455"
   },
   {
     "id": 7,
     "src": "/theweeknd.jpeg",
     "name": "The Weeknd",
-    "desc": "Artista"
+    "desc": "Artista",
+    "color": "#273D5D"
   },
   {
     "id": 8,
     "src": "/zach.jpeg",
     "name": "Zach Bryan",
-    "desc": "Artista"
+    "desc": "Artista",
+    "color": "#1D2F33"
   },
   {
     "id": 9,
     "src": "/sza.jpeg",
     "name": "SZA",
-    "desc": "Artista"
+    "desc": "Artista",
+    "color": "#261919"
   },
   {
     "id": 10,
     "src": "/future.jpeg",
     "name": "Future",
-    "desc": "Artista"
+    "desc": "Artista",
+    "color": "#27110D"
   }
 ]
