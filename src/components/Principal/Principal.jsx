@@ -9,6 +9,7 @@ import { IoIosPlay } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
+import ArtistModal from "../ArtistModal/ArtistModal";
 
 const Principal = () => {
   const navigate = useNavigate();
@@ -19,17 +20,7 @@ const Principal = () => {
 
   const { artistData } = useContext(ArtistContext);
 
-  let totalLength = 0;
-
-  const filteredArtists = [];
-
-  const newData = [...artistData];
-
-  for (const artist of newData) {
-    if (filteredArtists.length >= 7) break;
-    filteredArtists.push(artist);
-    totalLength += artist.name.length;
-  }
+  const filteredArtists = [...artistData].slice(0, 7);
 
   useEffect(() => {
     const cardOnHover = document.querySelectorAll(".artistcard__card");
@@ -101,6 +92,9 @@ const Principal = () => {
                   <h1 className="artistcard__name">{artist.name}</h1>
                   <p className="artistcard__desc">{artist.desc}</p>
                   <IoIosPlay className="artistcard__play__icon" />
+                  {/*     <ArtistModal className="principal__artist__card__modal">
+                    <img src={artist.src} alt="" />
+                  </ArtistModal> */}
                 </ArtistCard>
               );
             })}
