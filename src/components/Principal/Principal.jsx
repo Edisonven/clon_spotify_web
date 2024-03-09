@@ -9,6 +9,7 @@ import { IoIosPlay } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa6";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
+import PrincipalFooter from "../PrincipalFooter/PrincipalFooter";
 
 const Principal = ({ fullArray = false }) => {
   const { artistData, openArtistModal } = useContext(ArtistContext);
@@ -57,7 +58,7 @@ const Principal = ({ fullArray = false }) => {
             <Link className="principal__navbar__link">Ayuda</Link>
             <Link className="principal__navbar__link">Descargar</Link>
           </div>
-          <span className="principal__navbar__divisor">'</span>
+          <span className="principal__navbar__divisor"></span>
           <div className="principal__navbar__register">
             <Link to="/register" className="principal__navbar__link__register">
               Regístrate
@@ -155,9 +156,9 @@ const Principal = ({ fullArray = false }) => {
         </section>
       </section>
       <hr className="principal__footer__divisor allartist" />
-      <footer className="principal__footer__section allartist__footer__section">
+      <PrincipalFooter className="principal__footer__section allartist__footer__section">
         <h5 className="principal__footer__section__title">© 2024 Spotify AB</h5>
-      </footer>
+      </PrincipalFooter>
     </section>
   );
 };
