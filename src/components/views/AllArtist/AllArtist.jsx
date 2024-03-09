@@ -37,7 +37,7 @@ const AllArtist = () => {
   }, [artistData]);
 
   return (
-    <section className="principal__container">
+    <section className="principal__container allartist">
       <PrincipalNavbar />
       <section className="principal__body__container allartist__body__container">
         <div className="principal__body__title__section">
