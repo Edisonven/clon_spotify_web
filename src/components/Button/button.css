@@ -18,22 +18,3 @@
   opacity: 70%;
   transform: scale(1);
 }
-
-.footer__register__btn {
-  font-weight: 700;
-  font-size: 0.95rem;
-  margin-right: 12px;
-  cursor: pointer;
-  border: none;
-  background-color: var(--btnBgColor);
-  border-radius: 30px;
-  padding: 15px 33px;
-}
-
-.footer__register__btn:hover {
-  transform: scale(1.03);
-}
-.footer__register__btn:active {
-  transform: scale(1);
-  background-color: var(--backGroundBtn);
-}

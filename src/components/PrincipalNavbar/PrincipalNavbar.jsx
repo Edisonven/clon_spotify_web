@@ -1,5 +1,5 @@
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import Button from "../Button/Button";
+import Button from "../Button/Button.jsx";
 import { Link, useNavigate } from "react-router-dom";
 
 const PrincipalNavbar = () => {

@@ -88,10 +88,10 @@
 
 .principal__navbar__btn {
   height: 100%;
-  font-size: 0.94rem;
-  padding: 15px 33px ;
+  font-size: 0.94rem !important;
+  padding: 15px 33px !important;
   margin: 0 5px;
-  font-weight: 600;
+  font-weight: 600 !important;
 }
 
 /*BODY SECTION*/
