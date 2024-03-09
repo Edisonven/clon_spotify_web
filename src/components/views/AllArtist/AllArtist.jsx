@@ -10,30 +10,11 @@ import PrincipalFooter from "../../PrincipalFooter/PrincipalFooter";
 import PrincipalLinks from "../../PrincipalLinks/PrincipalLinks";
 
 const AllArtist = () => {
-  const { artistData, openArtistModal } = useContext(ArtistContext);
+  const { artistData, openArtistModal, applyHoverEffects } =
+    useContext(ArtistContext);
+
   useEffect(() => {
-    const cardOnHover = document.querySelectorAll(".artistcard__card");
-
-    cardOnHover.forEach((card) => {
-      const icon = card.querySelector(".artistcard__play__icon");
-
-      const handleMouseEnter = () => {
-        card.classList.add("inverse");
-        if (icon) {
-          icon.classList.add("inverse");
-        }
-      };
-
-      const handleMouseLeave = () => {
-        card.classList.remove("inverse");
-        if (icon) {
-          icon.classList.remove("inverse");
-        }
-      };
-
-      card.addEventListener("mouseenter", handleMouseEnter);
-      card.addEventListener("mouseleave", handleMouseLeave);
-    });
+    applyHoverEffects();
   }, [artistData]);
 
   return (

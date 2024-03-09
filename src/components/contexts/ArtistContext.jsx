@@ -26,6 +26,31 @@ const ArtistProvider = ({ children }) => {
     return;
   };
 
+  const applyHoverEffects = () => {
+    const cardOnHover = document.querySelectorAll(".artistcard__card");
+
+    cardOnHover.forEach((card) => {
+      const icon = card.querySelector(".artistcard__play__icon");
+
+      const handleMouseEnter = () => {
+        card.classList.add("inverse");
+        if (icon) {
+          icon.classList.add("inverse");
+        }
+      };
+
+      const handleMouseLeave = () => {
+        card.classList.remove("inverse");
+        if (icon) {
+          icon.classList.remove("inverse");
+        }
+      };
+
+      card.addEventListener("mouseenter", handleMouseEnter);
+      card.addEventListener("mouseleave", handleMouseLeave);
+    });
+  };
+
   return (
     <ArtistContext.Provider
       value={{
@@ -34,6 +59,7 @@ const ArtistProvider = ({ children }) => {
         artistModal,
         setArtistModal,
         openArtistModal,
+        applyHoverEffects,
       }}
     >
       {children}

@@ -10,32 +10,12 @@ import { IoIosPlay } from "react-icons/io";
 import ArtistCard from "../ArtistCard/ArtistCard";
 
 const Principal = () => {
-  const { artistData, openArtistModal } = useContext(ArtistContext);
+  const { artistData, openArtistModal, applyHoverEffects } =
+    useContext(ArtistContext);
   const filteredArtists = [...artistData].slice(0, 7);
 
   useEffect(() => {
-    const cardOnHover = document.querySelectorAll(".artistcard__card");
-
-    cardOnHover.forEach((card) => {
-      const icon = card.querySelector(".artistcard__play__icon");
-
-      const handleMouseEnter = () => {
-        card.classList.add("inverse");
-        if (icon) {
-          icon.classList.add("inverse");
-        }
-      };
-
-      const handleMouseLeave = () => {
-        card.classList.remove("inverse");
-        if (icon) {
-          icon.classList.remove("inverse");
-        }
-      };
-
-      card.addEventListener("mouseenter", handleMouseEnter);
-      card.addEventListener("mouseleave", handleMouseLeave);
-    });
+    applyHoverEffects();
   }, [artistData]);
 
   return (
