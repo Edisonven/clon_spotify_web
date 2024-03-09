@@ -15,3 +15,7 @@
 .allartist .allartist__footer__section {
   margin-bottom: 75px;
 }
+
+.allartist .allartist__body__title:hover {
+  text-decoration: none;
+}
