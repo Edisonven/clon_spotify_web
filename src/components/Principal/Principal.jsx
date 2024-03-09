@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 import "../Principal/principal.css/";
-import ArtistCard from "../ArtistCard/ArtistCard";
 import { useContext, useEffect } from "react";
 import { ArtistContext } from "../contexts/ArtistContext";
-import { IoIosPlay } from "react-icons/io";
-
 import PrincipalFooter from "../PrincipalFooter/PrincipalFooter";
 import PrincipalLinks from "../PrincipalLinks/PrincipalLinks";
 import PrincipalNavbar from "../PrincipalNavbar/PrincipalNavbar";
+import PrincipalArtistsCards from "../PrincipalArtistsCards/PrincipalArtistsCards";
+import { IoIosPlay } from "react-icons/io";
+import ArtistCard from "../ArtistCard/ArtistCard";
 
-const Principal = ({ fullArray = false }) => {
+const Principal = () => {
   const { artistData, openArtistModal } = useContext(ArtistContext);
-  const filteredArtists = fullArray ? artistData : [...artistData].slice(0, 7);
+  const filteredArtists = [...artistData].slice(0, 7);
 
   useEffect(() => {
     const cardOnHover = document.querySelectorAll(".artistcard__card");
@@ -51,7 +51,7 @@ const Principal = ({ fullArray = false }) => {
           </Link>
         </div>
         <section className="principal__artist__section">
-          <div className="principal__artistcard__cards__container allartist__artistcard__cards__container">
+          <PrincipalArtistsCards className="principal__artistcard__cards__container allartist__artistcard__cards__container">
             {filteredArtists?.map((artist) => {
               return (
                 <ArtistCard key={artist.id} className="artistcard__card">
@@ -65,7 +65,7 @@ const Principal = ({ fullArray = false }) => {
                 </ArtistCard>
               );
             })}
-          </div>
+          </PrincipalArtistsCards>
         </section>
         <PrincipalLinks />
       </section>
