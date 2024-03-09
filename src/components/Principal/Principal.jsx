@@ -49,10 +49,7 @@ const Principal = () => {
         </section>
         <PrincipalLinks />
       </section>
-      <hr className="principal__footer__divisor allartist" />
-      <PrincipalFooter className="principal__footer__section allartist__footer__section">
-        <h5 className="principal__footer__section__title">© 2024 Spotify AB</h5>
-      </PrincipalFooter>
+      <PrincipalFooter />
     </section>
   );
 };
