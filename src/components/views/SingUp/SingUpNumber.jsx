@@ -1,4 +1,4 @@
-import "../Register/registernumber.css";
+import "../SingUp/singupnumber.css";
 import SpotifyHome from "../../SpotifyHome/SpotifyHome";
 import Button from "../../Button/Button";
 import { useContext, useEffect, useState } from "react";
@@ -73,7 +73,7 @@ const RegisterNumber = () => {
       setError_2("Verifica tu número de teléfono.");
       setError("");
     } else {
-      navigate("/register/register_with_number/validate_number");
+      navigate("/singup/singup_with_number/validate_number");
     }
   };
 

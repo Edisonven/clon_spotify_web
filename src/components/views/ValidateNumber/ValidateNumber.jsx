@@ -115,7 +115,7 @@ const ValidateNumber = () => {
           ) : null}
           <div className="validatenumber__code__section">
             <NavLink
-              to="/register/register_with_number"
+              to="/singup/singup_with_number"
               className="validationnumber__code__link"
             >
               Obtener nuevo código

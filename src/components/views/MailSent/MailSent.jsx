@@ -8,11 +8,11 @@ const MailSent = () => {
   const navigate = useNavigate();
 
   const editMail = () => {
-    navigate("/singup/reset_password");
+    navigate("/singin/reset_password");
   };
 
-  const singUpBack = () => {
-    navigate("/singup");
+  const singInBack = () => {
+    navigate("/singin");
   };
 
   return (
@@ -31,7 +31,7 @@ const MailSent = () => {
           Te enviamos un email. Sigue las instrucciones para volver a ingresar a
           tu cuenta.
         </p>
-        <Button onClick={singUpBack} className="mailsent__body__btn">
+        <Button onClick={singInBack} className="mailsent__body__btn">
           Regresar al inicio de sesión
         </Button>
         <Button

@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 const PrincipalNavbar = () => {
   const navigate = useNavigate();
   const NavigateToSingUp = () => {
-    navigate("/singup");
+    navigate("/singin");
   };
   return (
     <nav className="principal__navbar">
@@ -21,7 +21,7 @@ const PrincipalNavbar = () => {
         </div>
         <span className="principal__navbar__divisor"></span>
         <div className="principal__navbar__register">
-          <Link to="/register" className="principal__navbar__link__register">
+          <Link to="/singup" className="principal__navbar__link__register">
             Regístrate
           </Link>
           <Button

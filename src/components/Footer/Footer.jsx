@@ -6,7 +6,7 @@ const Footer = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate("/register");
+    navigate("/singup");
   };
 
   return (

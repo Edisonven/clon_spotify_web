@@ -1,70 +1,120 @@
-.singup__container {
+.register__container {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  background-image: linear-gradient(
-    to top,
-    var(--backGroundColor) 20%,
-    var(--backGroundColor_2) 80%
-  );
+  gap: 50px;
+  background: var(--sectionBgColor);
   width: 100%;
+  height: 100vh;
+  padding: 30px;
 }
-.singup__logo__link__spotify {
+.register__logo__link__spotify {
   display: flex;
   align-items: center;
   gap: 1px;
   text-decoration: none;
 }
-.singup__icon {
+.register__icon {
   font-size: 2.5rem;
   color: var(--btnBgColor);
 }
-.singup__paragraph {
+.register__paragraph {
   font-weight: 500;
   font-size: 1.3rem;
   color: var(--btnBgColor);
 }
-.singup__navbar {
-  background: var(--sectionBgColor);
-  padding: 30px;
-}
-.singup__body__section {
-  width: 100%;
+.register__section__container {
+  margin: 0 auto;
+  max-width: 600px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
-.singup__body__container {
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-  max-width: 750px;
-  background-image: linear-gradient(
-    to top,
-    var(--backGroundColor_2) 10%,
-    var(--sectionBgColor) 40%
-  );
-  width: 100%;
-}
-.singup__body__title {
-  width: 100%;
+.register__section__title {
   color: var(--btnBgColor);
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
-  margin: 50px 0;
 }
-.singup__social__section {
+.resgister__form__container {
+  width: 100%;
+  margin-top: 25px;
+  max-width: 350px;
+}
+.register__form {
+  color: var(--btnBgColor);
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+}
+.register__label__correo {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.register__input__correo {
+  transition: all linear 0.07s;
+  border: 0;
+  outline: 0;
+  box-shadow: inset 0 0 0 1px var(--letterColor);
+  height: 50px;
+  margin-bottom: 20px;
+}
+.register__input__correo:hover {
+  border: none;
+  outline: 1px solid var(--btnBgColor);
+}
+.register__input__correo:focus:hover {
+  outline: 0;
+}
+.register__input__correo:focus {
+  box-shadow: inset 0 0 0 3px var(--btnBgColor);
+}
+[placeholder] {
+  padding-left: 20px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--btnBgColor);
+}
+.register__number__link {
+  color: var(--registerColor);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.register__number__btn {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: var(--registerColor);
+  border: none;
+  padding: 12px 50px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.register__number__btn:hover {
+  filter: brightness(110%);
+}
+.register__divisor__container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+.register__divisor {
+  border: 1px solid #868585a8;
+  width: 100%;
+}
+.register__divisor__last {
+  margin-top: 15px;
+  border: 1px solid #86858559;
+}
+.register__social__section {
+  display: flex;
+  gap: 20px;
   flex-direction: column;
   align-items: center;
-  max-width: 320px;
-  width: 100%;
-  margin: 0 auto;
 }
-.singup__social__btn {
+.register__social__btn {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
   cursor: pointer;
   width: 100%;
   padding: 12px 20px;
@@ -75,191 +125,45 @@
   font-size: 1rem;
   font-weight: 700;
 }
-.singup__social__btn__number {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.register__social__btn:hover {
+  outline: 2px solid var(--btnBgColor);
 }
-.singup__social__btn:hover {
-  outline: 1px solid var(--btnBgColor);
-}
-.singup__social__btn__icon {
+.register__social__btn__icon {
   width: 22px;
 }
-.singup__cuenta__section {
-  margin: 0 auto 50px;
+.register__cuenta__secdtion {
   display: flex;
   gap: 20px;
   align-items: center;
   color: var(--letterColor);
 }
-.singup__divisor {
-  border: 1px solid #868585a8;
-  width: 100%;
-}
-.singup__divisor__last {
-  margin: 50px auto;
-  max-width: 500px;
 
-  border: 1px solid #86858559;
-}
-.singup__cuenta__link {
+.register__cuenta__link {
   color: var(--btnBgColor);
 }
-.singup__form__section {
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
-}
-.singup__from {
-  color: var(--btnBgColor);
-  display: flex;
-  flex-direction: column;
-}
-.singup__form__input {
-  transition: all linear 0.07s;
-  border: 0;
-  outline: 0;
-  box-shadow: inset 0 0 0 1px var(--letterColor);
-  height: 50px;
-  margin-bottom: 20px;
-}
-.singup__form__input:hover {
-  border: none;
-  outline: 1px solid var(--btnBgColor);
-}
-.singup__form__input:focus:hover {
-  outline: 0;
-}
-.singup__form__input:focus {
-  box-shadow: inset 0 0 0 3px var(--btnBgColor);
-}
-
-.singup__form__input__password__container {
-  position: relative;
-}
-.singup__form__eye__icon {
-  color: var(--letterColor);
-  font-size: 1.7rem;
-  position: absolute;
-  top: 20px;
-  right: 3%;
-}
-.singup__form__eye__icon:hover {
-  transform: scale(1.1);
-  color: var(--btnBgColor);
-}
-.singup__form__eye__icon:active {
-  transform: scale(1);
-  color: var(--letterColor);
-}
-
-.singup__form__input__password {
-  width: 100%;
-}
-.singup__form__btn {
-  cursor: pointer;
-  margin: 40px 0;
-  background-color: var(--registerColor);
-  border: none;
-  padding: 17px 50px;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: 700;
-}
-.singup__form__btn:hover {
-  transform: scale(1.03);
-}
-.singup__form__btn:active {
-  transition: all linear 0.2s;
-  transform: scale(1);
-  outline: 3px solid var(--backGroundColor);
-  background-color: #14a148;
-}
-.singup__form__btn:active::after {
-  position: absolute;
-  content: "";
-  top: -7px;
-  bottom: -7px;
-  left: -7px;
-  right: -7px;
-  border: 4px solid;
-  border-color: var(--btnBgColor);
-  pointer-events: none;
-  border-radius: 32px;
-}
-.singup__from__link {
-  color: var(--btnBgColor);
-  margin: 0 auto;
-}
-
-.singup__from__link:hover,
-.singup__cuenta__link:hover {
-  color: var(--registerColor);
-}
-
-.singup__footer__section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  background: var(--sectionBgColor);
+.register__footer__section {
+  text-align: center;
   color: var(--letterColor);
   font-size: 0.7rem;
 }
-.singup__footer__link {
+.register__footer__link {
   color: var(--letterColor);
 }
-.singup__form__alert__container {
-  padding: 0 20px;
+.register__alert__container {
   display: flex;
+  align-items: stretch;
   gap: 10px;
-  align-items: center;
-  justify-content: flex-start;
-  max-width: 650px;
-  width: 100%;
-  margin: 0 auto 20px;
-  height: 50px;
-  color: var(--btnBgColor);
-  background: #e91429;
 }
-.singup__form__alert {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 50px;
-}
-.singup__form__alert__icon {
-  font-size: 1.8rem;
-}
-.singup__form__username__alert {
+.register__alert {
+  color: var(--alertColor_1);
+  font-size: 0.8rem;
+  font-weight: 600;
   margin-bottom: 10px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: var(--alertColor_1);
 }
-.singup__form__username__alert__container {
-  display: flex;
-  gap: 10px;
-  align-items: normal;
-}
-.singup__form__username__icon {
-  color: var(--alertColor_1);
+.register__alert__icon {
   transform: scale(2.5);
-}
-
-.singup__form__password__alert {
-  margin-bottom: 25px;
-  font-weight: 600;
-  font-size: 0.9rem;
   color: var(--alertColor_1);
 }
-.singup__form__password__alert__container {
-  display: flex;
-  gap: 5px;
-  align-items: normal;
-}
-.singup__form__password__icon {
-  color: var(--alertColor_1);
-  transform: scale(1.4);
+.register__alert__exito {
+  color: green;
 }

@@ -8,7 +8,7 @@ const ArtistModal = () => {
   const navigate = useNavigate();
 
   const navigateToRegister = () => {
-    navigate("/register");
+    navigate("/singup");
   };
 
   const { pathname } = useLocation();

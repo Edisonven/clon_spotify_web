@@ -12,6 +12,12 @@
   --artistCardColor: #181818;
 }
 
+html {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
