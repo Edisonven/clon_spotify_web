@@ -14,7 +14,6 @@ const Principal = ({ fullArray = false }) => {
   const { artistData, openArtistModal } = useContext(ArtistContext);
   const filteredArtists = fullArray ? artistData : [...artistData].slice(0, 7);
 
-  console.log(fullArray);
   const navigate = useNavigate();
   const NavigateToSingUp = () => {
     navigate("/singup");
