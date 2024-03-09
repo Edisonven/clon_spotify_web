@@ -54,7 +54,7 @@ const ArtistModal = () => {
             <p className="artistmodal__desc__link__paragraph">
               ¿Ya tienes una cuenta?
             </p>
-            <NavLink to="/singup" className="artistmodal__desc__link">
+            <NavLink to="/singin" className="artistmodal__desc__link">
               Iniciar sesión
             </NavLink>
           </div>
