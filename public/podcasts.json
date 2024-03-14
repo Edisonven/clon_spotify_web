@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Ranking de podcasts",
+    "color": "#0D73EC",
+    "url": "/podcasts/ranking_podcasts.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Videopodcasts",
+    "color": "#BC5900",
+    "url": "/podcasts/video_podcasts.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Comedia",
+    "color": "#E8115B",
+    "url": "/podcasts/comedia.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Bienestar y Salud",
+    "color": "#E8115B",
+    "url": "/podcasts/bienestar_salud.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Historias",
+    "color": "#777777",
+    "url": "/podcasts/historias.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Educación",
+    "color": "#056952",
+    "url": "/podcasts/educacion.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Ficción",
+    "color": "#E61E32",
+    "url": "/podcasts/ficcion.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Arte y entretenimiento",
+    "color": "#0D72EA",
+    "url": "/podcasts/arte_entretenimiento.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Relaciones",
+    "color": "#E61E32",
+    "url": "/podcasts/relaciones.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Cuidado personal",
+    "color": "#006450",
+    "url": "/podcasts/cuidado_personal.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Crímenes reales",
+    "color": "#8D67AB",
+    "url": "/podcasts/crimenes_reales.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Noticias y política",
+    "color": "#8A202B",
+    "url": "/podcasts/noticias_politica.jpeg"
+  },
+  {
+    "id": 13,
+    "name": "Historias",
+    "color": "#503750",
+    "url": "/podcasts/historia.jpeg"
+  },
+  {
+    "id": 14,
+    "name": "Sexo",
+    "color": "#A56752",
+    "url": "/podcasts/sexo.jpeg"
+  },
+  {
+    "id": 15,
+    "name": "Podcasts de meditación",
+    "color": "#777777",
+    "url": "/podcasts/meditacion.jpeg"
+  },
+  {
+    "id": 16,
+    "name": "Idiomas",
+    "color": "#BA5D07",
+    "url": "/podcasts/idiomas.jpeg"
+  }
+]

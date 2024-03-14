@@ -8,7 +8,15 @@
     var(--podcastsColor) 90%
   );
 }
-
 .principal__podcasts__nav {
   background: #00000060;
+}
+.principal__podcasts__title__container {
+  margin-top: 68px;
+}
+.principal__podcasts__title {
+  color: var(--btnBgColor);
+  font-size: 5.5rem;
+  letter-spacing: -3px;
+  padding-left: 20px;
 }
