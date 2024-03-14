@@ -24,6 +24,7 @@ const Podcasts = () => {
                   className="principal__podcast__body"
                 >
                   <h1 className="principal__podcast__title">{podcast.name}</h1>
+                  <img className="principal__podcast__img" src={podcast.url} alt="" />
                 </div>
               );
             })}
