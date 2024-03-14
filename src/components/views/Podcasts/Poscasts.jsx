@@ -2,6 +2,8 @@ import { useContext } from "react";
 import PrincipalNavbar from "../../PrincipalNavbar/PrincipalNavbar";
 import "../Podcasts/podcasts.css";
 import { PodcastsContext } from "../../contexts/PodcastsContext";
+import { Link } from "react-router-dom";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Podcasts = () => {
   const { podcastsData } = useContext(PodcastsContext);
@@ -24,11 +26,23 @@ const Podcasts = () => {
                   className="principal__podcast__body"
                 >
                   <h1 className="principal__podcast__title">{podcast.name}</h1>
-                  <img className="principal__podcast__img" src={podcast.url} alt="" />
+                  <img
+                    className="principal__podcast__img"
+                    src={podcast.url}
+                    alt=""
+                  />
                 </div>
               );
             })}
           </div>
+        </div>
+      </div>
+      <div className="principal__podcasts__footer__section">
+        <div className="principal__podcasts__link__container">
+          <Link className="principal__podcast__link">
+            Ver todas las categorias
+            <IoIosArrowForward className="principal__podcasts__link__icon" />
+          </Link>
         </div>
       </div>
     </section>
