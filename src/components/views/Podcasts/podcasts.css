@@ -18,17 +18,21 @@
   color: var(--btnBgColor);
   font-size: 5.5rem;
   letter-spacing: -3px;
+  padding-left: 22px;
+  margin-bottom: 25px;
 }
-.principal__podcasts__section {
-  padding: 22px;
+.principal__podcasts__container {
+  background: #00000034;
+  padding: 45px 0 20px;
 }
 
-.principal__podcasts__container {
+.principal__podcasts__body__section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 0 22px;
 }
 .principal__podcast__body {
   cursor: pointer;
@@ -43,4 +47,10 @@
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--btnBgColor);
+}
+.principal__podcasts__section__title {
+  color: var(--btnBgColor);
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  padding-left: 22px;
 }
