@@ -1,0 +1,14 @@
+.principal__podcasts {
+  border-radius: 8px;
+  grid-area: principal;
+  overflow: auto;
+  background-image: linear-gradient(
+    to top,
+    var(--sectionBgColor) 40%,
+    var(--podcastsColor) 90%
+  );
+}
+
+.principal__podcasts__nav {
+  background: #00000060;
+}

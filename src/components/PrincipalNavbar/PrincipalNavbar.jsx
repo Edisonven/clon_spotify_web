@@ -2,13 +2,13 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Button from "../Button/Button.jsx";
 import { Link, useNavigate } from "react-router-dom";
 
-const PrincipalNavbar = () => {
+const PrincipalNavbar = ({ className }) => {
   const navigate = useNavigate();
   const NavigateToSingUp = () => {
     navigate("/singin");
   };
   return (
-    <nav className="principal__navbar">
+    <nav className={`${className} principal__navbar`}>
       <div className="principal__navbar__icons">
         <IoIosArrowBack className="principal__navbar__icon" />
         <IoIosArrowForward className="principal__navbar__icon" />

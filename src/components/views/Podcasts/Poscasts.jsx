@@ -1,9 +1,10 @@
+import PrincipalNavbar from "../../PrincipalNavbar/PrincipalNavbar";
 import "../Podcasts/podcasts.css";
 
 const Podcasts = () => {
   return (
-    <section>
-      <h1>Hola soy los podcasts</h1>
+    <section className="principal__podcasts">
+      <PrincipalNavbar className="principal__podcasts__nav"/>
     </section>
   );
 };
