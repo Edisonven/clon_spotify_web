@@ -15,6 +15,9 @@
 .principal__podcasts__title__container {
   margin-top: 62px;
 }
+.revert {
+  background-color: #10352a;
+}
 .principal__podcasts__title {
   color: var(--btnBgColor);
   font-size: 5.5rem;
