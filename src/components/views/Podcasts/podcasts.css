@@ -22,7 +22,7 @@
   margin-bottom: 25px;
 }
 .principal__podcasts__container {
-  background: #00000034;
+  background-image: linear-gradient(to bottom, #00000034 50%, transparent 100%);
   padding: 45px 0 20px;
 }
 
@@ -92,4 +92,7 @@
 .principal__podcasts__link__icon {
   color: var(--btnBgColor);
   font-size: 1.2rem;
+}
+.principal__podcasts__links__section {
+  color: var(--btnBgColor);
 }

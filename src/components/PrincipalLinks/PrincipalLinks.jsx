@@ -3,9 +3,9 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
-const PrincipalLinks = () => {
+const PrincipalLinks = ({ className }) => {
   return (
-    <section className="principal__links__section__container">
+    <section className={`${className} principal__links__section__container`}>
       <div className="principal__links__conatiner">
         <div className="principal__links__section principal__links__first__section">
           <h1 className="principal__links__title principal__links__first__section__title">
