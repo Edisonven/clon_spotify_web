@@ -5,6 +5,7 @@ import { PodcastsContext } from "../../contexts/PodcastsContext";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import PrincipalLinks from "../../PrincipalLinks/PrincipalLinks";
+import PrincipalFooter from "../../PrincipalFooter/PrincipalFooter";
 
 const Podcasts = () => {
   const { podcastsData } = useContext(PodcastsContext);
@@ -45,8 +46,9 @@ const Podcasts = () => {
             <IoIosArrowForward className="principal__podcasts__link__icon" />
           </Link>
         </div>
-        <PrincipalLinks className="principal__podcasts__links__section"/>
+        <PrincipalLinks className="principal__podcasts__links__section" />
       </div>
+      <PrincipalFooter />
     </section>
   );
 };

@@ -7,6 +7,7 @@
     var(--sectionBgColor) 40%,
     var(--podcastsColor) 90%
   );
+  background-attachment: scroll;
 }
 .principal__podcasts__nav {
   background: #00000060;
@@ -70,7 +71,7 @@
   transition: filter linear 0.1s;
   border-radius: 30px;
   background: var(--backGroundColor_2);
-  margin-top: 25px;
+  margin-top: 20px;
   width: max-content;
 }
 .principal__podcast__link {
