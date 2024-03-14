@@ -4,13 +4,15 @@ import Footer from "../../Footer/Footer.jsx";
 import "../Home/home.css";
 import { Route, Routes } from "react-router-dom";
 import AllArtist from "../AllArtist/AllArtist.jsx";
+import Podcasts from "../Podcasts/Poscasts.jsx";
 
 const Home = () => {
   return (
     <section className="home__container">
       <Routes>
         <Route path="/" element={<Principal />}></Route>
-        <Route path="/all_artists" element={<AllArtist></AllArtist>} />
+        <Route path="/all_artists" element={<AllArtist />} />
+        <Route path="/podcasts" element={<Podcasts />} />
       </Routes>
       <Sidebar />
       <Footer />

@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import "../Sidebar/sidebar.css";
 import { useState } from "react";
 import { PiMusicNotesPlus } from "react-icons/pi";
@@ -11,6 +11,12 @@ import SpotifyHome from "../SpotifyHome/SpotifyHome";
 const Sidebar = () => {
   const [createPlaytist, setCreatePlaylist] = useState(false);
   const [playlistModal, setPlaylistModal] = useState(false);
+
+  const navigate = useNavigate();
+
+  const navigateToPodcasts = () => {
+    navigate("/podcasts");
+  };
 
   const handlePlaylistModal = () => {
     setPlaylistModal(!playlistModal);
@@ -133,7 +139,12 @@ const Sidebar = () => {
               <h5 className="asidecard__subtitle">
                 Te mantendremos al tanto de los nuevos episodios.
               </h5>
-              <Button className="btn asidecard__btn">Explorar podscasts</Button>
+              <Button
+                onClick={navigateToPodcasts}
+                className="btn asidecard__btn"
+              >
+                Explorar podscasts
+              </Button>
             </AsideCard>
           </div>
           <div className="sidebar__legal__section">
