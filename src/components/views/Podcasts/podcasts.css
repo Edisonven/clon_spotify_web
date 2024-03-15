@@ -6,6 +6,13 @@
   position: relative;
   z-index: 1;
 }
+.principal__podcasts::-webkit-scrollbar {
+  width: 13px;
+  position: absolute;
+}
+.principal__podcasts::-webkit-scrollbar-thumb {
+  background-color: #ffffff6b;
+}
 .principal__podcasts__nav {
   background: #00000060;
 }
