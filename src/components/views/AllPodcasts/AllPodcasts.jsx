@@ -136,6 +136,75 @@ const AllPodcasts = () => {
               );
             })}
           </div>
+          <h1 className="allpodcasts__section__body__title allpodcasts__six__section__title">
+            Juegos
+          </h1>
+          <div className="allpodcasts__section allpodcasts__six__section">
+            {[...allPodcastsData].slice(33, 35).map((sixSection) => {
+              return (
+                <PodcastsCard
+                  key={sixSection.id}
+                  style={{ background: sixSection.color }}
+                  className="principal__podcast__body"
+                >
+                  <h1 className="principal__podcast__title">
+                    {sixSection.name}
+                  </h1>
+                  <img
+                    className="principal__podcast__img"
+                    src={sixSection.url}
+                    alt=""
+                  />
+                </PodcastsCard>
+              );
+            })}
+          </div>
+          <h1 className="allpodcasts__section__body__title allpodcasts__seven__section__title">
+            Negocios y tecnología
+          </h1>
+          <div className="allpodcasts__section allpodcasts__seven__section">
+            {[...allPodcastsData].slice(35, 42).map((sevenSection) => {
+              return (
+                <PodcastsCard
+                  key={sevenSection.id}
+                  style={{ background: sevenSection.color }}
+                  className="principal__podcast__body"
+                >
+                  <h1 className="principal__podcast__title">
+                    {sevenSection.name}
+                  </h1>
+                  <img
+                    className="principal__podcast__img"
+                    src={sevenSection.url}
+                    alt=""
+                  />
+                </PodcastsCard>
+              );
+            })}
+          </div>
+          <h1 className="allpodcasts__section__body__title allpodcasts__eight__section__title">
+            Salud y estilo de vida
+          </h1>
+          <div className="allpodcasts__section allpodcasts__eight__section">
+            {[...allPodcastsData].slice(42).map((eightSection) => {
+              return (
+                <PodcastsCard
+                  key={eightSection.id}
+                  style={{ background: eightSection.color }}
+                  className="principal__podcast__body"
+                >
+                  <h1 className="principal__podcast__title">
+                    {eightSection.name}
+                  </h1>
+                  <img
+                    className="principal__podcast__img"
+                    src={eightSection.url}
+                    alt=""
+                  />
+                </PodcastsCard>
+              );
+            })}
+          </div>
         </div>
       </section>
     </section>
