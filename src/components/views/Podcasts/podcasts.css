@@ -37,17 +37,6 @@
     var(--podcastsColor) 90%
   );
 }
-.revertNav {
-  background-color: #10352a;
-}
-
-[scroll-anim="move"] {
-  opacity: 0;
-  transition: all linear 0.5s;
-}
-.revertNavTitle {
-  opacity: 1;
-}
 .principal__podcasts__title {
   color: var(--btnBgColor);
   font-size: 5.5rem;
