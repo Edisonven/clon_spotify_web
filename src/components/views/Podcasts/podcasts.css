@@ -8,7 +8,6 @@
 }
 .principal__podcasts::-webkit-scrollbar {
   width: 13px;
-  position: absolute;
 }
 .principal__podcasts::-webkit-scrollbar-thumb {
   background-color: #ffffff6b;

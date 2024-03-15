@@ -4,7 +4,6 @@
 }
 .allartist::-webkit-scrollbar {
   width: 13px;
-  position: absolute;
 }
 .allartist::-webkit-scrollbar-thumb {
   background-color: #ffffff6b;
