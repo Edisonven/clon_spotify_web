@@ -18,9 +18,14 @@ const AllPodcasts = () => {
       const allpodcastsTitle = document.querySelector(
         ".allpodcasts__nav__title"
       );
+      const allPodcastsNav = document.querySelector(".allpodcasts__nav");
       allpodcastsTitle.classList.toggle(
         "revertNavTitle",
-        allPodcastsSection.scrollTop > 200
+        allPodcastsSection.scrollTop > 210
+      );
+      allPodcastsNav.classList.toggle(
+        "revertNavAllposcasts",
+        allPodcastsSection.scrollTop > 210
       );
     };
 
