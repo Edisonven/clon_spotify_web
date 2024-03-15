@@ -9,6 +9,13 @@ const AllPodcasts = () => {
           Todas las categorías de podcasts
         </h1>
       </PrincipalNavbar>
+      <section className="allpodcasts__section__container">
+        <div className="allpodcasts__section__title__container">
+          <h1 className="allpodcasts__section__title">
+            Todas las categorías de podcasts
+          </h1>
+        </div>
+      </section>
     </section>
   );
 };
