@@ -5,6 +5,7 @@ import "../Home/home.css";
 import { Route, Routes } from "react-router-dom";
 import AllArtist from "../AllArtist/AllArtist.jsx";
 import Podcasts from "../Podcasts/Poscasts.jsx";
+import AllPodcasts from "../AllPodcasts/AllPodcasts.jsx";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Route path="/" element={<Principal />}></Route>
         <Route path="/all_artists" element={<AllArtist />} />
         <Route path="/podcasts" element={<Podcasts />} />
+        <Route path="/podcasts/allpodcasts" element={<AllPodcasts />} />
       </Routes>
       <Sidebar />
       <Footer />

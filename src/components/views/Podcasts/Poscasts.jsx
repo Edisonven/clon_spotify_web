@@ -64,7 +64,7 @@ const Podcasts = () => {
       </div>
       <div className="principal__podcasts__footer__section">
         <div className="principal__podcasts__link__container">
-          <Link className="principal__podcast__link">
+          <Link to="/podcasts/allpodcasts" className="principal__podcast__link">
             Ver todas las categorias
             <IoIosArrowForward className="principal__podcasts__link__icon" />
           </Link>
