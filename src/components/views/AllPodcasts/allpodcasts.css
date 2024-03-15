@@ -12,7 +12,7 @@
 }
 .allpodcasts__section__title__container {
   padding-top: 68px;
-  padding-left: 20px;
+  padding-left: 22px;
   padding-bottom: 35px;
   background-image: linear-gradient(to bottom, #161616fb, #0c0c0c);
 }
@@ -20,4 +20,18 @@
   letter-spacing: -3px;
   font-size: 5.5rem;
   color: var(--btnBgColor);
+}
+.allpodcasts__section__body {
+  padding: 22px;
+}
+.allpodcasts__section__body__title {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  color: var(--btnBgColor);
+  font-size: 1.4rem;
+}
+.allpodcasts__first__section {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }

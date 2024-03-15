@@ -7,7 +7,7 @@ const AllPodcastsUrl = "/allPodcasts.json";
 
 const PodcastsProvider = ({ children }) => {
   const [podcastsData, setPodcastsData] = useState([]);
-  const [allPodcastsData, setallPodcastsData] = useState([]);
+  const [allPodcastsData, setAllPodcastsData] = useState([]);
 
   const getPodcastsData = async () => {
     const respuesta = await fetch(PodcastsUrl);
@@ -18,13 +18,14 @@ const PodcastsProvider = ({ children }) => {
   const getAllPodcastsData = async () => {
     const respuesta = await fetch(AllPodcastsUrl);
     const data = await respuesta.json();
-    setallPodcastsData(data);
+    setAllPodcastsData(data);
   };
 
   useEffect(() => {
     getPodcastsData();
     getAllPodcastsData();
   }, []);
+  
 
   return (
     <PodcastsContext.Provider
@@ -32,7 +33,7 @@ const PodcastsProvider = ({ children }) => {
         podcastsData,
         setPodcastsData,
         allPodcastsData,
-        setallPodcastsData,
+        setAllPodcastsData,
       }}
     >
       {children}
