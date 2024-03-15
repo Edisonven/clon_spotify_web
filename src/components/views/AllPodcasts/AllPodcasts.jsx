@@ -90,6 +90,29 @@ const AllPodcasts = () => {
               );
             })}
           </div>
+          <h1 className="allpodcasts__section__body__title allpodcasts__four__section__title">
+            Deportes y recreación
+          </h1>
+          <div className="allpodcasts__section allpodcasts__four__section">
+            {[...allPodcastsData].slice(14, 27).map((fourSection) => {
+              return (
+                <PodcastsCard
+                  key={fourSection.id}
+                  style={{ background: fourSection.color }}
+                  className="principal__podcast__body"
+                >
+                  <h1 className="principal__podcast__title">
+                    {fourSection.name}
+                  </h1>
+                  <img
+                    className="principal__podcast__img"
+                    src={fourSection.url}
+                    alt=""
+                  />
+                </PodcastsCard>
+              );
+            })}
+          </div>
         </div>
       </section>
     </section>
