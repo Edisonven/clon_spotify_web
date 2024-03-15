@@ -11,18 +11,30 @@ const Podcasts = () => {
   const { podcastsData } = useContext(PodcastsContext);
 
   useEffect(() => {
+    const podcastSection = document.querySelector(".principal__podcasts");
+
     const scrollDownNav = () => {
       const podcastNav = document.querySelector(".principal__podcasts__nav");
-      podcastNav.classList.toggle("revert", podcastSection.scrollTop > 200);
+      const podcastNavTitle = document.querySelector(
+        ".principal__podcasts__nav__title"
+      );
+      podcastNav.classList.toggle("revertNav", podcastSection.scrollTop > 210);
+      podcastNavTitle.classList.toggle(
+        "revertNavTitle",
+        podcastSection.scrollTop > 210
+      );
     };
 
-    const podcastSection = document.querySelector(".principal__podcasts");
     podcastSection.addEventListener("scroll", scrollDownNav);
   }, []);
 
   return (
     <section className="principal__podcasts">
-      <PrincipalNavbar className="principal__podcasts__nav" />
+      <PrincipalNavbar className="principal__podcasts__nav">
+        <h1 className="principal__podcasts__nav__title" scroll-anim="move">
+          Podcasts
+        </h1>
+      </PrincipalNavbar>
       <div className="principal__podcasts__section">
         <div className="principal__podcasts__title__container">
           <h1 className="principal__podcasts__title">Podcasts</h1>
