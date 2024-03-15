@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import PrincipalLinks from "../../PrincipalLinks/PrincipalLinks";
 import PrincipalFooter from "../../PrincipalFooter/PrincipalFooter";
+import PodcastsCard from "./PodcastsCard/PodcastsCard";
 
 const Podcasts = () => {
   const { podcastsData } = useContext(PodcastsContext);
@@ -44,7 +45,7 @@ const Podcasts = () => {
           <div className="principal__podcasts__body__section">
             {podcastsData?.map((podcast) => {
               return (
-                <div
+                <PodcastsCard
                   key={podcast.id}
                   style={{ background: podcast.color }}
                   className="principal__podcast__body"
@@ -55,7 +56,7 @@ const Podcasts = () => {
                     src={podcast.url}
                     alt=""
                   />
-                </div>
+                </PodcastsCard>
               );
             })}
           </div>
