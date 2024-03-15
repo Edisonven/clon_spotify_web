@@ -1,0 +1,9 @@
+.allpodcasts__container {
+  border-radius: 8px;
+  grid-area: principal;
+  overflow: auto;
+  background-color: var(--sectionBgColor);
+}
+.allpodcasts__nav {
+  background: #0a0a0a;
+}

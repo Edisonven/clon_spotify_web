@@ -1,10 +1,6 @@
-const PodcastsCard = ({ key, style, className, children }) => {
+const PodcastsCard = ({ style, className, children }) => {
   return (
-    <div
-      key={key}
-      style={style}
-      className={`${className} principal__podcast__body`}
-    >
+    <div style={style} className={`${className} principal__podcast__body`}>
       {children}
     </div>
   );
