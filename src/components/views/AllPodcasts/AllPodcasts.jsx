@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import PrincipalNavbar from "../../PrincipalNavbar/PrincipalNavbar";
 import "../AllPodcasts/allpodcasts.css";
 import { PodcastsContext } from "../../contexts/PodcastsContext";
@@ -8,6 +8,24 @@ import PrincipalFooter from "../../PrincipalFooter/PrincipalFooter";
 
 const AllPodcasts = () => {
   const { allPodcastsData } = useContext(PodcastsContext);
+
+  useEffect(() => {
+    const allPodcastsSection = document.querySelector(
+      ".allpodcasts__container"
+    );
+
+    const scrollDonSection = () => {
+      const allpodcastsTitle = document.querySelector(
+        ".allpodcasts__nav__title"
+      );
+      allpodcastsTitle.classList.toggle(
+        "revertNavTitle",
+        allPodcastsSection.scrollTop > 200
+      );
+    };
+
+    allPodcastsSection.addEventListener("scroll", scrollDonSection);
+  }, []);
 
   return (
     <section className="allpodcasts__container">

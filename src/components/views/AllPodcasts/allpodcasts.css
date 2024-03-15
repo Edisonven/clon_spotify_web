@@ -13,6 +13,11 @@
 .allpodcasts__nav {
   background: #0a0a0a;
 }
+.allpodcasts__nav__title {
+  color: var(--btnBgColor);
+  font-size: 1.4rem;
+  cursor: default;
+}
 .allpodcasts__section__container {
   content: "";
 }
