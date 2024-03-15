@@ -67,6 +67,29 @@ const AllPodcasts = () => {
               );
             })}
           </div>
+          <h1 className="allpodcasts__section__body__title allpodcasts__third__section__title">
+            Crímenes reales
+          </h1>
+          <div className="allpodcasts__section allpodcasts__third__section">
+            {[...allPodcastsData].slice(13, 14).map((thirdSection) => {
+              return (
+                <PodcastsCard
+                  key={thirdSection.id}
+                  style={{ background: thirdSection.color }}
+                  className="principal__podcast__body"
+                >
+                  <h1 className="principal__podcast__title">
+                    {thirdSection.name}
+                  </h1>
+                  <img
+                    className="principal__podcast__img"
+                    src={thirdSection.url}
+                    alt=""
+                  />
+                </PodcastsCard>
+              );
+            })}
+          </div>
         </div>
       </section>
     </section>

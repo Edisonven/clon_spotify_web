@@ -28,10 +28,10 @@
   color: var(--btnBgColor);
 }
 .allpodcasts__section__body {
-  padding: 22px 0 22px 22px;
+  padding: 0 0 22px 22px;
 }
 .allpodcasts__section__body__title {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 5px;
   color: var(--btnBgColor);
   font-size: 1.4rem;
