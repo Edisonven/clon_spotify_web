@@ -1,0 +1,326 @@
+[
+  {
+    "id": 12,
+    "name": "Noticias y política",
+    "color": "#8A202B",
+    "url": "/podcasts/noticias_politica.jpeg"
+  },
+  {
+    "id": 17,
+    "name": "Política",
+    "color": "#BA5D07",
+    "url": ""
+  },
+  {
+    "id": 8,
+    "name": "Arte y entretenimiento",
+    "color": "#0D72EA",
+    "url": "/podcasts/arte_entretenimiento.jpeg"
+  },
+  {
+    "id": 18,
+    "name": "Libros",
+    "color": "#E8115B",
+    "url": ""
+  },
+  {
+    "id": 19,
+    "name": "Celebridades",
+    "color": "#777777",
+    "url": ""
+  },
+  {
+    "id": 3,
+    "name": "Comedia",
+    "color": "#E8115B",
+    "url": "/podcasts/comedia.jpeg"
+  },
+  {
+    "id": 20,
+    "name": "Diseño",
+    "color": "#DC148C",
+    "url": ""
+  },
+  {
+    "id": 7,
+    "name": "Ficción",
+    "color": "#E61E32",
+    "url": "/podcasts/ficcion.jpeg"
+  },
+  {
+    "id": 21,
+    "name": "Cine",
+    "color": "#1E3264",
+    "url": ""
+  },
+  {
+    "id": 22,
+    "name": "Literatura",
+    "color": "#8D67AB",
+    "url": ""
+  },
+  {
+    "id": 23,
+    "name": "Cultura pop",
+    "color": "#DC148C",
+    "url": "/podcasts/cultura_pop.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Historias",
+    "color": "#777777",
+    "url": "/podcasts/historias.jpeg"
+  },
+  {
+    "id": 24,
+    "name": "Podcasts sobre programas de TV",
+    "color": "#8D67AB",
+    "url": ""
+  },
+  {
+    "id": 11,
+    "name": "Crímenes reales",
+    "color": "#8D67AB",
+    "url": "/podcasts/crimenes_reales.jpeg"
+  },
+  {
+    "id": 25,
+    "name": "Béisbol",
+    "color": "#E8115B",
+    "url": ""
+  },
+  {
+    "id": 26,
+    "name": "Básquetbol",
+    "color": "#0D73EC",
+    "url": ""
+  },
+  {
+    "id": 27,
+    "name": "Boxeo",
+    "color": "#A56752",
+    "url": ""
+  },
+  {
+    "id": 28,
+    "name": "Fútbol",
+    "color": "#A56752",
+    "url": ""
+  },
+  {
+    "id": 29,
+    "name": "Hockey",
+    "color": "#006450",
+    "url": ""
+  },
+  {
+    "id": 30,
+    "name": "Artes marciales mixtas",
+    "color": "#E13300",
+    "url": ""
+  },
+  {
+    "id": 31,
+    "name": "Al aire libre",
+    "color": "#1E3264",
+    "url": ""
+  },
+  {
+    "id": 32,
+    "name": "Rugby",
+    "color": "#608108",
+    "url": ""
+  },
+  {
+    "id": 33,
+    "name": "Ir a correr",
+    "color": "#148A08",
+    "url": ""
+  },
+  {
+    "id": 34,
+    "name": "Fútbol",
+    "color": "#8D67AB",
+    "url": ""
+  },
+  {
+    "id": 35,
+    "name": "Deportes y recreación",
+    "color": "#777777",
+    "url": ""
+  },
+  {
+    "id": 36,
+    "name": "Tenis",
+    "color": "#777777",
+    "url": ""
+  },
+  {
+    "id": 37,
+    "name": "Lucha libre",
+    "color": "#777777",
+    "url": ""
+  },
+  {
+    "id": 6,
+    "name": "Educación",
+    "color": "#056952",
+    "url": "/podcasts/educacion.jpeg"
+  },
+  {
+    "id": 38,
+    "name": "Gobierno",
+    "color": "#777777",
+    "url": ""
+  },
+  {
+    "id": 13,
+    "name": "Historia",
+    "color": "#503750",
+    "url": "/podcasts/historia.jpeg"
+  },
+  {
+    "id": 16,
+    "name": "Idiomas",
+    "color": "#BA5D07",
+    "url": "/podcasts/idiomas.jpeg"
+  },
+  {
+    "id": 39,
+    "name": "Filosofía",
+    "color": "#477D95",
+    "url": ""
+  },
+  {
+    "id": 40,
+    "name": "Ciencia",
+    "color": "#B06239",
+    "url": "/podcasts/ciencia.jpeg"
+  },
+  {
+    "id": 41,
+    "name": "Juegos",
+    "color": "#148A08",
+    "url": ""
+  },
+  {
+    "id": 42,
+    "name": "Videojuegos",
+    "color": "#0D73EC",
+    "url": ""
+  },
+  {
+    "id": 43,
+    "name": "Negocios",
+    "color": "#E8115B",
+    "url": ""
+  },
+  {
+    "id": 44,
+    "name": "Negocios y tecnología",
+    "color": "#E61E32",
+    "url": ""
+  },
+  {
+    "id": 45,
+    "name": "Profesiones",
+    "color": "#27856A",
+    "url": ""
+  },
+  {
+    "id": 46,
+    "name": "Economía",
+    "color": "#AF2896",
+    "url": ""
+  },
+  {
+    "id": 47,
+    "name": "Finanzas",
+    "color": "#8D67AB",
+    "url": ""
+  },
+  {
+    "id": 48,
+    "name": "Marketing",
+    "color": "#1E3264",
+    "url": ""
+  },
+  {
+    "id": 49,
+    "name": "Tecnología",
+    "color": "#8D67AB",
+    "url": ""
+  },
+  {
+    "id": 50,
+    "name": "Belleza",
+    "color": "#A56752",
+    "url": ""
+  },
+  {
+    "id": 51,
+    "name": "Moda",
+    "color": "#27856A",
+    "url": ""
+  },
+  {
+    "id": 52,
+    "name": "Fitness y nutrición",
+    "color": "#27856A",
+    "url": ""
+  },
+  {
+    "id": 53,
+    "name": "Alimentación",
+    "color": "#777777",
+    "url": ""
+  },
+  {
+    "id": 54,
+    "name": "Salud",
+    "color": "#148A08",
+    "url": ""
+  },
+  {
+    "id": 55,
+    "name": "Pasatiempos",
+    "color": "#E61E32",
+    "url": ""
+  },
+  {
+    "id": 56,
+    "name": "Estilo de vida",
+    "color": "#1E3264",
+    "url": ""
+  },
+  {
+    "id": 15,
+    "name": "Podcasts de meditación",
+    "color": "#777777",
+    "url": "/podcasts/meditacion.jpeg"
+  },
+  {
+    "id": 57,
+    "name": "Crianza",
+    "color": "#0D73EC",
+    "url": ""
+  },
+  {
+    "id": 9,
+    "name": "Relaciones",
+    "color": "#E61E32",
+    "url": "/podcasts/relaciones.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Cuidado personal",
+    "color": "#006450",
+    "url": "/podcasts/cuidado_personal.jpeg"
+  },
+  {
+    "id": 14,
+    "name": "Sexo",
+    "color": "#A56752",
+    "url": "/podcasts/sexo.jpeg"
+  }
+]
