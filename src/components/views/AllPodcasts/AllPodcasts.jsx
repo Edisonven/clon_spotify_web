@@ -3,6 +3,8 @@ import PrincipalNavbar from "../../PrincipalNavbar/PrincipalNavbar";
 import "../AllPodcasts/allpodcasts.css";
 import { PodcastsContext } from "../../contexts/PodcastsContext";
 import PodcastsCard from "../Podcasts/PodcastsCard/PodcastsCard";
+import PrincipalLinks from "../../PrincipalLinks/PrincipalLinks";
+import PrincipalFooter from "../../PrincipalFooter/PrincipalFooter";
 
 const AllPodcasts = () => {
   const { allPodcastsData } = useContext(PodcastsContext);
@@ -206,7 +208,13 @@ const AllPodcasts = () => {
             })}
           </div>
         </div>
+        <div className="allpodcasts__footer__section">
+          <div className="allpodcasts__links__container">
+            <PrincipalLinks className="allpodcasts__links__section" />
+          </div>
+        </div>
       </section>
+      <PrincipalFooter></PrincipalFooter>
     </section>
   );
 };
