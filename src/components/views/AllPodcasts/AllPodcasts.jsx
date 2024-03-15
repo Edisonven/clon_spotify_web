@@ -113,6 +113,29 @@ const AllPodcasts = () => {
               );
             })}
           </div>
+          <h1 className="allpodcasts__section__body__title allpodcasts__five__section__title">
+            Educación
+          </h1>
+          <div className="allpodcasts__section allpodcasts__five__section">
+            {[...allPodcastsData].slice(27, 33).map((fiveSection) => {
+              return (
+                <PodcastsCard
+                  key={fiveSection.id}
+                  style={{ background: fiveSection.color }}
+                  className="principal__podcast__body"
+                >
+                  <h1 className="principal__podcast__title">
+                    {fiveSection.name}
+                  </h1>
+                  <img
+                    className="principal__podcast__img"
+                    src={fiveSection.url}
+                    alt=""
+                  />
+                </PodcastsCard>
+              );
+            })}
+          </div>
         </div>
       </section>
     </section>
