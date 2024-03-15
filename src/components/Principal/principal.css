@@ -249,7 +249,7 @@
 
 /*FOOTER SECTION*/
 .principal__footer__divisor {
-  margin: 30px auto;
+  margin: 40px auto;
   width: 95%;
   height: 1px;
   border-radius: 50%;
@@ -257,7 +257,7 @@
   background: var(--backGroundColor_2);
 }
 .principal__footer__section {
-  margin-bottom: 75px;
+  margin-bottom: 85px;
 }
 .principal__footer__section__title {
   margin-left: 40px;
