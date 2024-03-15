@@ -18,10 +18,10 @@ const Podcasts = () => {
       const podcastNavTitle = document.querySelector(
         ".principal__podcasts__nav__title"
       );
-      podcastNav.classList.toggle("revertNav", podcastSection.scrollTop > 210);
+      podcastNav.classList.toggle("revertNav", podcastSection.scrollTop > 190);
       podcastNavTitle.classList.toggle(
         "revertNavTitle",
-        podcastSection.scrollTop > 210
+        podcastSection.scrollTop > 190
       );
     };
 
