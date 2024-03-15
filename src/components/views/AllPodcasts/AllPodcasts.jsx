@@ -24,7 +24,7 @@ const AllPodcasts = () => {
           <h1 className="allpodcasts__section__body__title allpodcasts__first__section__title">
             Actualidad y política
           </h1>
-          <div className="allpodcasts__first__section">
+          <div className="allpodcasts__section allpodcasts__first__section">
             {[...allPodcastsData].slice(0, 2).map((firstSection) => {
               return (
                 <PodcastsCard
@@ -38,6 +38,29 @@ const AllPodcasts = () => {
                   <img
                     className="principal__podcast__img"
                     src={firstSection.url}
+                    alt=""
+                  />
+                </PodcastsCard>
+              );
+            })}
+          </div>
+          <h1 className="allpodcasts__section__body__title allpodcasts__second__section__title">
+            Arte y entretenimiento
+          </h1>
+          <div className="allpodcasts__section allpodcasts__second__section">
+            {[...allPodcastsData].slice(2, 13).map((secondSection) => {
+              return (
+                <PodcastsCard
+                  key={secondSection.id}
+                  style={{ background: secondSection.color }}
+                  className="principal__podcast__body"
+                >
+                  <h1 className="principal__podcast__title">
+                    {secondSection.name}
+                  </h1>
+                  <img
+                    className="principal__podcast__img"
+                    src={secondSection.url}
                     alt=""
                   />
                 </PodcastsCard>
