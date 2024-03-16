@@ -27,13 +27,24 @@
   align-items: center;
   justify-content: space-between;
   height: 64px;
-  padding: 0 28px;
+  padding: 0 28px 0 24px;
   background: var(--sectionBgColor);
 }
 .principal__navbar__icons {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-left: 5px;
+}
+.principal__navbar__icontitle__container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 100%;
+  gap: 13px;
+}
+.principal__navbar__title {
+  overflow: hidden;
 }
 .principal__navbar__icon {
   cursor: not-allowed;

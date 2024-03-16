@@ -19,6 +19,8 @@
   color: var(--btnBgColor);
   font-size: 1.4rem;
   cursor: default;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .principal__podcasts__title__container {
   margin-top: 62px;
