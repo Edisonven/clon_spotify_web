@@ -124,6 +124,12 @@
   height: 50px;
   margin-bottom: 20px;
 }
+.singup__form__input[placeholder] {
+  padding: 0 15px;
+  font-size: 0.95rem;
+  color: var(--btnBgColor);
+  font-weight: 600;
+}
 .singup__form__input:hover {
   border: none;
   outline: 1px solid var(--btnBgColor);
