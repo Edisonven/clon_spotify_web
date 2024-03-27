@@ -25,6 +25,11 @@ const Search = () => {
           />
         </div>
       </PrincipalNavbar>
+      <div className="search__section__container">
+        <div className="search__title__container">
+          <h1 className="search__title">Explorar todo</h1>
+        </div>
+      </div>
     </section>
   );
 };

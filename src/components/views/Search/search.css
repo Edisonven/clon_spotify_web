@@ -66,3 +66,13 @@
   position: absolute;
   left: 15px;
 }
+.search__section__container {
+  margin-top: 10px;
+}
+.search__title {
+  color: var(--btnBgColor);
+  font-size: 1.4rem;
+}
+.search__section__container {
+  padding: 23px;
+}
