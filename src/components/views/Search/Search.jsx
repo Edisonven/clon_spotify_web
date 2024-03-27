@@ -28,7 +28,7 @@ const Search = () => {
 
   useEffect(() => {
     searchInputRef.current.focus();
-  }, []);
+  }, [inputCloseBtn]);
 
   useEffect(() => {
     const searchContainer = document.querySelector(".search__container");
