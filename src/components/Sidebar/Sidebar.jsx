@@ -48,7 +48,7 @@ const Sidebar = () => {
           </NavLink>
         </div>
         <div className="sidebar__logo__inicio">
-          <NavLink className="sidebar__logo__link">
+          <NavLink to="/search" className="sidebar__logo__link">
             <i className="bx bx-search sidebar__icon sidebar__icon__inicio"></i>
             <p className="sidebar__paragraph sidebar__logo__paragraph sidebar__logo__paragraph__inicio__section">
               Buscar
