@@ -36,6 +36,12 @@
   width: 100%;
   max-width: 360px;
 }
+.search__navbar__input:focus {
+  outline: 2px solid var(--btnBgColor);
+}
+.search__navbar__input:focus:hover {
+  outline: 2px solid var(--btnBgColor);
+}
 .search__navbar__input[placeholder] {
   font-weight: 500;
   text-overflow: ellipsis;
