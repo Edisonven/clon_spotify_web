@@ -4,6 +4,8 @@ import "../Search/search.css";
 import { IoSearchOutline } from "react-icons/io5";
 import { SearchContext } from "../../contexts/SearchContext";
 import PodcastsCard from "../Podcasts/PodcastsCard/PodcastsCard";
+import PrincipalLinks from "../../PrincipalLinks/PrincipalLinks";
+import PrincipalFooter from "../../PrincipalFooter/PrincipalFooter";
 
 const Search = () => {
   const { searchData } = useContext(SearchContext);
@@ -70,6 +72,10 @@ const Search = () => {
           </div>
         </div>
       </div>
+      <div className="principal__podcasts__footer__section">
+        <PrincipalLinks className="principal__podcasts__links__section" />
+      </div>
+      <PrincipalFooter />
     </section>
   );
 };
