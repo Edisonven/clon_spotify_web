@@ -1,0 +1,17 @@
+.search__container {
+    border-radius: 8px;
+    grid-area: principal;
+    overflow: auto;
+    background-color: var(--sectionBgColor);
+    position: relative;
+    z-index: 1;
+  }
+  .search__container::-webkit-scrollbar {
+    width: 13px;
+  }
+  .search__container::-webkit-scrollbar-thumb {
+    background-color: #ffffff6b;
+  }
+  .principal__podcasts__nav {
+    background: #00000060;
+  }
