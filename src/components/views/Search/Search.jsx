@@ -1,9 +1,13 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useContext } from "react";
 import PrincipalNavbar from "../../PrincipalNavbar/PrincipalNavbar";
 import "../Search/search.css";
 import { IoSearchOutline } from "react-icons/io5";
+import { SearchContext } from "../../contexts/SearchContext";
+import PodcastsCard from "../Podcasts/PodcastsCard/PodcastsCard";
 
 const Search = () => {
+  const { searchData } = useContext(SearchContext);
+
   const searchInputRef = useRef();
 
   useEffect(() => {
@@ -28,6 +32,28 @@ const Search = () => {
       <div className="search__section__container">
         <div className="search__title__container">
           <h1 className="search__title">Explorar todo</h1>
+        </div>
+        <div className="search__section__cards__container">
+          <div className="search__section__card__container">
+            {searchData.map((searchCard) => {
+              return (
+                <PodcastsCard
+                  key={searchCard.id}
+                  style={{ background: searchCard.color }}
+                  className="search__searchcard__body"
+                >
+                  <h1 className="search__searchcard__title">
+                    {searchCard.name}
+                  </h1>
+                  <img
+                    className="search__searchcard__img"
+                    src={searchCard.url}
+                    alt=""
+                  />
+                </PodcastsCard>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
