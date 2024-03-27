@@ -44,11 +44,17 @@
   font-size: 1rem;
 }
 .register__number__input {
+  color: var(--btnBgColor);
   width: 100%;
   transition: all linear 0.07s;
   border: 0;
   outline: 0;
   box-shadow: inset 0 0 0 1px var(--letterColor);
+}
+.register__number__input[placeholder] {
+  padding: 0 15px;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 .register__number__select:hover {
   outline: 1px solid var(--btnBgColor);
