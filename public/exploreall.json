@@ -3,96 +3,384 @@
     "id": 1,
     "name": "Podcasts",
     "color": "#006450",
-    "url": "/podcasts/ranking_podcasts.jpeg"
+    "url": "/busqueda/podcasts.jpeg"
   },
   {
     "id": 2,
-    "name": "Videopodcasts",
-    "color": "#BC5900",
-    "url": "/podcasts/video_podcasts.jpeg"
+    "name": "Eventos en vivo",
+    "color": "#8400E7",
+    "url": "/busqueda/eventos_en_vivo.jpeg"
   },
   {
     "id": 3,
-    "name": "Comedia",
-    "color": "#E8115B",
-    "url": "/podcasts/comedia.jpeg"
+    "name": "Creados para ti",
+    "color": "#1E3264",
+    "url": "/busqueda/creados_para_ti.png"
   },
   {
     "id": 4,
-    "name": "Bienestar y Salud",
-    "color": "#537AA1",
-    "url": "/podcasts/bienestar_salud.jpeg"
+    "name": "Nuevos lanzamientos",
+    "color": "#E8115B",
+    "url": "/busqueda/nuevos_lanzamientos.jpeg"
   },
   {
     "id": 5,
-    "name": "Historias",
-    "color": "#777777",
-    "url": "/podcasts/historias.jpeg"
+    "name": "Latina",
+    "color": "#E1118C",
+    "url": "/busqueda/latina.jpeg"
   },
   {
     "id": 6,
-    "name": "Educación",
-    "color": "#056952",
-    "url": "/podcasts/educacion.jpeg"
+    "name": "Felices fiestas",
+    "color": "#8C1932",
+    "url": "/busqueda/felices_fiestas.jpeg"
   },
   {
     "id": 7,
-    "name": "Ficción",
-    "color": "#E61E32",
-    "url": "/podcasts/ficcion.jpeg"
+    "name": "Pop",
+    "color": "#148A08",
+    "url": "/busqueda/pop.jpeg"
   },
   {
     "id": 8,
-    "name": "Arte y entretenimiento",
-    "color": "#0D72EA",
-    "url": "/podcasts/arte_entretenimiento.jpeg"
+    "name": "Cumbia",
+    "color": "#509BF5",
+    "url": "/busqueda/cumbia.jpeg"
   },
   {
     "id": 9,
-    "name": "Relaciones",
-    "color": "#E61E32",
-    "url": "/podcasts/relaciones.jpeg"
+    "name": "Ranking de podcasts",
+    "color": "#0D73EC",
+    "url": "/busqueda/ranking_podcasts.jpeg"
   },
   {
     "id": 10,
-    "name": "Cuidado personal",
-    "color": "#006450",
-    "url": "/podcasts/cuidado_personal.jpeg"
+    "name": "Videopodcasts",
+    "color": "#BC5900",
+    "url": "/busqueda/video_podcasts.jpeg"
   },
   {
     "id": 11,
-    "name": "Crímenes reales",
-    "color": "#8D67AB",
-    "url": "/podcasts/crimenes_reales.jpeg"
+    "name": "Comedia",
+    "color": "#E8115B",
+    "url": "/busqueda/comedia.jpeg"
   },
   {
     "id": 12,
-    "name": "Noticias y política",
-    "color": "#8A202B",
-    "url": "/podcasts/noticias_politica.jpeg"
+    "name": "Bienestar y Salud",
+    "color": "#537AA1",
+    "url": "/busqueda/bienestar_salud.jpeg"
   },
   {
     "id": 13,
-    "name": "Historias",
-    "color": "#503750",
-    "url": "/podcasts/historia.jpeg"
+    "name": "Rankings",
+    "color": "#8D67AB",
+    "url": "/busqueda/rankings.jpg"
   },
   {
     "id": 14,
-    "name": "Sexo",
-    "color": "#A56752",
-    "url": "/podcasts/sexo.jpeg"
+    "name": "Rock",
+    "color": "#006450",
+    "url": "/busqueda/rock.jpeg"
   },
   {
     "id": 15,
-    "name": "Podcasts de meditación",
-    "color": "#777777",
-    "url": "/podcasts/meditacion.jpeg"
+    "name": "Indie",
+    "color": "#E91429",
+    "url": "/busqueda/indie.jpeg"
   },
   {
     "id": 16,
-    "name": "Idiomas",
+    "name": "Estado de ánimo",
+    "color": "#E1118C",
+    "url": "/busqueda/estado_de_animo.jpeg"
+  },
+  {
+    "id": 17,
+    "name": "Dance/Electrónica",
+    "color": "#D84000",
+    "url": "/busqueda/dance_electronica.jpeg"
+  },
+  {
+    "id": 18,
+    "name": "Descubre",
+    "color": "#8D67AB",
+    "url": "/busqueda/descubre.jpeg"
+  },
+  {
+    "id": 19,
+    "name": "Tendencias",
+    "color": "#B02897",
+    "url": "/busqueda/tendencias.jpeg"
+  },
+  {
+    "id": 20,
+    "name": "Salsa",
+    "color": "#438270",
+    "url": "/busqueda/salsa.jpeg"
+  },
+  {
+    "id": 21,
+    "name": "Rythm & Blues",
     "color": "#BA5D07",
-    "url": "/podcasts/idiomas.jpeg"
+    "url": "/busqueda/rythm_blues.jpeg"
+  },
+  {
+    "id": 22,
+    "name": "Pop coreano",
+    "color": "#148A08",
+    "url": "/busqueda/pop_coreano.jpeg"
+  },
+  {
+    "id": 23,
+    "name": "Para relajarse",
+    "color": "#D84000",
+    "url": "/busqueda/para_relajarse.jpeg"
+  },
+  {
+    "id": 24,
+    "name": "Dormir",
+    "color": "#1E3264",
+    "url": "/busqueda/dormir.jpeg"
+  },
+  {
+    "id": 25,
+    "name": "Fiesta",
+    "color": "#537AA1",
+    "url": "/busqueda/fiesta.jpeg"
+  },
+  {
+    "id": 26,
+    "name": "En casa",
+    "color": "#5179A1",
+    "url": "/busqueda/en_casa.jpeg"
+  },
+  {
+    "id": 27,
+    "name": "Decadas",
+    "color": "#BA5D07",
+    "url": "/busqueda/decadas.jpeg"
+  },
+  {
+    "id": 28,
+    "name": "Amor",
+    "color": "#E61E32",
+    "url": "/busqueda/amor.jpeg"
+  },
+  {
+    "id": 29,
+    "name": "Metal",
+    "color": "#E91429",
+    "url": "/busqueda/metal.jpeg"
+  },
+  {
+    "id": 30,
+    "name": "Jazz",
+    "color": "#777777",
+    "url": "/busqueda/jazz.jpeg"
+  },
+  {
+    "id": 31,
+    "name": "Entrenamiento",
+    "color": "#777777",
+    "url": "/busqueda/entrenamiento.jpeg"
+  },
+  {
+    "id": 32,
+    "name": "Radar",
+    "color": "#A56752",
+    "url": "/busqueda/radar.jpeg"
+  },
+  {
+    "id": 33,
+    "name": "Equal",
+    "color": "#056952",
+    "url": "/busqueda/equal.jpeg"
+  },
+  {
+    "id": 34,
+    "name": "Anime",
+    "color": "#E41D63",
+    "url": "/busqueda/anime.jpeg"
+  },
+  {
+    "id": 35,
+    "name": "Clásica",
+    "color": "#7D4B32",
+    "url": "/busqueda/clasica.jpeg"
+  },
+  {
+    "id": 36,
+    "name": "Folk & acústica",
+    "color": "#BC5900",
+    "url": "/busqueda/folk.jpeg"
+  },
+  {
+    "id": 37,
+    "name": "Música mexicana",
+    "color": "#B06239",
+    "url": "/busqueda/musica_mexicana.jpeg"
+  },
+  {
+    "id": 38,
+    "name": "Enfoque",
+    "color": "#503750",
+    "url": "/busqueda/enfoque.jpeg"
+  },
+  {
+    "id": 39,
+    "name": "Soul",
+    "color": "#DC148C",
+    "url": "/busqueda/soul.jpeg"
+  },
+  {
+    "id": 40,
+    "name": "Niños y familia",
+    "color": "#8D67AB",
+    "url": "/busqueda/niños_familia.jpeg"
+  },
+  {
+    "id": 41,
+    "name": "Gaming",
+    "color": "#E8115B",
+    "url": "/busqueda/gaming.jpeg"
+  },
+  {
+    "id": 42,
+    "name": "Televisión y películas",
+    "color": "#AF2896",
+    "url": "/busqueda/television_peliculas.jpeg"
+  },
+  {
+    "id": 43,
+    "name": "Instrumental",
+    "color": "#537AA1",
+    "url": "/busqueda/instrumental.jpeg"
+  },
+  {
+    "id": 44,
+    "name": "Netflix",
+    "color": "#EB1E32",
+    "url": "/busqueda/netflix.jpeg"
+  },
+  {
+    "id": 45,
+    "name": "Punk",
+    "color": "#1E3264",
+    "url": "/busqueda/punk.jpeg"
+  },
+  {
+    "id": 46,
+    "name": "Ambient",
+    "color": "#477D95",
+    "url": "/busqueda/ambient.jpeg"
+  },
+  {
+    "id": 47,
+    "name": "Blues",
+    "color": "#B06239",
+    "url": "/busqueda/blues.jpeg"
+  },
+  {
+    "id": 48,
+    "name": "Hora de la comedia",
+    "color": "#BA5D07",
+    "url": "/busqueda/hora_comedia.jpeg"
+  },
+  {
+    "id": 49,
+    "name": "Alternativa",
+    "color": "#E13300",
+    "url": "/busqueda/alternativa.jpeg"
+  },
+  {
+    "id": 50,
+    "name": "Viajes",
+    "color": "#0D72ED",
+    "url": "/busqueda/viajes.jpeg"
+  },
+  {
+    "id": 51,
+    "name": "Música caribeña",
+    "color": "#0D72ED",
+    "url": "/busqueda/musica_caribeña.jpeg"
+  },
+  {
+    "id": 52,
+    "name": "Afro",
+    "color": "#D84000",
+    "url": "/busqueda/afro.jpeg"
+  },
+  {
+    "id": 53,
+    "name": "GLOW",
+    "color": "#0D73EC",
+    "url": "/busqueda/glow.jpeg"
+  },
+  {
+    "id": 54,
+    "name": "Compositores",
+    "color": "#8C1932",
+    "url": "/busqueda/compositores.jpeg"
+  },
+  {
+    "id": 55,
+    "name": "Naturaleza y sonidos para relajarse",
+    "color": "#477D95",
+    "url": "/busqueda/naturaleza.jpeg"
+  },
+  {
+    "id": 56,
+    "name": "Funk",
+    "color": "#E61E32",
+    "url": "/busqueda/funk.jpeg"
+  },
+  {
+    "id": 57,
+    "name": "League of Legends",
+    "color": "#148A08",
+    "url": "/busqueda/lol.jpeg"
+  },
+  {
+    "id": 58,
+    "name": "Spotify Singles",
+    "color": "#777777",
+    "url": "/busqueda/singles.jpeg"
+  },
+  {
+    "id": 59,
+    "name": "Verano",
+    "color": "#27856A",
+    "url": "/busqueda/verano.jpeg"
+  },
+  {
+    "id": 60,
+    "name": "Country",
+    "color": "#D84000",
+    "url": "/busqueda/country.jpeg"
+  },
+  {
+    "id": 61,
+    "name": "Flesh finds",
+    "color": "#FF0090",
+    "url": "/busqueda/fresh.jpeg"
+  },
+  {
+    "id": 62,
+    "name": "Bienestar",
+    "color": "#A56752",
+    "url": "/busqueda/bienestar.jpeg"
+  },
+  {
+    "id": 63,
+    "name": "Música + Charla",
+    "color": "#FF4632",
+    "url": "/busqueda/musica_charla.jpeg"
+  },
+  {
+    "id": 64,
+    "name": "Creadores de tendencias",
+    "color": "#E8115B",
+    "url": "/busqueda/creadores_tendencias.png"
   }
 ]
