@@ -1,4 +1,4 @@
-import { useRef, useEffect, useContext } from "react";
+import { useRef, useEffect, useContext, useState } from "react";
 import PrincipalNavbar from "../../PrincipalNavbar/PrincipalNavbar";
 import "../Search/search.css";
 import { IoSearchOutline } from "react-icons/io5";
@@ -9,6 +9,7 @@ import PrincipalFooter from "../../PrincipalFooter/PrincipalFooter";
 
 const Search = () => {
   const { searchData } = useContext(SearchContext);
+  const [searchInput, setSearchInput] = useState("");
 
   const searchInputRef = useRef();
 
@@ -36,6 +37,8 @@ const Search = () => {
         <div className="search__navbar__input__container">
           <IoSearchOutline className="search__navbar__icon" />
           <input
+            onChange={(e) => setSearchInput(e.target.value)}
+            value={searchInput}
             ref={searchInputRef}
             className="search__navbar__input"
             type="text"
