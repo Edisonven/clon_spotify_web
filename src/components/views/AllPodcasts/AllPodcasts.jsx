@@ -14,7 +14,7 @@ const AllPodcasts = () => {
       ".allpodcasts__container"
     );
 
-    const scrollDonSection = () => {
+    const scrollDownSection = () => {
       const allpodcastsTitle = document.querySelector(
         ".allpodcasts__nav__title"
       );
@@ -29,7 +29,7 @@ const AllPodcasts = () => {
       );
     };
 
-    allPodcastsSection.addEventListener("scroll", scrollDonSection);
+    allPodcastsSection.addEventListener("scroll", scrollDownSection);
   }, []);
 
   return (

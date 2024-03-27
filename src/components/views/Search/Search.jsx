@@ -14,6 +14,20 @@ const Search = () => {
     searchInputRef.current.focus();
   }, []);
 
+  useEffect(() => {
+    const searchContainer = document.querySelector(".search__container");
+
+    const searchNavBgColor = () => {
+      const searchNavbar = document.querySelector(".search__navbar");
+      searchNavbar.classList.toggle(
+        "revertNavSearch",
+        searchContainer.scrollTop > 0
+      );
+    };
+
+    searchContainer.addEventListener("scroll", searchNavBgColor);
+  }, []);
+
   return (
     <section className="search__container">
       <PrincipalNavbar className="search__navbar">

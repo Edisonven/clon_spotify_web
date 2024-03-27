@@ -52,6 +52,9 @@ input:hover {
 .revertNavAllposcasts {
   background-color: #070707;
 }
+.revertNavSearch {
+  background-color: var(--sectionBgColor);
+}
 
 [scroll-anim="move"] {
   opacity: 0;
