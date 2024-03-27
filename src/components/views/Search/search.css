@@ -123,3 +123,13 @@
   left: 50%;
   transform: rotate(25deg);
 }
+.search__noresults__container {
+  margin-top: 150px;
+  text-align: center;
+  width: 100%;
+  color: var(--btnBgColor);
+}
+.search__noresults__title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}

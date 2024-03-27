@@ -17,14 +17,20 @@ const Search = () => {
 
   useEffect(() => {
     if (searchInput) {
+      const removeAccents = (str) => {
+        return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      };
+
       const filteredArray = searchData.filter((data) =>
-        data.name.toLowerCase().includes(searchInput.toLowerCase())
+        removeAccents(data.name.toLowerCase()).includes(
+          removeAccents(searchInput.toLowerCase())
+        )
       );
       setFilteredData(filteredArray);
     } else {
       setFilteredData(searchData);
     }
-  }, [searchInput]);
+  }, [searchInput, searchData]);
 
   useEffect(() => {
     if (searchInput) {
@@ -85,24 +91,36 @@ const Search = () => {
         </div>
         <div className="search__section__cards__container">
           <div className="search__section__card__container">
-            {filteredData.map((searchCard) => {
-              return (
-                <PodcastsCard
-                  key={searchCard.id}
-                  style={{ background: searchCard.color }}
-                  className="search__searchcard__body"
-                >
-                  <h1 className="search__searchcard__title">
-                    {searchCard.name}
-                  </h1>
-                  <img
-                    className="search__searchcard__img"
-                    src={searchCard.url}
-                    alt=""
-                  />
-                </PodcastsCard>
-              );
-            })}
+            {filteredData.length > 0 ? (
+              filteredData.map((searchCard) => {
+                return (
+                  <PodcastsCard
+                    key={searchCard.id}
+                    style={{ background: searchCard.color }}
+                    className="search__searchcard__body"
+                  >
+                    <h1 className="search__searchcard__title">
+                      {searchCard.name}
+                    </h1>
+                    <img
+                      className="search__searchcard__img"
+                      src={searchCard.url}
+                      alt=""
+                    />
+                  </PodcastsCard>
+                );
+              })
+            ) : (
+              <div className="search__noresults__container">
+                <h1 className="search__noresults__title">
+                  No se han encontrado resultados para "{searchInput}"
+                </h1>
+                <p className="saearch__noresults__paragraph">
+                  Asegúrate de escribir las palabras de forma correcta o usa
+                  menos o distintas palabras claves.
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>
