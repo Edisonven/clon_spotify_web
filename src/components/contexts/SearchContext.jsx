@@ -17,7 +17,7 @@ const SearchProvider = ({ children }) => {
   }, []);
 
   return (
-    <SearchContext.Provider value={{ searchData }}>
+    <SearchContext.Provider value={{ searchData, setSearchData }}>
       {children}
     </SearchContext.Provider>
   );

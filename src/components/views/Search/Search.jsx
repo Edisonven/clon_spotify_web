@@ -12,7 +12,19 @@ const Search = () => {
   const { searchData } = useContext(SearchContext);
   const [searchInput, setSearchInput] = useState("");
   const [inputCloseBtn, setInputCloseBtn] = useState(false);
+  const [filteredData, setFilteredData] = useState([]);
   const searchInputRef = useRef();
+
+  useEffect(() => {
+    if (searchInput) {
+      const filteredArray = searchData.filter((data) =>
+        data.name.toLowerCase().includes(searchInput.toLowerCase())
+      );
+      setFilteredData(filteredArray);
+    } else {
+      setFilteredData(searchData);
+    }
+  }, [searchInput]);
 
   useEffect(() => {
     if (searchInput) {
@@ -73,7 +85,7 @@ const Search = () => {
         </div>
         <div className="search__section__cards__container">
           <div className="search__section__card__container">
-            {searchData.map((searchCard) => {
+            {filteredData.map((searchCard) => {
               return (
                 <PodcastsCard
                   key={searchCard.id}
