@@ -6,12 +6,25 @@ import { SearchContext } from "../../contexts/SearchContext";
 import PodcastsCard from "../Podcasts/PodcastsCard/PodcastsCard";
 import PrincipalLinks from "../../PrincipalLinks/PrincipalLinks";
 import PrincipalFooter from "../../PrincipalFooter/PrincipalFooter";
+import { IoMdClose } from "react-icons/io";
 
 const Search = () => {
   const { searchData } = useContext(SearchContext);
   const [searchInput, setSearchInput] = useState("");
-
+  const [inputCloseBtn, setInputCloseBtn] = useState(false);
   const searchInputRef = useRef();
+
+  useEffect(() => {
+    if (searchInput) {
+      setInputCloseBtn(true);
+    } else {
+      setInputCloseBtn(false);
+    }
+  }, [inputCloseBtn, searchInput]);
+
+  const eraseInputContent = () => {
+    setSearchInput("");
+  };
 
   useEffect(() => {
     searchInputRef.current.focus();
@@ -46,6 +59,12 @@ const Search = () => {
             id=""
             placeholder="¿Qué quieres reproducir?"
           />
+          {inputCloseBtn ? (
+            <IoMdClose
+              onClick={() => eraseInputContent()}
+              className="search__navbar__icon__close"
+            />
+          ) : null}
         </div>
       </PrincipalNavbar>
       <div className="search__section__container">
