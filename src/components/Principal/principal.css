@@ -42,9 +42,11 @@
   overflow: hidden;
   height: 100%;
   gap: 13px;
+  width: 100%;
 }
 .principal__navbar__title {
   overflow: hidden;
+  width: 100%;
 }
 .principal__navbar__icon {
   cursor: not-allowed;
