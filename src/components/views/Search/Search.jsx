@@ -1,9 +1,12 @@
+import PrincipalNavbar from "../../PrincipalNavbar/PrincipalNavbar";
 import "../Search/search.css";
 
 const Search = () => {
   return (
     <section className="search__container">
-      <h1>Hola soy la busqueda</h1>
+      <PrincipalNavbar className="search__navbar">
+
+      </PrincipalNavbar>
     </section>
   );
 };
