@@ -30,6 +30,10 @@ const AllPodcasts = () => {
     };
 
     allPodcastsSection.addEventListener("scroll", scrollDownSection);
+
+    return () => {
+      allPodcastsSection.removeEventListener("scroll", scrollDownSection);
+    };
   }, []);
 
   return (

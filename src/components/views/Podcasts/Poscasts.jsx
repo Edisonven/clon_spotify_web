@@ -27,6 +27,10 @@ const Podcasts = () => {
     };
 
     podcastSection.addEventListener("scroll", scrollDownNav);
+
+    return () => {
+      podcastSection.removeEventListener("scroll", scrollDownNav);
+    };
   }, []);
 
   return (

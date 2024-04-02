@@ -42,6 +42,10 @@ const Register = () => {
     };
 
     inputFocus.addEventListener("blur", onFocus);
+
+    return () => {
+      inputFocus.removeEventListener("blur", onFocus);
+    };
   }, []);
 
   const handleSubmit = (event) => {

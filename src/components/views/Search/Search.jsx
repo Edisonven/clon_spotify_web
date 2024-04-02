@@ -60,6 +60,10 @@ const Search = () => {
     };
 
     searchContainer.addEventListener("scroll", searchNavBgColor);
+
+    return () => {
+      searchContainer.removeEventListener("scroll", searchNavBgColor);
+    };
   }, []);
 
   return (
