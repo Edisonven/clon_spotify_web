@@ -39,12 +39,12 @@ const Home = () => {
       <Sidebar />
       <Footer />
       {activeMenu ? (
-        <AiOutlineMenuFold
+        <AiOutlineMenuUnfold
           onClick={() => handleSidebarMenu()}
           className="home__menu__icon"
         />
       ) : (
-        <AiOutlineMenuUnfold
+        <AiOutlineMenuFold
           onClick={() => handleSidebarMenu()}
           className="home__menu__icon"
         />

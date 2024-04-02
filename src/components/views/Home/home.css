@@ -12,18 +12,22 @@
   gap: 8px;
 }
 .home__menu__icon {
-  color: var(--backGroundColor);
-  position: absolute;
-  bottom: 10vh;
-  left: 12px;
-  font-size: 2.2rem;
-  z-index: 100;
-  background: var(--letterColor);
-  border-radius: 5px;
+  display: none;
 }
 
 @media (max-width: 1165px) {
   .home__container {
     gap: 0px;
+  }
+  .home__menu__icon {
+    display: inline-block;
+    color: var(--backGroundColor);
+    position: absolute;
+    bottom: 10vh;
+    left: 12px;
+    font-size: 2.2rem;
+    z-index: 100;
+    background: var(--letterColor);
+    border-radius: 5px;
   }
 }
