@@ -12,7 +12,7 @@ import { AiOutlineMenuFold } from "react-icons/ai";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-  const [activeMenu, setActiveMenu] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(true);
 
   const handleSidebarMenu = () => {
     setActiveMenu(!activeMenu);
@@ -20,6 +20,7 @@ const Home = () => {
 
   useEffect(() => {
     const sidebarContainer = document.querySelector(".sidebar__container");
+
     if (activeMenu) {
       sidebarContainer.classList.add("sidebarActive");
     } else {
@@ -40,12 +41,12 @@ const Home = () => {
       <Footer />
       {activeMenu ? (
         <AiOutlineMenuUnfold
-          onClick={() => handleSidebarMenu()}
+          onClick={handleSidebarMenu}
           className="home__menu__icon"
         />
       ) : (
         <AiOutlineMenuFold
-          onClick={() => handleSidebarMenu()}
+          onClick={handleSidebarMenu}
           className="home__menu__icon"
         />
       )}
