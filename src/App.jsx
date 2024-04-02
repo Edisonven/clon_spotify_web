@@ -14,10 +14,7 @@ function App() {
       <Routes>
         <Route path="*" element={<Home />} />
         <Route path="/singup" element={<SingUp />} />
-        <Route
-          path="/singup/singup_with_number"
-          element={<SingUpNumber />}
-        />
+        <Route path="/singup/singup_with_number" element={<SingUpNumber />} />
         <Route
           path="/singup/singup_with_number/validate_number"
           element={<ValidateNumber />}

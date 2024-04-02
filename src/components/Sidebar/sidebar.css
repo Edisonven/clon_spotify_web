@@ -12,6 +12,7 @@
 .sidebar__paragraph {
   color: var(--letterColor);
 }
+
 /*FIRST SECTION*/
 
 .sidebar__first__section {
@@ -257,4 +258,10 @@
   flex-direction: column;
   justify-content: space-between;
   height: 90%;
+}
+
+@media (max-width: 1165px) {
+  .sidebarActive {
+    display: none;
+  }
 }
