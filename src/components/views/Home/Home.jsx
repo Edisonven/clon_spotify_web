@@ -14,11 +14,18 @@ import { useEffect, useState } from "react";
 const Home = () => {
   const [activeMenu, setActiveMenu] = useState(true);
 
-  window.addEventListener("resize", function () {
+  const handleWindowResize = () => {
     if (window.innerWidth > 1165) {
       setActiveMenu(true);
     }
-  });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowResize);
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, [activeMenu]);
 
   const navigate = useNavigate();
 
@@ -51,7 +58,7 @@ const Home = () => {
         <Route path="/podcasts/allpodcasts" element={<AllPodcasts />} />
         <Route path="/search" element={<Search />} />
       </Routes>
-      <Sidebar />
+      <Sidebar activeMenu={activeMenu} />
       <Footer />
       {activeMenu ? (
         <AiOutlineMenuUnfold

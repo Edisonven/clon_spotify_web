@@ -1,6 +1,6 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import "../Sidebar/sidebar.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { PiMusicNotesPlus } from "react-icons/pi";
 import AsideCard from "../AsideCard/AsideCard";
 import { MdLanguage } from "react-icons/md";
@@ -8,7 +8,7 @@ import Button from "../Button/Button";
 import PlaylistModal from "../PlaylistModal/PlaylistModal";
 import SpotifyHome from "../SpotifyHome/SpotifyHome";
 
-const Sidebar = () => {
+const Sidebar = ({ activeMenu }) => {
   const [createPlaytist, setCreatePlaylist] = useState(false);
   const [playlistModal, setPlaylistModal] = useState(false);
 
@@ -25,6 +25,13 @@ const Sidebar = () => {
   const handleCreatePlaylist = () => {
     setCreatePlaylist(!createPlaytist);
   };
+
+  useEffect(() => {
+    if (activeMenu) {
+      setPlaylistModal(false);
+    }
+    return;
+  }, [activeMenu]);
 
   return (
     <section className="sidebar__container">
