@@ -269,10 +269,9 @@
     position: absolute;
     z-index: 100;
     top: 8px;
-    left: 0;
+    left: 8px;
     height: 90%;
-    box-shadow: 2px 2px 5px #000, 5px 5px 10px #000;
+    filter: drop-shadow(5px 5px 7px #000);
     border-radius: 8px;
-    background: var(--backGroundColor_2);
   }
 }
