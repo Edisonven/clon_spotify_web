@@ -262,6 +262,17 @@
 
 @media (max-width: 1165px) {
   .sidebarActive {
-    display: none;
+    transform: translateX(-110%);
+  }
+  .sidebar__container {
+    transition: transform 0.2s ease-in;
+    position: absolute;
+    z-index: 100;
+    top: 8px;
+    left: 0;
+    height: 90%;
+    box-shadow: 2px 2px 5px #000, 5px 5px 10px #000;
+    border-radius: 8px;
+    background: var(--backGroundColor_2);
   }
 }
