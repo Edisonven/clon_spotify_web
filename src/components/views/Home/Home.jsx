@@ -2,7 +2,7 @@ import Principal from "../../Principal/Principal.jsx";
 import Sidebar from "../../Sidebar/Sidebar.jsx";
 import Footer from "../../Footer/Footer.jsx";
 import "../Home/home.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import AllArtist from "../AllArtist/AllArtist.jsx";
 import Podcasts from "../Podcasts/Poscasts.jsx";
 import AllPodcasts from "../AllPodcasts/AllPodcasts.jsx";
@@ -19,6 +19,14 @@ const Home = () => {
       setActiveMenu(true);
     }
   });
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (navigate) {
+      setActiveMenu(true);
+    }
+  }, [navigate]);
 
   const handleSidebarMenu = () => {
     setActiveMenu(!activeMenu);
