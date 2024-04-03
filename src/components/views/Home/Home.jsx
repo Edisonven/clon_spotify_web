@@ -14,6 +14,12 @@ import { useEffect, useState } from "react";
 const Home = () => {
   const [activeMenu, setActiveMenu] = useState(true);
 
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 1165) {
+      setActiveMenu(true);
+    }
+  });
+
   const handleSidebarMenu = () => {
     setActiveMenu(!activeMenu);
   };
