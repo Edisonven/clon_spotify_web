@@ -52,6 +52,26 @@ const PrincipalLinks = ({ className }) => {
             App móvil gratis
           </NavLink>
         </div>
+        <div className="principal__links__section principal__links__fourth__section">
+          <h1 className="principal__links__title principal__links__fourth__section__title">
+            Planes de Spotify
+          </h1>
+          <NavLink className="principal__link principal__link__fourth__section">
+            Premium Individual
+          </NavLink>
+          <NavLink className="principal__link principal__link__fourth__section">
+            Premium Duo
+          </NavLink>
+          <NavLink className="principal__link principal__link__fourth__section">
+            Premium Familiar
+          </NavLink>
+          <NavLink className="principal__link principal__link__fourth__section">
+            Premium para Estudiantes
+          </NavLink>
+          <NavLink className="principal__link principal__link__fourth__section">
+            Versión gratuita
+          </NavLink>
+        </div>
       </div>
       <section className="principal__social__container">
         <div className="principal__social__icons">

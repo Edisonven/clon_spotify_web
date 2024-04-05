@@ -17,12 +17,6 @@ const PrincipalNavbar = ({ className, children }) => {
         <div className="principal__navbar__title">{children}</div>
       </div>
       <div className="principal__register__section">
-        <div className="principal__navbar__links">
-          <Link className="principal__navbar__link">Premium</Link>
-          <Link className="principal__navbar__link">Ayuda</Link>
-          <Link className="principal__navbar__link">Descargar</Link>
-        </div>
-        <span className="principal__navbar__divisor"></span>
         <div className="principal__navbar__register">
           <Link to="/singup" className="principal__navbar__link__register">
             Regístrate
